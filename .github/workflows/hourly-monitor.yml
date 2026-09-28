@@ -1,1 +1,99 @@
+name: Hourly Career Monitor
 
+on:
+  schedule:
+    - cron: '17 * * * *'
+      timezone: 'America/Chicago'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-pipeline-state
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    name: Scan shard ${{ matrix.shard }}
+    runs-on: windows-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Ensure employer registry exists
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+
+      - name: Monitor official career sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Path artifacts -Force | Out-Null
+          ./scripts/Monitor-CareerSources.ps1 `
+            -ShardIndex ${{ matrix.shard }} `
+            -ShardCount 8 `
+            -OutputPath "artifacts/jobs-shard-${{ matrix.shard }}.json" `
+            -EmployerStatePath "artifacts/state-shard-${{ matrix.shard }}.json"
+
+      - name: Upload shard result
+        uses: actions/upload-artifact@v7
+        with:
+          name: career-shard-${{ matrix.shard }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 2
+
+  sync:
+    name: Aggregate and sync ClickUp
+    needs: scan
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Download shard results
+        uses: actions/download-artifact@v8
+        with:
+          pattern: career-shard-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Aggregate snapshots and sync ClickUp
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Invoke-CareerPipeline.ps1 `
+            -Mode HourlyAggregate `
+            -ArtifactDirectory artifacts `
+            -ApplyChanges
+
+      - name: Persist monitoring state
+        shell: pwsh
+        run: |
+          git config user.name "career-pipeline-monitor[bot]"
+          git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
+          git add config/employers.json data/current data/previous data/changes data/audit
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            git commit -m "Career Pipeline Monitor"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          } else {
+            Write-Host "No state changes to commit."
+          }
