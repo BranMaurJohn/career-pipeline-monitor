@@ -24,30 +24,202 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Fix XLSX importer XML attributes
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $path = './scripts/Import-Employers.ps1'
+
+          if (-not (Test-Path -LiteralPath $path)) {
+            throw "Importer not found: $path"
+          }
+
+          $content = Get-Content -LiteralPath $path -Raw
+
+          $replacements = [ordered]@{
+            '$row.r'                 = '$row.GetAttribute(''r'')'
+            '$cell.r'                = '$cell.GetAttribute(''r'')'
+            '$cell.t'                = '$cell.GetAttribute(''t'')'
+            '$relationship.Target'   = '$relationship.GetAttribute(''Target'')'
+          }
+
+          $changes = 0
+
+          foreach ($entry in $replacements.GetEnumerator()) {
+            $old = [string]$entry.Key
+            $new = [string]$entry.Value
+
+            if ($content.Contains($old)) {
+              $content = $content.Replace($old, $new)
+              $changes++
+              Write-Host "Replaced unsafe XML accessor: $old"
+            }
+            elseif ($content.Contains($new)) {
+              Write-Host "Already fixed: $new"
+            }
+            else {
+              throw "Expected XML accessor was not found: $old"
+            }
+          }
+
+          if ($changes -gt 0) {
+            Set-Content `
+              -LiteralPath $path `
+              -Value $content `
+              -Encoding utf8NoBOM
+
+            Write-Host "Import-Employers.ps1 patched successfully."
+          }
+          else {
+            Write-Host "Import-Employers.ps1 was already patched."
+          }
+
+      - name: Validate PowerShell parser
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $files = @(
+            './scripts/Import-Employers.ps1',
+            './scripts/Discover-CareerSources.ps1'
+          )
+
+          foreach ($file in $files) {
+            $tokens = $null
+            $errors = $null
+
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              (Resolve-Path -LiteralPath $file),
+              [ref]$tokens,
+              [ref]$errors
+            ) | Out-Null
+
+            if ($errors.Count -gt 0) {
+              $errors | ForEach-Object {
+                Write-Host "::error file=$file::$($_.Message)"
+              }
+
+              throw "PowerShell parser validation failed for $file"
+            }
+
+            Write-Host "Parser validation passed: $file"
+          }
+
       - name: Refresh employer registry from workbook
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
+
           ./scripts/Import-Employers.ps1 | Out-Null
+
+          $registryPath = './config/employers.json'
+
+          if (-not (Test-Path -LiteralPath $registryPath)) {
+            throw "Employer registry was not created."
+          }
+
+          $registry = Get-Content `
+            -LiteralPath $registryPath `
+            -Raw |
+            ConvertFrom-Json
+
+          if ($registry.recordCount -ne 639) {
+            throw "Expected 639 workbook records but found $($registry.recordCount)."
+          }
+
+          if ($registry.employerCount -ne 625) {
+            throw "Expected 625 unique employers but found $($registry.employerCount)."
+          }
+
+          if (@($registry.employers).Count -ne 625) {
+            throw "Employer array contains $(@($registry.employers).Count) records instead of 625."
+          }
+
+          Write-Host "Employer registry validated."
+          Write-Host "Workbook records: $($registry.recordCount)"
+          Write-Host "Unique employers: $($registry.employerCount)"
 
       - name: Discover and refresh official career sources
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
+
           ./scripts/Discover-CareerSources.ps1 -RefreshExisting | Out-Null
+
+      - name: Validate refreshed employer registry
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $registryPath = './config/employers.json'
+
+          if (-not (Test-Path -LiteralPath $registryPath)) {
+            throw "Employer registry is missing after discovery."
+          }
+
+          $registry = Get-Content `
+            -LiteralPath $registryPath `
+            -Raw |
+            ConvertFrom-Json
+
+          if (@($registry.employers).Count -ne 625) {
+            throw "Discovery changed the employer universe unexpectedly. Found $(@($registry.employers).Count) employers."
+          }
+
+          $withCareersUrl = @(
+            $registry.employers |
+            Where-Object {
+              -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl)
+            }
+          ).Count
+
+          $withAts = @(
+            $registry.employers |
+            Where-Object {
+              -not [string]::IsNullOrWhiteSpace([string]$_.ats)
+            }
+          ).Count
+
+          Write-Host "Registry validation passed."
+          Write-Host "Employers: 625"
+          Write-Host "Employers with careers URL: $withCareersUrl"
+          Write-Host "Employers with detected ATS: $withAts"
 
       - name: Persist source registry
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+
           git config user.name "career-pipeline-monitor[bot]"
           git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
+
+          git add scripts/Import-Employers.ps1
           git add config/employers.json
+
           git diff --cached --quiet
+
           if ($LASTEXITCODE -ne 0) {
             git commit -m "Career Pipeline Monitor"
+
+            if ($LASTEXITCODE -ne 0) {
+              throw "Git commit failed."
+            }
+
             git pull --rebase origin main
+
+            if ($LASTEXITCODE -ne 0) {
+              throw "Git pull --rebase failed."
+            }
+
             git push origin HEAD:main
-          } else {
+
+            if ($LASTEXITCODE -ne 0) {
+              throw "Git push failed."
+            }
+
+            Write-Host "Career source registry persisted successfully."
+          }
+          else {
             Write-Host "No discovery changes to commit."
           }
-
