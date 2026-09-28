@@ -56,6 +56,27 @@ Describe 'JobMatching' {
             Should -BeFalse
     }
 
+    It 'rejects a one-token same-name false identity' {
+        JobMatching\Test-CompanyIdentity `
+            -Company 'Albany Med Health System' `
+            -Text 'University at Albany jobs and careers' |
+            Should -BeFalse
+    }
+
+    It 'accepts the exact health-system identity for a one-token brand' {
+        JobMatching\Test-CompanyIdentity `
+            -Company 'Albany Med Health System' `
+            -Text 'Albany Med Health System careers and employment' |
+            Should -BeTrue
+    }
+
+    It 'requires two distinctive tokens for multi-token fallback identity' {
+        JobMatching\Test-CompanyIdentity `
+            -Company 'NYU Langone Health' `
+            -Text 'NYU Langone careers and technology jobs' |
+            Should -BeTrue
+    }
+
     It 'accepts an official employer-domain job URL' {
         $employer = [pscustomobject]@{
             name               = 'Example Health'
