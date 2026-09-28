@@ -1,7 +1,7 @@
 BeforeAll {
     $root = Resolve-Path (Join-Path $PSScriptRoot '..')
 
-    Import-Module (Join-Path $root 'modules\Utilities.psm1') `
+    Import-Module (Join-Path $root 'modules\ClickUp.psm1') `
         -Force `
         -Global
 
@@ -9,7 +9,7 @@ BeforeAll {
         -Force `
         -Global
 
-    Import-Module (Join-Path $root 'modules\ClickUp.psm1') `
+    Import-Module (Join-Path $root 'modules\Utilities.psm1') `
         -Force `
         -Global
 }
