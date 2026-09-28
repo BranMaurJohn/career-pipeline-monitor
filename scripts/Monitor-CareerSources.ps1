@@ -16,8 +16,10 @@ $ErrorActionPreference = 'Stop'
 
 $utilitiesModule = Join-Path $PSScriptRoot '..\modules\Utilities.psm1'
 $careerSourcesModule = Join-Path $PSScriptRoot '..\modules\CareerSources.psm1'
+$jobMatchingModule = Join-Path $PSScriptRoot '..\modules\JobMatching.psm1'
 
 Import-Module $careerSourcesModule -Force -ErrorAction Stop
+Import-Module $jobMatchingModule -Force -ErrorAction Stop
 Import-Module $utilitiesModule -Force -ErrorAction Stop
 
 $registry = Utilities\Get-JsonFile -Path $EmployersPath -Default $null
@@ -56,7 +58,8 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
     if (-not $isActive) { continue }
 
     $name = [string]$employer.name
-    if ($overrideMap.ContainsKey($name)) {
+    $hasVerifiedOverride = $overrideMap.ContainsKey($name)
+    if ($hasVerifiedOverride) {
         $override = $overrideMap[$name]
         $employer.careersUrl = [string]$override.careersUrl
         if (-not [string]::IsNullOrWhiteSpace([string]$override.ats)) {
@@ -88,6 +91,56 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
                     -Settings $settings `
                     -Keywords $keywords `
                     -DeepSearch:$DeepSearch
+            )
+
+            # Branded source overrides are already verified as belonging to the employer.
+            # Search that host directly without forcing the employer name into the query;
+            # some official job pages do not repeat the corporate name in indexed snippets.
+            if ($hasVerifiedOverride) {
+                $domain = Utilities\Get-UriHostKey ([string]$employer.careersUrl)
+                if ($domain) {
+                    $overrideQueries = @(
+                        ('site:' + $domain + ' (UKG OR Kronos OR Boomi OR HRIS OR "workforce management" OR WFM OR timekeeping OR "time and attendance" OR "advanced scheduling")')
+                    )
+                    if ($DeepSearch) {
+                        $overrideQueries += ('site:' + $domain + ' (UKG OR Boomi OR HRIS OR "workforce management" OR timekeeping) (analyst OR manager OR developer OR engineer OR administrator OR specialist OR director)')
+                    }
+
+                    foreach ($query in $overrideQueries | Select-Object -Unique) {
+                        $results = @(
+                            CareerSources\Search-CareerWeb `
+                                -Query $query `
+                                -Settings $settings `
+                                -Count ([int]$settings.search.jobResultCount)
+                        )
+
+                        foreach ($result in $results) {
+                            $evidence = ([string]$result.Title) + ' ' + ([string]$result.Description)
+                            if (-not (JobMatching\Test-JobRelevance -Title ([string]$result.Title) -Text ([string]$result.Description) -Keywords $keywords)) { continue }
+
+                            $roleTitle = JobMatching\Get-JobTitleFromSearchTitle -Title ([string]$result.Title) -Company $name
+                            if (-not (JobMatching\Test-LooksLikeRoleTitle -Title $roleTitle)) { continue }
+                            if (-not (JobMatching\Test-OfficialJobUrl -Url ([string]$result.Url) -Employer $employer -Settings $settings -EvidenceText $evidence)) { continue }
+
+                            $employerJobs += [pscustomobject]@{
+                                employer   = $name
+                                roleTitle  = $roleTitle
+                                workModel  = JobMatching\Get-WorkModelFromText -Text $evidence
+                                salary     = JobMatching\Get-SalaryFromText -Text $evidence
+                                jobUrl     = [string]$result.Url
+                                careersUrl = [string]$employer.careersUrl
+                                source     = [string]$result.Source
+                                verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
+                            }
+                        }
+                    }
+                }
+            }
+
+            $employerJobs = @(
+                $employerJobs |
+                    Group-Object { (Utilities\ConvertTo-NormalizedText $_.roleTitle) + '|' + ([string]$_.jobUrl).ToLowerInvariant() } |
+                    ForEach-Object { $_.Group | Select-Object -First 1 }
             )
             $jobs += $employerJobs
         }
