@@ -101,9 +101,19 @@ jobs:
             throw "Expected 625 employers in registry but found $(@($registry.employers).Count)."
           }
 
+          $sourceCount = @(
+            $registry.employers |
+              Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }
+          ).Count
+
+          if ($sourceCount -lt 100) {
+            throw "Verified career-source coverage is degraded: $sourceCount / 625. Refusing to publish a misleading hourly zero-result scan."
+          }
+
           Write-Host 'Employer registry validated.'
           Write-Host "Workbook records: $($registry.recordCount)"
           Write-Host "Unique employers: $($registry.employerCount)"
+          Write-Host "Verified career sources: $sourceCount"
 
       - name: Monitor official career sources
         shell: pwsh
@@ -119,6 +129,7 @@ jobs:
           ./scripts/Monitor-CareerSources.ps1 `
             -ShardIndex ${{ matrix.shard }} `
             -ShardCount 8 `
+            -DeepSearch `
             -OutputPath "artifacts/jobs-shard-${{ matrix.shard }}.json" `
             -EmployerStatePath "artifacts/state-shard-${{ matrix.shard }}.json"
 
@@ -207,6 +218,13 @@ jobs:
 
               Write-Host "Validated artifact: $($_.Name)"
             }
+
+          $totalJobs = 0
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $payload = Get-Content "./artifacts/jobs-shard-$shard.json" -Raw | ConvertFrom-Json
+            $totalJobs += @($payload.jobs).Count
+          }
+          Write-Host "Qualifying roles discovered across all shards: $totalJobs"
 
           Write-Host 'All 8 shard artifact sets validated.'
 
