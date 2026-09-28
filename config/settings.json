@@ -1,1 +1,68 @@
-
+{
+  "version": 1,
+  "request": {
+    "timeoutSeconds": 30,
+    "retries": 2,
+    "delayMilliseconds": 150
+  },
+  "search": {
+    "careerResultCount": 8,
+    "jobResultCount": 12,
+    "hourlyShards": 8
+  },
+  "clickup": {
+    "listId": "901421563551",
+    "targetCompanyStatus": "target company",
+    "roleIdentifiedStatus": "role identified",
+    "deleteTasks": false,
+    "demoteMissingRoles": false,
+    "writeDelayMilliseconds": 750
+  },
+  "aggregatorDomains": [
+    "indeed.com",
+    "linkedin.com",
+    "glassdoor.com",
+    "ziprecruiter.com",
+    "simplyhired.com",
+    "talent.com",
+    "jooble.org",
+    "monster.com",
+    "careerbuilder.com"
+  ],
+  "officialAtsDomains": [
+    "myworkdayjobs.com",
+    "workdayjobs.com",
+    "icims.com",
+    "oraclecloud.com",
+    "taleo.net",
+    "successfactors.com",
+    "successfactors.eu",
+    "jobvite.com",
+    "greenhouse.io",
+    "lever.co",
+    "smartrecruiters.com",
+    "phenompeople.com",
+    "eightfold.ai",
+    "ultipro.com",
+    "paylocity.com",
+    "paycomonline.net"
+  ],
+  "atsNames": {
+    "myworkdayjobs.com": "Workday",
+    "workdayjobs.com": "Workday",
+    "icims.com": "iCIMS",
+    "oraclecloud.com": "Oracle Recruiting",
+    "taleo.net": "Oracle Taleo",
+    "successfactors.com": "SAP SuccessFactors",
+    "successfactors.eu": "SAP SuccessFactors",
+    "jobvite.com": "Jobvite",
+    "greenhouse.io": "Greenhouse",
+    "lever.co": "Lever",
+    "smartrecruiters.com": "SmartRecruiters",
+    "phenompeople.com": "Phenom",
+    "eightfold.ai": "Eightfold",
+    "ultipro.com": "UKG Recruiting",
+    "paylocity.com": "Paylocity",
+    "paycomonline.net": "Paycom"
+  }
+}
