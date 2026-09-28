@@ -1,1 +1,40 @@
-
+{
+  "primary": [
+    "UKG",
+    "UKG Pro WFM",
+    "UKG Dimensions",
+    "Kronos",
+    "Boomi",
+    "Workforce Management",
+    "WFM"
+  ],
+  "secondary": [
+    "HRIS",
+    "HR systems",
+    "Human Resources Information System",
+    "Timekeeping",
+    "Time and Attendance",
+    "Advanced Scheduling",
+    "Accruals",
+    "Attendance",
+    "Workday integration",
+    "HCM integration",
+    "Payroll systems",
+    "Integration Developer",
+    "Application Analyst",
+    "HR Technology"
+  ],
+  "exclude": [
+    "patient scheduling",
+    "patient scheduler",
+    "medical scheduler",
+    "appointment scheduler",
+    "surgery scheduler",
+    "staffing coordinator",
+    "workforce coordinator",
+    "registered nurse",
+    "licensed practical nurse",
+    "physician",
+    "medical assistant"
+  ]
+}
