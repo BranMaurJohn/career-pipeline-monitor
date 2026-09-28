@@ -1,10 +1,101 @@
 {
-  "generatedAt": "2026-09-28T23:23:42.9375983Z",
-  "currentJobCount": 0,
+  "generatedAt": "2026-09-28T23:31:07.6732165Z",
+  "currentJobCount": 9,
   "previousJobCount": 0,
-  "newJobCount": 0,
+  "newJobCount": 9,
   "removedJobCount": 0,
-  "newJobs": [],
+  "newJobs": [
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Scheduling Analyst",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-charlestown-ma-jr96189/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:45.4496665Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Integration Developer",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-integration-developer-charlestown-ma-jr93455/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:45.4526243Z"
+    },
+    {
+      "employer": "UF Health",
+      "roleTitle": "Senior, HRIS Peoplesoft Business Analyst",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.ufhealth.org/careers-home/jobs/60625?lang=en-us",
+      "careersUrl": "https://jobs.ufhealth.org/",
+      "source": "Bing RSS",
+      "verifiedAt": "2026-09-28T23:30:05.6745572Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Timekeeping Analyst",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-timekeeping-analyst-charlestown-ma-jr96188/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:45.4510596Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Executive Director, AI Engineering and EHR Systems",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/executive-director-ai-engineering-and-ehr-systems-charlestown-ma-jr102947/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:45.448607Z"
+    },
+    {
+      "employer": "Cedars-Sinai",
+      "roleTitle": "Associate Director, ERP Application Developer (Payroll & UKG) - Remote",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://careers.cshs.org/job/los-angeles/associate-director-erp-application-developer-payroll-and-ukg-remote/252/100461036624",
+      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:48.7242107Z"
+    },
+    {
+      "employer": "Carilion Clinic",
+      "roleTitle": "Epic Application Analyst III",
+      "workModel": "Remote",
+      "salary": "Not disclosed",
+      "jobUrl": "https://carilionclinic.wd12.myworkdayjobs.com/en-US/External_Careers/job/Epic-Application-Analyst-III---Cadence-SER_R161869",
+      "careersUrl": "https://carilionclinic.wd12.myworkdayjobs.com/External_Careers",
+      "source": "Bing RSS",
+      "verifiedAt": "2026-09-28T23:29:55.3746958Z"
+    },
+    {
+      "employer": "Carilion Clinic",
+      "roleTitle": "EPIC APPLICATION ANALYST II, Cadence/SER",
+      "workModel": "Remote",
+      "salary": "Not disclosed",
+      "jobUrl": "https://carilionclinic.wd12.myworkdayjobs.com/en-US/External_Careers/job/EPIC-APPLICATION-ANALYST-II--Cadence-SER_R162068",
+      "careersUrl": "https://carilionclinic.wd12.myworkdayjobs.com/External_Careers",
+      "source": "Bing RSS",
+      "verifiedAt": "2026-09-28T23:29:55.3727116Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Scheduling Analyst (Remote)",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-remote-charlestown-ma-jr93454/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-09-28T23:29:45.4532626Z"
+    }
+  ],
   "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
