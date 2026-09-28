@@ -7,12 +7,25 @@ function Get-CompanyMatchTokens {
     [CmdletBinding()]
     param([Parameter(Mandatory)][string]$Company)
 
-    $stop = @('health','system','systems','medical','center','centers','hospital','hospitals','network','management','services','care')
-    return @(
-        (ConvertTo-NormalizedText $Company).Split(' ') |
-            Where-Object { $_.Length -ge 4 -and $stop -notcontains $_ } |
-            Select-Object -Unique
+    $stop = @(
+        'health','healthcare','system','systems','medical','center','centers',
+        'hospital','hospitals','network','management','services','service','care',
+        'clinic','clinics','regional','university','the','and','of'
     )
+
+    $tokens = @()
+    foreach ($match in [regex]::Matches($Company, '[A-Za-z0-9]+')) {
+        $raw = [string]$match.Value
+        $normalized = $raw.ToLowerInvariant()
+        if ($stop -contains $normalized) { continue }
+
+        $isAcronym = ($raw -cmatch '^[A-Z0-9]{2,5}$')
+        if ($normalized.Length -ge 4 -or $isAcronym) {
+            $tokens += $normalized
+        }
+    }
+
+    return @($tokens | Select-Object -Unique)
 }
 
 function Test-CompanyIdentity {
@@ -25,18 +38,37 @@ function Test-CompanyIdentity {
     $normalized = ConvertTo-NormalizedText $Text
     if (-not $normalized) { return $false }
 
+    # Prefer an exact organization-name or alias match. Pipe-delimited workbook
+    # names often contain both an operating brand and its parent enterprise.
+    $aliases = @($Company -split '\s*[|/]\s*')
+    foreach ($alias in $aliases) {
+        $aliasNormalized = ConvertTo-NormalizedText ([string]$alias)
+        if ($aliasNormalized -and $normalized.Contains($aliasNormalized)) {
+            return $true
+        }
+    }
+
     $companyNormalized = ConvertTo-NormalizedText $Company
-    if ($companyNormalized -and $normalized.Contains($companyNormalized)) { return $true }
+    if ($companyNormalized -and $normalized.Contains($companyNormalized)) {
+        return $true
+    }
 
     $tokens = @(Get-CompanyMatchTokens -Company $Company)
-    if ($tokens.Count -eq 0) { return $false }
+
+    # A single token such as "albany", "banner", "delta", or "atlantic"
+    # is not enough evidence by itself. This prevents unrelated universities,
+    # airlines, publishers, tourism sites, and similarly named companies from
+    # being treated as the health system.
+    if ($tokens.Count -lt 2) { return $false }
 
     $hits = 0
     foreach ($token in $tokens) {
-        if ($normalized -match ('\b' + [regex]::Escape($token) + '\b')) { $hits++ }
+        if ($normalized -match ('\b' + [regex]::Escape($token) + '\b')) {
+            $hits++
+        }
     }
 
-    return ($hits -ge [Math]::Min(2, $tokens.Count))
+    return ($hits -ge 2)
 }
 
 function Test-JobRelevance {
