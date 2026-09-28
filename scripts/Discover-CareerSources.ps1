@@ -15,67 +15,29 @@ $utilitiesModule = Join-Path $PSScriptRoot '..\modules\Utilities.psm1'
 $jobMatchingModule = Join-Path $PSScriptRoot '..\modules\JobMatching.psm1'
 $careerSourcesModule = Join-Path $PSScriptRoot '..\modules\CareerSources.psm1'
 
-if (-not (Test-Path -LiteralPath $utilitiesModule)) {
-    throw "Required module not found: $utilitiesModule"
-}
-
-if (-not (Test-Path -LiteralPath $jobMatchingModule)) {
-    throw "Required module not found: $jobMatchingModule"
-}
-
-if (-not (Test-Path -LiteralPath $careerSourcesModule)) {
-    throw "Required module not found: $careerSourcesModule"
-}
-
-#
-# Import dependency modules first.
-#
-# CareerSources imports Utilities and JobMatching internally. Importing
-# Utilities LAST into the caller scope guarantees that commands such as
-# Get-JsonFile, Set-JsonFile, Test-HttpUrl, and Write-PipelineLog remain
-# directly available to this script after CareerSources has loaded.
-#
-Import-Module $jobMatchingModule -Force -Global -ErrorAction Stop
-Import-Module $careerSourcesModule -Force -Global -ErrorAction Stop
-Import-Module $utilitiesModule -Force -Global -ErrorAction Stop
-
-#
-# Fail immediately if required exported commands are not visible.
-#
-$requiredCommands = @(
-    'Get-JsonFile',
-    'Set-JsonFile',
-    'Test-HttpUrl',
-    'Write-PipelineLog',
-    'Find-CareerSource'
-)
-
-foreach ($commandName in $requiredCommands) {
-    if (-not (Get-Command $commandName -ErrorAction SilentlyContinue)) {
-        throw "Required command '$commandName' is not available after module import."
+foreach ($modulePath in @($utilitiesModule, $jobMatchingModule, $careerSourcesModule)) {
+    if (-not (Test-Path -LiteralPath $modulePath)) {
+        throw "Required module not found: $modulePath"
     }
 }
+
+# Load dependencies first and Utilities last so script-scope helper commands remain stable.
+Import-Module $jobMatchingModule -Force -ErrorAction Stop
+Import-Module $careerSourcesModule -Force -ErrorAction Stop
+Import-Module $utilitiesModule -Force -ErrorAction Stop
 
 if ([string]::IsNullOrWhiteSpace($OutputPath)) {
     $OutputPath = $EmployersPath
 }
 
-$registry = Get-JsonFile `
-    -Path $EmployersPath `
-    -Default $null
-
-$settings = Get-JsonFile `
-    -Path $SettingsPath `
-    -Default $null
+$registry = Utilities\Get-JsonFile -Path $EmployersPath -Default $null
+$settings = Utilities\Get-JsonFile -Path $SettingsPath -Default $null
 
 if (-not $registry) {
     throw "Employer registry is empty: $EmployersPath"
 }
 
-if (
-    $null -eq $registry.PSObject.Properties['employers'] -or
-    @($registry.employers).Count -eq 0
-) {
+if ($null -eq $registry.PSObject.Properties['employers'] -or @($registry.employers).Count -eq 0) {
     throw "Employer registry contains no employers: $EmployersPath"
 }
 
@@ -93,7 +55,7 @@ if ($ShardIndex -lt 0 -or $ShardIndex -ge $ShardCount) {
 
 $employers = @($registry.employers)
 
-Write-PipelineLog (
+Utilities\Write-PipelineLog (
     "Career source discovery starting for shard {0} of {1}. Total employers: {2}" -f `
         ($ShardIndex + 1),
         $ShardCount,
@@ -101,13 +63,11 @@ Write-PipelineLog (
 )
 
 for ($index = 0; $index -lt $employers.Count; $index++) {
-
     if (($index % $ShardCount) -ne $ShardIndex) {
         continue
     }
 
     $employer = $employers[$index]
-
     $isActive = $true
 
     if ($null -ne $employer.PSObject.Properties['active']) {
@@ -119,19 +79,15 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
     }
 
     $existingCareersUrl = ''
-
     if ($null -ne $employer.PSObject.Properties['careersUrl']) {
         $existingCareersUrl = [string]$employer.careersUrl
     }
 
-    if (
-        -not $RefreshExisting -and
-        (Test-HttpUrl $existingCareersUrl)
-    ) {
+    if (-not $RefreshExisting -and (Utilities\Test-HttpUrl $existingCareersUrl)) {
         continue
     }
 
-    Write-PipelineLog (
+    Utilities\Write-PipelineLog (
         "Discovering career source [{0}/{1}] {2}" -f `
             ($index + 1),
             $employers.Count,
@@ -139,58 +95,39 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
     )
 
     try {
-        $source = Find-CareerSource `
+        $source = CareerSources\Find-CareerSource `
             -Employer $employer `
             -Settings $settings
 
         if ($source) {
-
             if ($null -eq $employer.PSObject.Properties['careersUrl']) {
-                $employer |
-                    Add-Member `
-                        -MemberType NoteProperty `
-                        -Name careersUrl `
-                        -Value '' `
-                        -Force
+                $employer | Add-Member -MemberType NoteProperty -Name careersUrl -Value '' -Force
             }
 
             if ($null -eq $employer.PSObject.Properties['ats']) {
-                $employer |
-                    Add-Member `
-                        -MemberType NoteProperty `
-                        -Name ats `
-                        -Value '' `
-                        -Force
+                $employer | Add-Member -MemberType NoteProperty -Name ats -Value '' -Force
             }
 
             if ($null -eq $employer.PSObject.Properties['lastDiscoveredAt']) {
-                $employer |
-                    Add-Member `
-                        -MemberType NoteProperty `
-                        -Name lastDiscoveredAt `
-                        -Value '' `
-                        -Force
+                $employer | Add-Member -MemberType NoteProperty -Name lastDiscoveredAt -Value '' -Force
             }
 
             $employer.careersUrl = [string]$source.careersUrl
             $employer.ats = [string]$source.ats
-            $employer.lastDiscoveredAt = (
-                Get-Date
-            ).ToUniversalTime().ToString('o')
+            $employer.lastDiscoveredAt = (Get-Date).ToUniversalTime().ToString('o')
 
-            Write-PipelineLog (
+            Utilities\Write-PipelineLog (
                 "Career source: {0}" -f [string]$source.careersUrl
             ) -Level Success
         }
         else {
-            Write-PipelineLog (
-                "No official career source found for {0} in this pass." -f `
-                    [string]$employer.name
+            Utilities\Write-PipelineLog (
+                "No official career source found for {0} in this pass." -f [string]$employer.name
             ) -Level Warn
         }
     }
     catch {
-        Write-PipelineLog (
+        Utilities\Write-PipelineLog (
             "Career source discovery failed for {0}: {1}" -f `
                 [string]$employer.name,
                 $_.Exception.Message
@@ -198,7 +135,6 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
     }
 
     $delayMilliseconds = 0
-
     if (
         $null -ne $settings.PSObject.Properties['request'] -and
         $null -ne $settings.request -and
@@ -213,24 +149,17 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
 }
 
 if ($null -eq $registry.PSObject.Properties['generatedAt']) {
-    $registry |
-        Add-Member `
-            -MemberType NoteProperty `
-            -Name generatedAt `
-            -Value '' `
-            -Force
+    $registry | Add-Member -MemberType NoteProperty -Name generatedAt -Value '' -Force
 }
 
-$registry.generatedAt = (
-    Get-Date
-).ToUniversalTime().ToString('o')
+$registry.generatedAt = (Get-Date).ToUniversalTime().ToString('o')
 
-Set-JsonFile `
+Utilities\Set-JsonFile `
     -Path $OutputPath `
     -Value $registry `
     -Depth 12
 
-Write-PipelineLog (
+Utilities\Write-PipelineLog (
     "Career source discovery completed for shard {0} of {1}." -f `
         ($ShardIndex + 1),
         $ShardCount
