@@ -44,6 +44,74 @@ Describe 'CareerSources' {
             Should -BeFalse
     }
 
+    It 'rejects an unrelated university with the same city token' {
+        $employer = [pscustomobject]@{
+            name               = 'Albany Med Health System'
+            verificationSource = ''
+            careersUrl         = ''
+            ats                = ''
+        }
+
+        CareerSources\Test-CareerSourceCandidate `
+            -Employer $employer `
+            -Url 'https://www.albany.edu/jobs' `
+            -Title 'University at Albany Careers' `
+            -Description 'University employment opportunities in Albany.' `
+            -Settings $script:settings |
+            Should -BeFalse
+    }
+
+    It 'rejects an unrelated publisher with an overlapping brand token' {
+        $employer = [pscustomobject]@{
+            name               = 'Atlantic Health System'
+            verificationSource = ''
+            careersUrl         = ''
+            ats                = ''
+        }
+
+        CareerSources\Test-CareerSourceCandidate `
+            -Employer $employer `
+            -Url 'https://www.theatlantic.com/jobs/' `
+            -Title 'Jobs at The Atlantic' `
+            -Description 'Atlantic careers and employment opportunities.' `
+            -Settings $script:settings |
+            Should -BeFalse
+    }
+
+    It 'accepts an official branded career site' {
+        $employer = [pscustomobject]@{
+            name               = 'AdventHealth'
+            verificationSource = ''
+            careersUrl         = ''
+            ats                = ''
+        }
+
+        CareerSources\Test-CareerSourceCandidate `
+            -Employer $employer `
+            -Url 'https://jobs.adventhealth.com/' `
+            -Title 'AdventHealth Careers' `
+            -Description 'Search AdventHealth jobs and career opportunities.' `
+            -Settings $script:settings |
+            Should -BeTrue
+    }
+
+    It 'accepts a company-identified official ATS result' {
+        $employer = [pscustomobject]@{
+            name               = 'Example Health'
+            verificationSource = ''
+            careersUrl         = ''
+            ats                = ''
+        }
+
+        CareerSources\Test-CareerSourceCandidate `
+            -Employer $employer `
+            -Url 'https://example.wd5.myworkdayjobs.com/en-US/jobs' `
+            -Title 'Example Health Careers' `
+            -Description 'Search Example Health jobs.' `
+            -Settings $script:settings |
+            Should -BeTrue
+    }
+
     It 'unwraps a DuckDuckGo destination URL' {
         $target = 'https%3A%2F%2Fcareers.example.org%2Fjobs%2F123'
 
