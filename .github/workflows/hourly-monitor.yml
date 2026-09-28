@@ -30,50 +30,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      # Temporary bootstrap fix for the XLSX XML parser.
-      # This prevents StrictMode from throwing when an Excel cell
-      # does not contain an optional XML attribute such as "t".
-      - name: Fix XLSX importer XML attributes
-        shell: pwsh
-        run: |
-          $ErrorActionPreference = 'Stop'
-
-          $path = './scripts/Import-Employers.ps1'
-
-          if (-not (Test-Path -LiteralPath $path)) {
-            throw "Importer not found: $path"
-          }
-
-          $content = Get-Content -LiteralPath $path -Raw
-
-          $replacements = [ordered]@{
-            '$row.r'               = '$row.GetAttribute(''r'')'
-            '$cell.r'              = '$cell.GetAttribute(''r'')'
-            '$cell.t'              = '$cell.GetAttribute(''t'')'
-            '$relationship.Target' = '$relationship.GetAttribute(''Target'')'
-          }
-
-          foreach ($entry in $replacements.GetEnumerator()) {
-            $old = [string]$entry.Key
-            $new = [string]$entry.Value
-
-            if ($content.Contains($old)) {
-              $content = $content.Replace($old, $new)
-              Write-Host "Replaced unsafe XML accessor: $old"
-            }
-            elseif ($content.Contains($new)) {
-              Write-Host "Already fixed: $new"
-            }
-            else {
-              throw "Expected XML accessor was not found: $old"
-            }
-          }
-
-          Set-Content `
-            -LiteralPath $path `
-            -Value $content `
-            -Encoding utf8NoBOM
-
       - name: Validate PowerShell parser
         shell: pwsh
         run: |
@@ -98,9 +54,15 @@ jobs:
               [ref]$errors
             ) | Out-Null
 
-            if ($errors.Count -gt 0) {
-              foreach ($parseError in $errors) {
-                Write-Host "::error file=$file::$($parseError.Message)"
+            if (@($errors).Count -gt 0) {
+              foreach ($parseError in @($errors)) {
+                Write-Host (
+                  "::error file={0},line={1},col={2}::{3}" -f `
+                    $file,
+                    $parseError.Extent.StartLineNumber,
+                    $parseError.Extent.StartColumnNumber,
+                    $parseError.Message
+                )
               }
 
               throw "PowerShell parser validation failed: $file"
@@ -119,7 +81,7 @@ jobs:
           $registryPath = './config/employers.json'
 
           if (-not (Test-Path -LiteralPath $registryPath)) {
-            throw "Employer registry was not created."
+            throw 'Employer registry was not created.'
           }
 
           $registry = Get-Content `
@@ -139,7 +101,7 @@ jobs:
             throw "Expected 625 employers in registry but found $(@($registry.employers).Count)."
           }
 
-          Write-Host "Employer registry validated."
+          Write-Host 'Employer registry validated.'
           Write-Host "Workbook records: $($registry.recordCount)"
           Write-Host "Unique employers: $($registry.employerCount)"
 
@@ -171,7 +133,6 @@ jobs:
             throw "Shard did not create expected state artifact: $statePath"
           }
 
-          # Ensure both outputs contain valid JSON before uploading them.
           Get-Content -LiteralPath $jobsPath -Raw |
             ConvertFrom-Json |
             Out-Null
@@ -247,7 +208,7 @@ jobs:
               Write-Host "Validated artifact: $($_.Name)"
             }
 
-          Write-Host "All 8 shard artifact sets validated."
+          Write-Host 'All 8 shard artifact sets validated.'
 
       - name: Validate ClickUp secrets
         shell: pwsh
@@ -258,14 +219,14 @@ jobs:
           $ErrorActionPreference = 'Stop'
 
           if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) {
-            throw "Repository secret CLICKUP_API_TOKEN is missing."
+            throw 'Repository secret CLICKUP_API_TOKEN is missing.'
           }
 
           if ([string]::IsNullOrWhiteSpace($env:CLICKUP_LIST_ID)) {
-            throw "Repository secret CLICKUP_LIST_ID is missing."
+            throw 'Repository secret CLICKUP_LIST_ID is missing.'
           }
 
-          Write-Host "Required ClickUp secrets are available."
+          Write-Host 'Required ClickUp secrets are available.'
 
       - name: Aggregate snapshots and sync ClickUp
         shell: pwsh
@@ -314,19 +275,16 @@ jobs:
             Write-Host "Validated state file: $($file.FullName)"
           }
 
-          Write-Host "Monitoring state validation completed."
+          Write-Host 'Monitoring state validation completed.'
 
       - name: Persist monitoring state
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
 
-          git config user.name "career-pipeline-monitor[bot]"
-          git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
+          git config user.name 'career-pipeline-monitor[bot]'
+          git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
 
-          # The importer patch is included so the permanent fix lands in main
-          # after the first successful hourly workflow.
-          git add scripts/Import-Employers.ps1
           git add config/employers.json
           git add -f data/current
           git add -f data/previous
@@ -336,26 +294,17 @@ jobs:
           git diff --cached --quiet
 
           if ($LASTEXITCODE -eq 0) {
-            Write-Host "No state changes to commit."
+            Write-Host 'No state changes to commit.'
             exit 0
           }
 
-          git commit -m "Career Pipeline Monitor"
-
-          if ($LASTEXITCODE -ne 0) {
-            throw "Git commit failed."
-          }
+          git commit -m 'Career Pipeline Monitor'
+          if ($LASTEXITCODE -ne 0) { throw 'Git commit failed.' }
 
           git pull --rebase origin main
-
-          if ($LASTEXITCODE -ne 0) {
-            throw "Git pull --rebase failed."
-          }
+          if ($LASTEXITCODE -ne 0) { throw 'Git pull --rebase failed.' }
 
           git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) { throw 'Git push failed.' }
 
-          if ($LASTEXITCODE -ne 0) {
-            throw "Git push failed."
-          }
-
-          Write-Host "Career Pipeline Monitor state committed successfully."
+          Write-Host 'Career Pipeline Monitor state committed successfully.'
