@@ -1,0 +1,108 @@
+name: Clean Verified Career Rescan
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/rescan-clean.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-pipeline-clean-rescan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    name: Clean scan shard ${{ matrix.shard }}
+    runs-on: windows-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Scan corrected official sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+          $registry = Get-Content './config/employers.json' -Raw | ConvertFrom-Json
+          $sourceCount = @($registry.employers | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }).Count
+          if ($sourceCount -lt 100) { throw "Source coverage degraded: $sourceCount / 625" }
+          New-Item -ItemType Directory -Path './artifacts' -Force | Out-Null
+          ./scripts/Monitor-CareerSources.ps1 `
+            -ShardIndex ${{ matrix.shard }} `
+            -ShardCount 8 `
+            -DeepSearch `
+            -OutputPath "./artifacts/jobs-shard-${{ matrix.shard }}.json" `
+            -EmployerStatePath "./artifacts/state-shard-${{ matrix.shard }}.json" | Out-Null
+          $payload = Get-Content "./artifacts/jobs-shard-${{ matrix.shard }}.json" -Raw | ConvertFrom-Json
+          Write-Host "Clean scan shard ${{ matrix.shard }} qualifying roles: $(@($payload.jobs).Count)"
+      - uses: actions/upload-artifact@v7
+        with:
+          name: clean-shard-${{ matrix.shard }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 2
+
+  sync:
+    name: Aggregate clean results and sync ClickUp
+    needs: scan
+    if: ${{ success() }}
+    runs-on: windows-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/download-artifact@v8
+        with:
+          pattern: clean-shard-*
+          path: artifacts
+          merge-multiple: true
+      - name: Count clean roles
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $total = 0
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $path = "./artifacts/jobs-shard-$shard.json"
+            if (-not (Test-Path $path)) { throw "Missing $path" }
+            $payload = Get-Content $path -Raw | ConvertFrom-Json
+            $total += @($payload.jobs).Count
+          }
+          Write-Host "Clean rescan raw qualifying roles across all shards: $total"
+          if ($total -lt 1) { throw 'Corrected verified-source rescan returned zero roles.' }
+      - name: Sync corrected results to ClickUp
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) { throw 'CLICKUP_API_TOKEN is missing.' }
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_LIST_ID)) { throw 'CLICKUP_LIST_ID is missing.' }
+          ./scripts/Invoke-CareerPipeline.ps1 -Mode HourlyAggregate -ArtifactDirectory './artifacts' -ApplyChanges
+      - name: Persist corrected state
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git config user.name 'career-pipeline-monitor[bot]'
+          git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
+          git add -f data/current data/previous data/changes data/audit
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { exit 0 }
+          git commit -m 'Career Pipeline Monitor'
+          if ($LASTEXITCODE -ne 0) { throw 'State commit failed.' }
+          git pull --rebase origin main
+          if ($LASTEXITCODE -ne 0) { throw 'State rebase failed.' }
+          git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) { throw 'State push failed.' }
