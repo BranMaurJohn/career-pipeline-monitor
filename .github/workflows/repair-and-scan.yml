@@ -1,0 +1,221 @@
+name: Repair Career Registry and Scan
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/repair-and-scan.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: career-pipeline-repair
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    name: Publish completed discovery registry
+    runs-on: windows-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download completed discovery shards
+        uses: actions/download-artifact@v8
+        with:
+          pattern: discovery-shard-*
+          path: artifacts
+          merge-multiple: true
+          run-id: 36488942631
+          github-token: ${{ github.token }}
+
+      - name: Merge verified sources without blank regression
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+          $registryPath = './config/employers.json'
+          $base = Get-Content $registryPath -Raw | ConvertFrom-Json
+
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $path = "./artifacts/employers-shard-$shard.json"
+            if (-not (Test-Path -LiteralPath $path)) { throw "Missing discovery artifact: $path" }
+            $source = Get-Content $path -Raw | ConvertFrom-Json
+            if (@($source.employers).Count -ne 625) { throw "Invalid employer count in $path" }
+
+            for ($index = $shard; $index -lt 625; $index += 8) {
+              $candidateUrl = [string]$source.employers[$index].careersUrl
+              if ([string]::IsNullOrWhiteSpace($candidateUrl)) { continue }
+              $base.employers[$index].careersUrl = $candidateUrl
+              $base.employers[$index].ats = [string]$source.employers[$index].ats
+              $base.employers[$index].lastDiscoveredAt = [string]$source.employers[$index].lastDiscoveredAt
+            }
+          }
+
+          $base.generatedAt = (Get-Date).ToUniversalTime().ToString('o')
+          [System.IO.File]::WriteAllText(
+            (Resolve-Path $registryPath),
+            (($base | ConvertTo-Json -Depth 12) + [Environment]::NewLine),
+            (New-Object System.Text.UTF8Encoding($false))
+          )
+
+          $registry = Get-Content $registryPath -Raw | ConvertFrom-Json
+          if ($registry.recordCount -ne 639 -or $registry.employerCount -ne 625 -or @($registry.employers).Count -ne 625) {
+            throw 'Repair changed the employer universe.'
+          }
+
+          $withSource = @($registry.employers | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }).Count
+          if ($withSource -lt 100) { throw "Repair source coverage is too low: $withSource / 625" }
+          Write-Host "Repair registry verified sources: $withSource / 625"
+
+      - name: Persist repaired registry
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git config user.name 'career-pipeline-monitor[bot]'
+          git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
+          git add config/employers.json
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { Write-Host 'Registry already contains recovered sources.'; exit 0 }
+          git commit -m 'Career Pipeline Monitor'
+          if ($LASTEXITCODE -ne 0) { throw 'Repair commit failed.' }
+          git pull --rebase origin main
+          if ($LASTEXITCODE -ne 0) { throw 'Repair rebase failed.' }
+          git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) { throw 'Repair push failed.' }
+          Write-Host 'Recovered career-source registry published.'
+
+  scan:
+    name: Recovery scan shard ${{ matrix.shard }}
+    needs: repair
+    runs-on: windows-latest
+    timeout-minutes: 45
+
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+
+    steps:
+      - name: Checkout repaired main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Validate repaired registry
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+          $registry = Get-Content './config/employers.json' -Raw | ConvertFrom-Json
+          $sourceCount = @($registry.employers | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }).Count
+          if ($sourceCount -lt 100) { throw "Repaired source coverage is degraded: $sourceCount / 625" }
+          Write-Host "Recovery scan source coverage: $sourceCount / 625"
+
+      - name: Deep scan official sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Path './artifacts' -Force | Out-Null
+          ./scripts/Monitor-CareerSources.ps1 `
+            -ShardIndex ${{ matrix.shard }} `
+            -ShardCount 8 `
+            -DeepSearch `
+            -OutputPath "./artifacts/jobs-shard-${{ matrix.shard }}.json" `
+            -EmployerStatePath "./artifacts/state-shard-${{ matrix.shard }}.json" | Out-Null
+          $payload = Get-Content "./artifacts/jobs-shard-${{ matrix.shard }}.json" -Raw | ConvertFrom-Json
+          Write-Host "Recovery shard ${{ matrix.shard }} qualifying roles: $(@($payload.jobs).Count)"
+
+      - name: Upload recovery shard
+        uses: actions/upload-artifact@v7
+        with:
+          name: repair-career-shard-${{ matrix.shard }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 2
+
+  sync:
+    name: Aggregate recovery results and sync ClickUp
+    needs: scan
+    if: ${{ success() }}
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout latest main
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Download recovery shards
+        uses: actions/download-artifact@v8
+        with:
+          pattern: repair-career-shard-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Count recovery roles
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $total = 0
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $path = "./artifacts/jobs-shard-$shard.json"
+            if (-not (Test-Path -LiteralPath $path)) { throw "Missing recovery artifact: $path" }
+            $payload = Get-Content $path -Raw | ConvertFrom-Json
+            $total += @($payload.jobs).Count
+          }
+          Write-Host "Recovery scan qualifying roles across all shards: $total"
+
+      - name: Validate ClickUp secrets
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) { throw 'CLICKUP_API_TOKEN is missing.' }
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_LIST_ID)) { throw 'CLICKUP_LIST_ID is missing.' }
+
+      - name: Aggregate and sync ClickUp
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Invoke-CareerPipeline.ps1 `
+            -Mode HourlyAggregate `
+            -ArtifactDirectory './artifacts' `
+            -ApplyChanges
+
+      - name: Persist recovered monitoring state
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git config user.name 'career-pipeline-monitor[bot]'
+          git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
+          git add config/employers.json
+          git add -f data/current
+          git add -f data/previous
+          git add -f data/changes
+          git add -f data/audit
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) { Write-Host 'No recovery state changes to commit.'; exit 0 }
+          git commit -m 'Career Pipeline Monitor'
+          if ($LASTEXITCODE -ne 0) { throw 'Recovery state commit failed.' }
+          git pull --rebase origin main
+          if ($LASTEXITCODE -ne 0) { throw 'Recovery state rebase failed.' }
+          git push origin HEAD:main
+          if ($LASTEXITCODE -ne 0) { throw 'Recovery state push failed.' }
+          Write-Host 'Recovery monitoring state persisted.'
