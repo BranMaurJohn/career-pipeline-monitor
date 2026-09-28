@@ -4,13 +4,33 @@
       "name": "Cedars-Sinai",
       "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
       "ats": "custom",
-      "reason": "Verified branded Cedars-Sinai IT careers page exposes live UKG roles."
+      "reason": "Verified branded Cedars-Sinai IT careers page exposes live UKG roles.",
+      "verifiedJobs": [
+        {
+          "title": "ERP Solutions Analyst (UKG Timekeeping and Scheduling) - Remote",
+          "jobUrl": "https://careers.cshs.org/job/los-angeles/erp-solutions-analyst-ukg-timekeeping-and-scheduling-remote/252/99864489680"
+        },
+        {
+          "title": "Associate Director, ERP Application Developer (Payroll & UKG) - Remote",
+          "jobUrl": "https://careers.cshs.org/job/los-angeles/associate-director-erp-application-developer-payroll-and-ukg-remote/252/100461036624"
+        }
+      ]
     },
     {
       "name": "NYU Langone Health",
       "careersUrl": "https://jobs.nyulangone.org/",
       "ats": "custom",
-      "reason": "Verified branded NYU Langone Health jobs domain exposes live UKG Pro WFM roles."
+      "reason": "Verified branded NYU Langone Health jobs domain exposes live UKG Pro WFM roles.",
+      "verifiedJobs": [
+        {
+          "title": "Sr Developer - UKG Pro Workforce Management Solutions (Hybrid NYC)",
+          "jobUrl": "https://jobs.nyulangone.org/job/23276544/sr-developer-ukg-pro-workforce-management-solutions-hybrid-nyc-new-york-ny/"
+        },
+        {
+          "title": "Business Analyst",
+          "jobUrl": "https://jobs.nyulangone.org/job/23542444/business-analyst/"
+        }
+      ]
     },
     {
       "name": "Beth Israel Lahey Health",
