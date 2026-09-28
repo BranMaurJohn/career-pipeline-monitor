@@ -18,6 +18,7 @@ concurrency:
 
 jobs:
   full-scan:
+    name: Full Career Scan
     runs-on: windows-latest
     timeout-minutes: 240
 
@@ -27,6 +28,122 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Validate required files
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $requiredFiles = @(
+            './scripts/Import-Employers.ps1',
+            './scripts/Discover-CareerSources.ps1',
+            './scripts/Monitor-CareerSources.ps1',
+            './scripts/Invoke-CareerPipeline.ps1',
+            './config/keywords.json',
+            './config/settings.json',
+            './input/us_health_systems_2026_current_map.xlsx'
+          )
+
+          foreach ($file in $requiredFiles) {
+            if (-not (Test-Path -LiteralPath $file)) {
+              throw "Required file not found: $file"
+            }
+
+            Write-Host "Found: $file"
+          }
+
+      - name: Validate PowerShell parser
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $files = @(
+            Get-ChildItem `
+              -Path './scripts','./modules' `
+              -Recurse `
+              -File `
+              -Include *.ps1,*.psm1
+          )
+
+          foreach ($file in $files) {
+            $tokens = $null
+            $errors = $null
+
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              $file.FullName,
+              [ref]$tokens,
+              [ref]$errors
+            ) | Out-Null
+
+            if (@($errors).Count -gt 0) {
+              foreach ($parseError in @($errors)) {
+                Write-Host (
+                  "::error file={0},line={1},col={2}::{3}" -f `
+                    $file.FullName,
+                    $parseError.Extent.StartLineNumber,
+                    $parseError.Extent.StartColumnNumber,
+                    $parseError.Message
+                )
+              }
+
+              throw "PowerShell parser validation failed: $($file.FullName)"
+            }
+          }
+
+          Write-Host "PowerShell parser validation passed for $($files.Count) file(s)."
+
+      - name: Refresh employer registry
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          ./scripts/Import-Employers.ps1 | Out-Null
+
+          $registryPath = './config/employers.json'
+
+          if (-not (Test-Path -LiteralPath $registryPath)) {
+            throw 'Employer registry was not created.'
+          }
+
+          $registry = Get-Content `
+            -LiteralPath $registryPath `
+            -Raw |
+            ConvertFrom-Json
+
+          if ($registry.recordCount -ne 639) {
+            throw "Expected 639 valid workbook records but found $($registry.recordCount)."
+          }
+
+          if ($registry.employerCount -ne 625) {
+            throw "Expected 625 unique employers but found $($registry.employerCount)."
+          }
+
+          if (@($registry.employers).Count -ne 625) {
+            throw "Expected 625 employers in registry but found $(@($registry.employers).Count)."
+          }
+
+          Write-Host "Employer registry validated."
+          Write-Host "Workbook records: $($registry.recordCount)"
+          Write-Host "Unique employers: $($registry.employerCount)"
+
+      - name: Validate ClickUp secrets
+        if: ${{ inputs.apply_clickup }}
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) {
+            throw 'Repository secret CLICKUP_API_TOKEN is missing.'
+          }
+
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_LIST_ID)) {
+            throw 'Repository secret CLICKUP_LIST_ID is missing.'
+          }
+
+          Write-Host 'Required ClickUp secrets are available.'
+
       - name: Run full discovery and job scan
         shell: pwsh
         env:
@@ -34,25 +151,108 @@ jobs:
           CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
         run: |
           $ErrorActionPreference = 'Stop'
+
           $apply = '${{ inputs.apply_clickup }}' -eq 'true'
+
           if ($apply) {
-            ./scripts/Invoke-CareerPipeline.ps1 -Mode Full -ApplyChanges
-          } else {
-            ./scripts/Invoke-CareerPipeline.ps1 -Mode Full
+            Write-Host 'Running full scan with ClickUp synchronization enabled.'
+
+            ./scripts/Invoke-CareerPipeline.ps1 `
+              -Mode Full `
+              -ApplyChanges
+          }
+          else {
+            Write-Host 'Running full scan in dry-run mode. No ClickUp writes will occur.'
+
+            ./scripts/Invoke-CareerPipeline.ps1 `
+              -Mode Full
+          }
+
+      - name: Validate generated monitoring state
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $requiredDirectories = @(
+            './data/current',
+            './data/previous',
+            './data/changes',
+            './data/audit'
+          )
+
+          foreach ($directory in $requiredDirectories) {
+            if (-not (Test-Path -LiteralPath $directory)) {
+              throw "Expected monitoring directory was not created: $directory"
+            }
+          }
+
+          $requiredJson = @(
+            './data/current/jobs.json',
+            './data/current/employer-state.json',
+            './data/changes/latest.json'
+          )
+
+          foreach ($file in $requiredJson) {
+            if (-not (Test-Path -LiteralPath $file)) {
+              throw "Expected monitoring file was not created: $file"
+            }
+
+            Get-Content `
+              -LiteralPath $file `
+              -Raw |
+              ConvertFrom-Json |
+              Out-Null
+
+            Write-Host "Validated JSON: $file"
+          }
+
+          if (Test-Path -LiteralPath './data/previous/jobs.json') {
+            Get-Content `
+              -LiteralPath './data/previous/jobs.json' `
+              -Raw |
+              ConvertFrom-Json |
+              Out-Null
+
+            Write-Host 'Validated JSON: ./data/previous/jobs.json'
           }
 
       - name: Persist registry and monitoring state
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+
           git config user.name "career-pipeline-monitor[bot]"
           git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
-          git add config/employers.json data/current data/previous data/changes data/audit
+
+          git add config/employers.json
+          git add -f data/current
+          git add -f data/previous
+          git add -f data/changes
+          git add -f data/audit
+
           git diff --cached --quiet
-          if ($LASTEXITCODE -ne 0) {
-            git commit -m "Career Pipeline Monitor"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          } else {
-            Write-Host "No changes to commit."
+
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host 'No changes to commit.'
+            exit 0
           }
 
+          git commit -m "Career Pipeline Monitor"
+
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Git commit failed.'
+          }
+
+          git pull --rebase origin main
+
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Git pull --rebase failed.'
+          }
+
+          git push origin HEAD:main
+
+          if ($LASTEXITCODE -ne 0) {
+            throw 'Git push failed.'
+          }
+
+          Write-Host 'Career Pipeline Monitor state committed successfully.'
