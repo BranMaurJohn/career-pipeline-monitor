@@ -1,1 +1,10 @@
-
+{
+  "generatedAt": null,
+  "currentJobCount": 0,
+  "previousJobCount": 0,
+  "newJobCount": 0,
+  "removedJobCount": 0,
+  "newJobs": [],
+  "removedJobs": [],
+  "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
+}
