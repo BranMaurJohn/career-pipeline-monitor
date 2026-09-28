@@ -179,10 +179,6 @@ function Test-CareerSourceCandidate {
         return $false
     }
 
-    # A career source must look like an employment destination in the URL or
-    # result title. A careers keyword buried only in a search snippet is not
-    # sufficient because that produced unrelated publishers, schools, travel
-    # sites, banks, airlines, and other same-name false positives.
     $careerSignalText = (([string]$Url) + ' ' + ([string]$Title))
     $hasCareerSignal = $careerSignalText -match '(?i)(career|job|employment|candidate|requisition|opportunit|join[-_ ]?our[-_ ]?team|work[-_ ]?with[-_ ]?us)'
     if (-not $hasCareerSignal) { return $false }
@@ -268,7 +264,7 @@ function Find-CareerSource {
         if (Test-EmployerDomainMatch -Company ([string]$Employer.name) -Url ([string]$result.Url)) { $score += 60 }
         if ([string]$result.Url -match '(?i)(career|job|employment|candidate|requisition)') { $score += 20 }
         if ([string]$result.Title -match '(?i)(career|job|employment|candidate|requisition)') { $score += 10 }
-        if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text ([string]$result.Title) { $score += 10 }
+        if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text ([string]$result.Title)) { $score += 10 }
 
         $scored += [pscustomobject]@{ Result = $result; Score = $score }
     }
