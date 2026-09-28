@@ -18,6 +18,7 @@ jobs:
     name: Scan shard ${{ matrix.shard }}
     runs-on: windows-latest
     timeout-minutes: 45
+
     strategy:
       fail-fast: false
       matrix:
@@ -26,23 +27,160 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      # Temporary bootstrap fix for the XLSX XML parser.
+      # This prevents StrictMode from throwing when an Excel cell
+      # does not contain an optional XML attribute such as "t".
+      - name: Fix XLSX importer XML attributes
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $path = './scripts/Import-Employers.ps1'
+
+          if (-not (Test-Path -LiteralPath $path)) {
+            throw "Importer not found: $path"
+          }
+
+          $content = Get-Content -LiteralPath $path -Raw
+
+          $replacements = [ordered]@{
+            '$row.r'               = '$row.GetAttribute(''r'')'
+            '$cell.r'              = '$cell.GetAttribute(''r'')'
+            '$cell.t'              = '$cell.GetAttribute(''t'')'
+            '$relationship.Target' = '$relationship.GetAttribute(''Target'')'
+          }
+
+          foreach ($entry in $replacements.GetEnumerator()) {
+            $old = [string]$entry.Key
+            $new = [string]$entry.Value
+
+            if ($content.Contains($old)) {
+              $content = $content.Replace($old, $new)
+              Write-Host "Replaced unsafe XML accessor: $old"
+            }
+            elseif ($content.Contains($new)) {
+              Write-Host "Already fixed: $new"
+            }
+            else {
+              throw "Expected XML accessor was not found: $old"
+            }
+          }
+
+          Set-Content `
+            -LiteralPath $path `
+            -Value $content `
+            -Encoding utf8NoBOM
+
+      - name: Validate PowerShell parser
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $files = @(
+            './scripts/Import-Employers.ps1',
+            './scripts/Monitor-CareerSources.ps1'
+          )
+
+          foreach ($file in $files) {
+            if (-not (Test-Path -LiteralPath $file)) {
+              throw "Required PowerShell file not found: $file"
+            }
+
+            $tokens = $null
+            $errors = $null
+
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              (Resolve-Path -LiteralPath $file),
+              [ref]$tokens,
+              [ref]$errors
+            ) | Out-Null
+
+            if ($errors.Count -gt 0) {
+              foreach ($parseError in $errors) {
+                Write-Host "::error file=$file::$($parseError.Message)"
+              }
+
+              throw "PowerShell parser validation failed: $file"
+            }
+
+            Write-Host "Parser validation passed: $file"
+          }
 
       - name: Ensure employer registry exists
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
+
           ./scripts/Import-Employers.ps1 | Out-Null
+
+          $registryPath = './config/employers.json'
+
+          if (-not (Test-Path -LiteralPath $registryPath)) {
+            throw "Employer registry was not created."
+          }
+
+          $registry = Get-Content `
+            -LiteralPath $registryPath `
+            -Raw |
+            ConvertFrom-Json
+
+          if ($registry.recordCount -ne 639) {
+            throw "Expected 639 workbook records but found $($registry.recordCount)."
+          }
+
+          if ($registry.employerCount -ne 625) {
+            throw "Expected 625 unique employers but found $($registry.employerCount)."
+          }
+
+          if (@($registry.employers).Count -ne 625) {
+            throw "Expected 625 employers in registry but found $(@($registry.employers).Count)."
+          }
+
+          Write-Host "Employer registry validated."
+          Write-Host "Workbook records: $($registry.recordCount)"
+          Write-Host "Unique employers: $($registry.employerCount)"
 
       - name: Monitor official career sources
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          New-Item -ItemType Directory -Path artifacts -Force | Out-Null
+
+          New-Item `
+            -ItemType Directory `
+            -Path './artifacts' `
+            -Force |
+            Out-Null
+
           ./scripts/Monitor-CareerSources.ps1 `
             -ShardIndex ${{ matrix.shard }} `
             -ShardCount 8 `
             -OutputPath "artifacts/jobs-shard-${{ matrix.shard }}.json" `
             -EmployerStatePath "artifacts/state-shard-${{ matrix.shard }}.json"
+
+          $jobsPath = "artifacts/jobs-shard-${{ matrix.shard }}.json"
+          $statePath = "artifacts/state-shard-${{ matrix.shard }}.json"
+
+          if (-not (Test-Path -LiteralPath $jobsPath)) {
+            throw "Shard did not create expected jobs artifact: $jobsPath"
+          }
+
+          if (-not (Test-Path -LiteralPath $statePath)) {
+            throw "Shard did not create expected state artifact: $statePath"
+          }
+
+          # Ensure both outputs contain valid JSON before uploading them.
+          Get-Content -LiteralPath $jobsPath -Raw |
+            ConvertFrom-Json |
+            Out-Null
+
+          Get-Content -LiteralPath $statePath -Raw |
+            ConvertFrom-Json |
+            Out-Null
+
+          Write-Host "Shard ${{ matrix.shard }} completed successfully."
 
       - name: Upload shard result
         uses: actions/upload-artifact@v7
@@ -55,6 +193,7 @@ jobs:
   sync:
     name: Aggregate and sync ClickUp
     needs: scan
+    if: ${{ success() }}
     runs-on: windows-latest
     timeout-minutes: 30
 
@@ -71,6 +210,63 @@ jobs:
           path: artifacts
           merge-multiple: true
 
+      - name: Validate all shard artifacts
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $missing = @()
+
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $jobsPath = "./artifacts/jobs-shard-$shard.json"
+            $statePath = "./artifacts/state-shard-$shard.json"
+
+            if (-not (Test-Path -LiteralPath $jobsPath)) {
+              $missing += $jobsPath
+            }
+
+            if (-not (Test-Path -LiteralPath $statePath)) {
+              $missing += $statePath
+            }
+          }
+
+          if ($missing.Count -gt 0) {
+            throw "Missing shard artifacts: $($missing -join ', ')"
+          }
+
+          Get-ChildItem `
+            -LiteralPath './artifacts' `
+            -Filter '*.json' |
+            ForEach-Object {
+              Get-Content `
+                -LiteralPath $_.FullName `
+                -Raw |
+                ConvertFrom-Json |
+                Out-Null
+
+              Write-Host "Validated artifact: $($_.Name)"
+            }
+
+          Write-Host "All 8 shard artifact sets validated."
+
+      - name: Validate ClickUp secrets
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) {
+            throw "Repository secret CLICKUP_API_TOKEN is missing."
+          }
+
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_LIST_ID)) {
+            throw "Repository secret CLICKUP_LIST_ID is missing."
+          }
+
+          Write-Host "Required ClickUp secrets are available."
+
       - name: Aggregate snapshots and sync ClickUp
         shell: pwsh
         env:
@@ -78,22 +274,88 @@ jobs:
           CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
         run: |
           $ErrorActionPreference = 'Stop'
+
           ./scripts/Invoke-CareerPipeline.ps1 `
             -Mode HourlyAggregate `
-            -ArtifactDirectory artifacts `
+            -ArtifactDirectory './artifacts' `
             -ApplyChanges
+
+      - name: Validate generated monitoring state
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $requiredDirectories = @(
+            './data/current',
+            './data/previous',
+            './data/changes',
+            './data/audit'
+          )
+
+          foreach ($directory in $requiredDirectories) {
+            if (-not (Test-Path -LiteralPath $directory)) {
+              throw "Expected monitoring directory was not created: $directory"
+            }
+          }
+
+          $jsonFiles = @(
+            Get-ChildItem './data/current' -Filter '*.json' -File -ErrorAction SilentlyContinue
+            Get-ChildItem './data/previous' -Filter '*.json' -File -ErrorAction SilentlyContinue
+            Get-ChildItem './data/changes' -Filter '*.json' -File -ErrorAction SilentlyContinue
+          )
+
+          foreach ($file in $jsonFiles) {
+            Get-Content `
+              -LiteralPath $file.FullName `
+              -Raw |
+              ConvertFrom-Json |
+              Out-Null
+
+            Write-Host "Validated state file: $($file.FullName)"
+          }
+
+          Write-Host "Monitoring state validation completed."
 
       - name: Persist monitoring state
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+
           git config user.name "career-pipeline-monitor[bot]"
           git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
-          git add config/employers.json data/current data/previous data/changes data/audit
+
+          # The importer patch is included so the permanent fix lands in main
+          # after the first successful hourly workflow.
+          git add scripts/Import-Employers.ps1
+          git add config/employers.json
+          git add -f data/current
+          git add -f data/previous
+          git add -f data/changes
+          git add -f data/audit
+
           git diff --cached --quiet
-          if ($LASTEXITCODE -ne 0) {
-            git commit -m "Career Pipeline Monitor"
-            git pull --rebase origin main
-            git push origin HEAD:main
-          } else {
+
+          if ($LASTEXITCODE -eq 0) {
             Write-Host "No state changes to commit."
+            exit 0
           }
+
+          git commit -m "Career Pipeline Monitor"
+
+          if ($LASTEXITCODE -ne 0) {
+            throw "Git commit failed."
+          }
+
+          git pull --rebase origin main
+
+          if ($LASTEXITCODE -ne 0) {
+            throw "Git pull --rebase failed."
+          }
+
+          git push origin HEAD:main
+
+          if ($LASTEXITCODE -ne 0) {
+            throw "Git push failed."
+          }
+
+          Write-Host "Career Pipeline Monitor state committed successfully."
