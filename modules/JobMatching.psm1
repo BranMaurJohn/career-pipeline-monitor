@@ -38,8 +38,6 @@ function Test-CompanyIdentity {
     $normalized = ConvertTo-NormalizedText $Text
     if (-not $normalized) { return $false }
 
-    # Prefer an exact organization-name or alias match. Pipe-delimited workbook
-    # names often contain both an operating brand and its parent enterprise.
     $aliases = @($Company -split '\s*[|/]\s*')
     foreach ($alias in $aliases) {
         $aliasNormalized = ConvertTo-NormalizedText ([string]$alias)
@@ -54,11 +52,6 @@ function Test-CompanyIdentity {
     }
 
     $tokens = @(Get-CompanyMatchTokens -Company $Company)
-
-    # A single token such as "albany", "banner", "delta", or "atlantic"
-    # is not enough evidence by itself. This prevents unrelated universities,
-    # airlines, publishers, tourism sites, and similarly named companies from
-    # being treated as the health system.
     if ($tokens.Count -lt 2) { return $false }
 
     $hits = 0
@@ -69,6 +62,21 @@ function Test-CompanyIdentity {
     }
 
     return ($hits -ge 2)
+}
+
+function Test-NormalizedPhraseMatch {
+    [CmdletBinding()]
+    param(
+        [AllowNull()][string]$Haystack,
+        [AllowNull()][string]$Needle
+    )
+
+    if ([string]::IsNullOrWhiteSpace($Haystack) -or [string]::IsNullOrWhiteSpace($Needle)) {
+        return $false
+    }
+
+    $pattern = '(?<![a-z0-9])' + [regex]::Escape($Needle) + '(?![a-z0-9])'
+    return [regex]::IsMatch($Haystack, $pattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 }
 
 function Test-JobRelevance {
@@ -84,13 +92,13 @@ function Test-JobRelevance {
 
     foreach ($exclude in @($Keywords.exclude)) {
         $needle = ConvertTo-NormalizedText ([string]$exclude)
-        if ($needle -and $combined.Contains($needle)) { return $false }
+        if ($needle -and (Test-NormalizedPhraseMatch -Haystack $combined -Needle $needle)) { return $false }
     }
 
     $primaryHit = $false
     foreach ($term in @($Keywords.primary)) {
         $needle = ConvertTo-NormalizedText ([string]$term)
-        if ($needle -and $combined.Contains($needle)) {
+        if ($needle -and (Test-NormalizedPhraseMatch -Haystack $combined -Needle $needle)) {
             $primaryHit = $true
             break
         }
@@ -99,7 +107,7 @@ function Test-JobRelevance {
     $secondaryHit = $false
     foreach ($term in @($Keywords.secondary)) {
         $needle = ConvertTo-NormalizedText ([string]$term)
-        if ($needle -and $combined.Contains($needle)) {
+        if ($needle -and (Test-NormalizedPhraseMatch -Haystack $combined -Needle $needle)) {
             $secondaryHit = $true
             break
         }
@@ -243,6 +251,7 @@ function Test-CanPromoteRoleStatus {
 Export-ModuleMember -Function @(
     'Get-CompanyMatchTokens',
     'Test-CompanyIdentity',
+    'Test-NormalizedPhraseMatch',
     'Test-JobRelevance',
     'Test-LooksLikeRoleTitle',
     'Get-JobTitleFromSearchTitle',
