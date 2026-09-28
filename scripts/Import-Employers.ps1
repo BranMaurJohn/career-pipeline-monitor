@@ -9,7 +9,6 @@ $ErrorActionPreference = 'Stop'
 
 Import-Module (Join-Path $PSScriptRoot '..\modules\Utilities.psm1') -Force
 
-
 function Get-ExcelColumnIndex {
     param(
         [Parameter(Mandatory)]
@@ -24,7 +23,6 @@ function Get-ExcelColumnIndex {
 
     return $index
 }
-
 
 function Get-ZipEntryText {
     param(
@@ -58,7 +56,6 @@ function Get-ZipEntryText {
     }
 }
 
-
 function Get-XlsxWorksheetRows {
     param(
         [Parameter(Mandatory)]
@@ -73,24 +70,21 @@ function Get-XlsxWorksheetRows {
     Add-Type -AssemblyName System.IO.Compression
 
     try {
-        Add-Type `
-            -AssemblyName System.IO.Compression.FileSystem `
-            -ErrorAction SilentlyContinue
+        Add-Type -AssemblyName System.IO.Compression.FileSystem -ErrorAction SilentlyContinue
     }
     catch {
-        # FileSystem assembly may already be available.
+        # Assembly may already be loaded.
     }
 
     $resolvedPath = (Resolve-Path -LiteralPath $Path).Path
     $file = [System.IO.File]::OpenRead($resolvedPath)
 
     try {
-        $archive = New-Object `
-            System.IO.Compression.ZipArchive(
-                $file,
-                [System.IO.Compression.ZipArchiveMode]::Read,
-                $false
-            )
+        $archive = New-Object System.IO.Compression.ZipArchive(
+            $file,
+            [System.IO.Compression.ZipArchiveMode]::Read,
+            $false
+        )
 
         try {
             $workbookRaw = Get-ZipEntryText `
@@ -112,8 +106,7 @@ function Get-XlsxWorksheetRows {
             [xml]$workbookXml = $workbookRaw
             [xml]$relsXml = $relsRaw
 
-            $workbookNs = New-Object `
-                System.Xml.XmlNamespaceManager($workbookXml.NameTable)
+            $workbookNs = New-Object System.Xml.XmlNamespaceManager($workbookXml.NameTable)
 
             $workbookNs.AddNamespace(
                 'd',
@@ -143,8 +136,7 @@ function Get-XlsxWorksheetRows {
                 throw "Worksheet '$WorksheetName' does not contain a relationship ID."
             }
 
-            $relsNs = New-Object `
-                System.Xml.XmlNamespaceManager($relsXml.NameTable)
+            $relsNs = New-Object System.Xml.XmlNamespaceManager($relsXml.NameTable)
 
             $relsNs.AddNamespace(
                 'p',
@@ -160,11 +152,6 @@ function Get-XlsxWorksheetRows {
                 throw "Worksheet relationship '$relationshipId' was not found."
             }
 
-            #
-            # IMPORTANT:
-            # Use GetAttribute() instead of .Target because Set-StrictMode
-            # can throw when optional XML attributes/properties are absent.
-            #
             $target = [string]$relationship.GetAttribute('Target')
 
             if ([string]::IsNullOrWhiteSpace($target)) {
@@ -178,9 +165,6 @@ function Get-XlsxWorksheetRows {
                 $target = 'xl/' + $target.TrimStart('.').TrimStart('/')
             }
 
-            #
-            # Shared strings
-            #
             $sharedStrings = @()
 
             $sharedRaw = Get-ZipEntryText `
@@ -190,8 +174,7 @@ function Get-XlsxWorksheetRows {
             if ($sharedRaw) {
                 [xml]$sharedXml = $sharedRaw
 
-                $sharedNs = New-Object `
-                    System.Xml.XmlNamespaceManager($sharedXml.NameTable)
+                $sharedNs = New-Object System.Xml.XmlNamespaceManager($sharedXml.NameTable)
 
                 $sharedNs.AddNamespace(
                     'd',
@@ -203,9 +186,6 @@ function Get-XlsxWorksheetRows {
                 }
             }
 
-            #
-            # Worksheet XML
-            #
             $sheetRaw = Get-ZipEntryText `
                 -Archive $archive `
                 -EntryName $target
@@ -216,8 +196,7 @@ function Get-XlsxWorksheetRows {
 
             [xml]$sheetXml = $sheetRaw
 
-            $sheetNs = New-Object `
-                System.Xml.XmlNamespaceManager($sheetXml.NameTable)
+            $sheetNs = New-Object System.Xml.XmlNamespaceManager($sheetXml.NameTable)
 
             $sheetNs.AddNamespace(
                 'd',
@@ -235,11 +214,6 @@ function Get-XlsxWorksheetRows {
             $output = @()
 
             foreach ($row in $worksheetRows) {
-
-                #
-                # IMPORTANT:
-                # Do not access $row.r directly under StrictMode.
-                #
                 $rowNumberText = [string]$row.GetAttribute('r')
 
                 if ([string]::IsNullOrWhiteSpace($rowNumberText)) {
@@ -248,21 +222,13 @@ function Get-XlsxWorksheetRows {
 
                 $rowNumber = 0
 
-                if (-not [int]::TryParse(
-                    $rowNumberText,
-                    [ref]$rowNumber
-                )) {
+                if (-not [int]::TryParse($rowNumberText, [ref]$rowNumber)) {
                     continue
                 }
 
                 $valuesByColumn = @{}
 
                 foreach ($cell in @($row.SelectNodes('d:c', $sheetNs))) {
-
-                    #
-                    # IMPORTANT:
-                    # Same rule for cell XML attributes.
-                    #
                     $reference = [string]$cell.GetAttribute('r')
 
                     if ([string]::IsNullOrWhiteSpace($reference)) {
@@ -286,31 +252,20 @@ function Get-XlsxWorksheetRows {
                     $value = ''
 
                     if ($cellType -eq 'inlineStr') {
-
-                        $inline = $cell.SelectSingleNode(
-                            'd:is',
-                            $sheetNs
-                        )
+                        $inline = $cell.SelectSingleNode('d:is', $sheetNs)
 
                         if ($inline) {
                             $value = [string]$inline.InnerText
                         }
                     }
                     else {
-
-                        $valueNode = $cell.SelectSingleNode(
-                            'd:v',
-                            $sheetNs
-                        )
+                        $valueNode = $cell.SelectSingleNode('d:v', $sheetNs)
 
                         if ($valueNode) {
                             $value = [string]$valueNode.InnerText
                         }
 
-                        if (
-                            $cellType -eq 's' -and
-                            $value -match '^\d+$'
-                        ) {
+                        if ($cellType -eq 's' -and $value -match '^\d+$') {
                             $sharedIndex = [int]$value
 
                             if (
@@ -325,18 +280,9 @@ function Get-XlsxWorksheetRows {
                     $valuesByColumn[$columnIndex] = $value
                 }
 
-                #
-                # Build column/header mapping.
-                #
                 if ($rowNumber -eq $HeaderRow) {
-
                     foreach ($entry in $valuesByColumn.GetEnumerator()) {
-
-                        if (
-                            -not [string]::IsNullOrWhiteSpace(
-                                [string]$entry.Value
-                            )
-                        ) {
+                        if (-not [string]::IsNullOrWhiteSpace([string]$entry.Value)) {
                             $headerMap[[int]$entry.Key] = [string]$entry.Value
                         }
                     }
@@ -348,18 +294,10 @@ function Get-XlsxWorksheetRows {
                     continue
                 }
 
-                #
-                # Ignore worksheet rows that contain no actual cell values.
-                #
                 $hasAnyValue = $false
 
                 foreach ($valueItem in $valuesByColumn.Values) {
-
-                    if (
-                        -not [string]::IsNullOrWhiteSpace(
-                            [string]$valueItem
-                        )
-                    ) {
+                    if (-not [string]::IsNullOrWhiteSpace([string]$valueItem)) {
                         $hasAnyValue = $true
                         break
                     }
@@ -372,7 +310,6 @@ function Get-XlsxWorksheetRows {
                 $record = [ordered]@{}
 
                 foreach ($columnIndex in ($headerMap.Keys | Sort-Object)) {
-
                     $header = [string]$headerMap[$columnIndex]
 
                     if ($valuesByColumn.ContainsKey($columnIndex)) {
@@ -397,23 +334,12 @@ function Get-XlsxWorksheetRows {
     }
 }
 
-
-#
-# ---------------------------------------------------------------------------
-# MAIN
-# ---------------------------------------------------------------------------
-#
-
 if (-not (Test-Path -LiteralPath $WorkbookPath)) {
     throw "Workbook not found: $WorkbookPath"
 }
 
 Write-PipelineLog "Reading employer universe from $WorkbookPath"
 
-
-#
-# Read worksheet.
-#
 $rawRows = @(
     Get-XlsxWorksheetRows `
         -Path $WorkbookPath `
@@ -421,19 +347,6 @@ $rawRows = @(
         -HeaderRow 4
 )
 
-
-#
-# CRITICAL FIX:
-#
-# Excel can retain XML rows because of formatting, historical edits,
-# formulas, styles, etc. Those rows are not employer records.
-#
-# A valid source row for this pipeline must have the canonical
-# "2026 Job-Search Employer Name".
-#
-# Filtering HERE means recordCount reflects actual source records rather
-# than every physical/formatted worksheet row stored inside the XLSX.
-#
 $rows = @(
     $rawRows |
         Where-Object {
@@ -443,33 +356,24 @@ $rows = @(
         }
 )
 
-
 if ($rows.Count -eq 0) {
     throw "No valid employer records were found in worksheet '2026 Systems'."
 }
 
-
 Write-PipelineLog (
-    "Worksheet contained {0} populated XML/data rows; {1} valid employer records remain after filtering." -f `
+    "Worksheet contained {0} populated rows; {1} valid employer records remain after filtering." -f `
         $rawRows.Count,
         $rows.Count
 )
 
-
-#
-# Preserve previously discovered career-source metadata.
-#
 $existingRegistry = Get-JsonFile `
     -Path $OutputPath `
     -Default $null
 
 $existingByName = @{}
 
-
 if ($existingRegistry -and $existingRegistry.employers) {
-
     foreach ($employer in @($existingRegistry.employers)) {
-
         $key = ConvertTo-NormalizedText ([string]$employer.name)
 
         if ($key) {
@@ -478,23 +382,15 @@ if ($existingRegistry -and $existingRegistry.employers) {
     }
 }
 
-
-#
-# $rows has already been filtered to valid employer records.
-# Do not perform the same filter again.
-#
 $grouped = @(
     $rows |
         Group-Object '2026 Job-Search Employer Name'
 )
 
-
 $employers = @()
 $id = 0
 
-
 foreach ($group in ($grouped | Sort-Object Name)) {
-
     $id++
 
     $first = $group.Group | Select-Object -First 1
@@ -507,10 +403,6 @@ foreach ($group in ($grouped | Sort-Object Name)) {
         $existing = $existingByName[$key]
     }
 
-
-    #
-    # Verification source
-    #
     $verificationSource = @(
         $group.Group |
             ForEach-Object {
@@ -522,35 +414,21 @@ foreach ($group in ($grouped | Sort-Object Name)) {
             Select-Object -First 1
     )
 
-
-    #
-    # Record numbers
-    #
-    # Do not directly cast an empty cell to [int].
-    #
     $recordNumbers = @(
         $group.Group |
             ForEach-Object {
-
                 $recordNumberText = [string]$_.'Record #'
                 $recordNumber = 0
 
                 if (
                     -not [string]::IsNullOrWhiteSpace($recordNumberText) -and
-                    [int]::TryParse(
-                        $recordNumberText,
-                        [ref]$recordNumber
-                    )
+                    [int]::TryParse($recordNumberText, [ref]$recordNumber)
                 ) {
                     $recordNumber
                 }
             }
     )
 
-
-    #
-    # Preserve existing active state safely under StrictMode.
-    #
     $existingPriority = 2
     $existingActive = $true
     $existingCareersUrl = ''
@@ -558,7 +436,6 @@ foreach ($group in ($grouped | Sort-Object Name)) {
     $existingLastDiscoveredAt = ''
 
     if ($existing) {
-
         if ($null -ne $existing.PSObject.Properties['careersUrl']) {
             $existingCareersUrl = [string]$existing.careersUrl
         }
@@ -586,27 +463,22 @@ foreach ($group in ($grouped | Sort-Object Name)) {
         }
     }
 
-
     $employers += [pscustomobject][ordered]@{
         id                   = $id
         name                 = $name
         sourceRecordNumbers  = $recordNumbers
-
         currentCompany       = [string]$first.'Current 2026 Company / System'
         parentEnterprise     = [string]$first.'2026 Parent / Enterprise'
         operatingBrandRegion = [string]$first.'2026 Operating Brand / Region'
         structureStatus      = [string]$first.'2026 Structure Status'
-
         verificationSource   = if ($verificationSource.Count -gt 0) {
             [string]$verificationSource[0]
         }
         else {
             ''
         }
-
         verifiedAsOf         = [string]$first.'Verified As Of'
         structureCategory    = [string]$first.'2026 Structure Category'
-
         careersUrl           = $existingCareersUrl
         ats                  = $existingAts
         priority             = $existingPriority
@@ -615,38 +487,27 @@ foreach ($group in ($grouped | Sort-Object Name)) {
     }
 }
 
-
 if ($employers.Count -eq 0) {
     throw "Employer grouping produced zero employers."
 }
 
-
-#
-# Registry
-#
 $registry = [pscustomobject][ordered]@{
     generatedAt    = (Get-Date).ToUniversalTime().ToString('o')
     sourceWorkbook = [System.IO.Path]::GetFileName($WorkbookPath)
-
-    # Actual valid employer-source rows, NOT XLSX physical rows.
     recordCount    = $rows.Count
-
     employerCount  = $employers.Count
     employers      = $employers
 }
-
 
 Set-JsonFile `
     -Path $OutputPath `
     -Value $registry `
     -Depth 12
 
-
 Write-PipelineLog (
     "Imported {0} valid workbook records into {1} unique employers." -f `
         $rows.Count,
         $employers.Count
 ) -Level Success
-
 
 $registry
