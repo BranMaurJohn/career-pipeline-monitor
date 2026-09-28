@@ -119,14 +119,100 @@ function Test-BlockedDomain {
     return $false
 }
 
+function Test-OfficialAtsHost {
+    [CmdletBinding()]
+    param(
+        [AllowNull()][string]$Url,
+        [Parameter(Mandatory)]$Settings
+    )
+
+    $host = Get-UriHostKey $Url
+    if (-not $host) { return $false }
+
+    foreach ($atsDomain in @($Settings.officialAtsDomains)) {
+        $ats = ([string]$atsDomain).ToLowerInvariant()
+        if ($host -eq $ats -or $host.EndsWith('.' + $ats)) { return $true }
+    }
+
+    return $false
+}
+
+function Test-EmployerDomainMatch {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)][string]$Company,
+        [Parameter(Mandatory)][string]$Url
+    )
+
+    $host = Get-UriHostKey $Url
+    if (-not $host) { return $false }
+
+    $hostCompact = [regex]::Replace($host.ToLowerInvariant(), '[^a-z0-9]', '')
+    $tokens = @(Get-CompanyMatchTokens -Company $Company)
+    if ($tokens.Count -eq 0) { return $false }
+
+    $hits = 0
+    foreach ($token in $tokens) {
+        $compact = [regex]::Replace(([string]$token).ToLowerInvariant(), '[^a-z0-9]', '')
+        if ($compact -and $hostCompact.Contains($compact)) { $hits++ }
+    }
+
+    if ($tokens.Count -eq 1) { return ($hits -eq 1) }
+    return ($hits -ge 2)
+}
+
+function Test-CareerSourceCandidate {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory)]$Employer,
+        [Parameter(Mandatory)][string]$Url,
+        [AllowNull()][string]$Title,
+        [AllowNull()][string]$Description,
+        [Parameter(Mandatory)]$Settings
+    )
+
+    if (-not (Test-HttpUrl $Url)) { return $false }
+    if (Test-BlockedDomain -Url $Url -Settings $Settings) { return $false }
+
+    $evidence = (([string]$Title) + ' ' + ([string]$Description)).Trim()
+    if (-not (Test-CompanyIdentity -Company ([string]$Employer.name) -Text $evidence)) {
+        return $false
+    }
+
+    # A career source must look like an employment destination in the URL or
+    # result title. A careers keyword buried only in a search snippet is not
+    # sufficient because that produced unrelated publishers, schools, travel
+    # sites, banks, airlines, and other same-name false positives.
+    $careerSignalText = (([string]$Url) + ' ' + ([string]$Title))
+    $hasCareerSignal = $careerSignalText -match '(?i)(career|job|employment|candidate|requisition|opportunit|join[-_ ]?our[-_ ]?team|work[-_ ]?with[-_ ]?us)'
+    if (-not $hasCareerSignal) { return $false }
+
+    if (Test-OfficialAtsHost -Url $Url -Settings $Settings) {
+        return $true
+    }
+
+    $host = Get-UriHostKey $Url
+    $verificationHost = Get-UriHostKey ([string]$Employer.verificationSource)
+    if ($verificationHost -and (
+        $host -eq $verificationHost -or
+        $host.EndsWith('.' + $verificationHost) -or
+        $verificationHost.EndsWith('.' + $host)
+    )) {
+        return $true
+    }
+
+    return (Test-EmployerDomainMatch -Company ([string]$Employer.name) -Url $Url)
+}
+
 function Find-CareerSource {
     [CmdletBinding()]
     param(
         [Parameter(Mandatory)]$Employer,
-        [Parameter(Mandatory)]$Settings
+        [Parameter(Mandatory)]$Settings,
+        [switch]$IgnoreRegistry
     )
 
-    if (Test-HttpUrl ([string]$Employer.careersUrl)) {
+    if (-not $IgnoreRegistry -and (Test-HttpUrl ([string]$Employer.careersUrl))) {
         return [pscustomobject]@{
             careersUrl = [string]$Employer.careersUrl
             ats        = if ($Employer.ats) { [string]$Employer.ats } else { Get-AtsNameFromUrl -Url ([string]$Employer.careersUrl) -Settings $Settings }
@@ -134,54 +220,57 @@ function Find-CareerSource {
         }
     }
 
-    $query = '"' + [string]$Employer.name + '" careers jobs'
-    $results = @(Search-CareerWeb -Query $query -Settings $Settings -Count ([int]$Settings.search.careerResultCount))
-    $verificationDomain = Get-UriHostKey ([string]$Employer.verificationSource)
+    $queries = @()
+    $queries += ('"' + [string]$Employer.name + '" careers jobs employment')
+
+    foreach ($propertyName in @('currentCompany','parentEnterprise','operatingBrandRegion')) {
+        if ($null -ne $Employer.PSObject.Properties[$propertyName]) {
+            $alias = [string]$Employer.$propertyName
+            if (-not [string]::IsNullOrWhiteSpace($alias) -and $alias -ne [string]$Employer.name) {
+                $queries += ('"' + $alias + '" careers jobs employment')
+            }
+        }
+    }
+
+    $verificationHost = Get-UriHostKey ([string]$Employer.verificationSource)
+    if ($verificationHost) {
+        $queries += ('site:' + $verificationHost + ' careers jobs employment')
+    }
+
+    $results = @()
+    foreach ($query in @($queries | Select-Object -Unique)) {
+        $results += @(Search-CareerWeb -Query $query -Settings $Settings -Count ([int]$Settings.search.careerResultCount))
+    }
+
+    $results = @(
+        $results |
+            Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.Url) } |
+            Group-Object { ([string]$_.Url).ToLowerInvariant() } |
+            ForEach-Object { $_.Group | Select-Object -First 1 }
+    )
+
     $scored = @()
-
     foreach ($result in $results) {
-        if (-not (Test-HttpUrl $result.Url)) { continue }
-        if (Test-BlockedDomain -Url $result.Url -Settings $Settings) { continue }
+        if (-not (Test-CareerSourceCandidate `
+            -Employer $Employer `
+            -Url ([string]$result.Url) `
+            -Title ([string]$result.Title) `
+            -Description ([string]$result.Description) `
+            -Settings $Settings)) {
+            continue
+        }
 
-        $host = Get-UriHostKey $result.Url
-        $evidence = ([string]$result.Title) + ' ' + ([string]$result.Description)
+        $host = Get-UriHostKey ([string]$result.Url)
         $score = 0
-        $officialSignal = $false
 
-        if ($verificationDomain -and ($host -eq $verificationDomain -or $host.EndsWith('.' + $verificationDomain))) {
-            $score += 7
-            $officialSignal = $true
-        }
+        if (Test-OfficialAtsHost -Url ([string]$result.Url) -Settings $Settings) { $score += 100 }
+        if ($verificationHost -and ($host -eq $verificationHost -or $host.EndsWith('.' + $verificationHost))) { $score += 80 }
+        if (Test-EmployerDomainMatch -Company ([string]$Employer.name) -Url ([string]$result.Url)) { $score += 60 }
+        if ([string]$result.Url -match '(?i)(career|job|employment|candidate|requisition)') { $score += 20 }
+        if ([string]$result.Title -match '(?i)(career|job|employment|candidate|requisition)') { $score += 10 }
+        if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text ([string]$result.Title) { $score += 10 }
 
-        foreach ($atsDomain in @($Settings.officialAtsDomains)) {
-            $ats = ([string]$atsDomain).ToLowerInvariant()
-            if ($host -eq $ats -or $host.EndsWith('.' + $ats)) {
-                if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text $evidence) {
-                    $score += 8
-                    $officialSignal = $true
-                }
-                break
-            }
-        }
-
-        foreach ($token in @(Get-CompanyMatchTokens -Company ([string]$Employer.name))) {
-            if ($token.Length -ge 5 -and $host -match [regex]::Escape($token)) {
-                if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text $evidence) {
-                    $score += 6
-                    $officialSignal = $true
-                }
-                break
-            }
-        }
-
-        if (-not $officialSignal) { continue }
-        if ((ConvertTo-NormalizedText $result.Url) -match '\b(career|careers|job|jobs|employment)\b') { $score += 3 }
-        if ((ConvertTo-NormalizedText $result.Title) -match '\b(career|careers|job|jobs|employment)\b') { $score += 2 }
-        if (Test-CompanyIdentity -Company ([string]$Employer.name) -Text $evidence) { $score += 2 }
-
-        if ($score -ge 5) {
-            $scored += [pscustomobject]@{ Result = $result; Score = $score }
-        }
+        $scored += [pscustomobject]@{ Result = $result; Score = $score }
     }
 
     $best = $scored | Sort-Object Score -Descending | Select-Object -First 1
@@ -221,14 +310,14 @@ function Get-RelevantLinksFromCareerPage {
         if (-not (Test-OfficialJobUrl -Url $url -Employer $Employer -Settings $Settings -EvidenceText ($title + ' ' + [string]$Employer.name))) { continue }
 
         $jobs += [pscustomobject]@{
-            employer       = [string]$Employer.name
-            roleTitle      = $title
-            workModel      = 'Not stated'
-            salary         = 'Not disclosed'
-            jobUrl         = $url
-            careersUrl     = [string]$Employer.careersUrl
-            source         = 'Official career page'
-            verifiedAt     = (Get-Date).ToUniversalTime().ToString('o')
+            employer   = [string]$Employer.name
+            roleTitle  = $title
+            workModel  = 'Not stated'
+            salary     = 'Not disclosed'
+            jobUrl     = $url
+            careersUrl = [string]$Employer.careersUrl
+            source     = 'Official career page'
+            verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
         }
     }
 
@@ -269,14 +358,14 @@ function Find-OfficialJobs {
             if (-not (Test-OfficialJobUrl -Url ([string]$result.Url) -Employer $Employer -Settings $Settings -EvidenceText $evidence)) { continue }
 
             $jobs += [pscustomobject]@{
-                employer       = [string]$Employer.name
-                roleTitle      = $roleTitle
-                workModel      = Get-WorkModelFromText -Text $evidence
-                salary         = Get-SalaryFromText -Text $evidence
-                jobUrl         = [string]$result.Url
-                careersUrl     = [string]$Employer.careersUrl
-                source         = [string]$result.Source
-                verifiedAt     = (Get-Date).ToUniversalTime().ToString('o')
+                employer   = [string]$Employer.name
+                roleTitle  = $roleTitle
+                workModel  = Get-WorkModelFromText -Text $evidence
+                salary     = Get-SalaryFromText -Text $evidence
+                jobUrl     = [string]$result.Url
+                careersUrl = [string]$Employer.careersUrl
+                source     = [string]$result.Source
+                verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
             }
         }
     }
@@ -294,6 +383,7 @@ Export-ModuleMember -Function @(
     'Search-CareerWeb',
     'Get-AtsNameFromUrl',
     'Test-BlockedDomain',
+    'Test-CareerSourceCandidate',
     'Find-CareerSource',
     'Get-RelevantLinksFromCareerPage',
     'Find-OfficialJobs'
