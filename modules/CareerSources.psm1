@@ -146,19 +146,24 @@ function Test-EmployerDomainMatch {
 
     $host = Get-UriHostKey $Url
     if (-not $host) { return $false }
-
     $hostCompact = [regex]::Replace($host.ToLowerInvariant(), '[^a-z0-9]', '')
-    $tokens = @(Get-CompanyMatchTokens -Company $Company)
-    if ($tokens.Count -eq 0) { return $false }
 
-    $hits = 0
-    foreach ($token in $tokens) {
-        $compact = [regex]::Replace(([string]$token).ToLowerInvariant(), '[^a-z0-9]', '')
-        if ($compact -and $hostCompact.Contains($compact)) { $hits++ }
+    $aliases = @($Company -split '\s*[|/]\s*')
+    foreach ($alias in $aliases) {
+        $tokens = @(Get-CompanyMatchTokens -Company ([string]$alias))
+        if ($tokens.Count -eq 0) { continue }
+
+        $hits = 0
+        foreach ($token in $tokens) {
+            $compact = [regex]::Replace(([string]$token).ToLowerInvariant(), '[^a-z0-9]', '')
+            if ($compact -and $hostCompact.Contains($compact)) { $hits++ }
+        }
+
+        if ($tokens.Count -eq 1 -and $hits -eq 1) { return $true }
+        if ($tokens.Count -ge 2 -and $hits -ge 2) { return $true }
     }
 
-    if ($tokens.Count -eq 1) { return ($hits -eq 1) }
-    return ($hits -ge 2)
+    return $false
 }
 
 function Test-CareerSourceCandidate {
@@ -183,21 +188,32 @@ function Test-CareerSourceCandidate {
     $hasCareerSignal = $careerSignalText -match '(?i)(career|job|employment|candidate|requisition|opportunit|join[-_ ]?our[-_ ]?team|work[-_ ]?with[-_ ]?us)'
     if (-not $hasCareerSignal) { return $false }
 
-    if (Test-OfficialAtsHost -Url $Url -Settings $Settings) {
-        return $true
-    }
+    $isAts = Test-OfficialAtsHost -Url $Url -Settings $Settings
+    if ($isAts) { return $true }
 
     $host = Get-UriHostKey $Url
     $verificationHost = Get-UriHostKey ([string]$Employer.verificationSource)
-    if ($verificationHost -and (
+    $matchesVerificationHost = $verificationHost -and (
         $host -eq $verificationHost -or
         $host.EndsWith('.' + $verificationHost) -or
         $verificationHost.EndsWith('.' + $host)
-    )) {
-        return $true
+    )
+    if ($matchesVerificationHost) { return $true }
+
+    if (-not (Test-EmployerDomainMatch -Company ([string]$Employer.name) -Url $Url)) {
+        return $false
     }
 
-    return (Test-EmployerDomainMatch -Company ([string]$Employer.name) -Url $Url)
+    # For a custom domain whose employer identity reduces to only one usable
+    # brand token, require the actual search-result title to name the health
+    # organization. This stops collisions such as Albany.edu, TheAtlantic.com,
+    # Delta.com, BannerEngineering.com, and similarly named unrelated sites.
+    $tokens = @(Get-CompanyMatchTokens -Company ([string]$Employer.name))
+    if ($tokens.Count -lt 2) {
+        return (Test-CompanyIdentity -Company ([string]$Employer.name) -Text ([string]$Title))
+    }
+
+    return $true
 }
 
 function Find-CareerSource {
