@@ -1,15 +1,15 @@
 BeforeAll {
     $root = Resolve-Path (Join-Path $PSScriptRoot '..')
 
-    Import-Module (Join-Path $root 'modules\Utilities.psm1') `
-        -Force `
-        -Global
-
     Import-Module (Join-Path $root 'modules\JobMatching.psm1') `
         -Force `
         -Global
 
     Import-Module (Join-Path $root 'modules\CareerSources.psm1') `
+        -Force `
+        -Global
+
+    Import-Module (Join-Path $root 'modules\Utilities.psm1') `
         -Force `
         -Global
 
