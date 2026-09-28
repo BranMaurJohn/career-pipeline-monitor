@@ -5,13 +5,18 @@ on:
     - cron: '43 5,17 * * *'
       timezone: 'America/Chicago'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/deep-discovery.yml'
 
 permissions:
   contents: write
 
 concurrency:
   group: career-pipeline-state
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   discover:
@@ -34,46 +39,23 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-
           $tokens = $null
           $errors = $null
-          [System.Management.Automation.Language.Parser]::ParseFile(
-            (Resolve-Path './scripts/Discover-CareerSources.ps1'),
-            [ref]$tokens,
-            [ref]$errors
-          ) | Out-Null
-
-          if (@($errors).Count -gt 0) {
-            $errors | ForEach-Object { Write-Host "::error::$($_.Message)" }
-            throw 'Discover-CareerSources.ps1 failed parser validation.'
-          }
-
+          [System.Management.Automation.Language.Parser]::ParseFile((Resolve-Path './scripts/Discover-CareerSources.ps1'),[ref]$tokens,[ref]$errors) | Out-Null
+          if (@($errors).Count -gt 0) { $errors | ForEach-Object { Write-Host "::error::$($_.Message)" }; throw 'Discover-CareerSources.ps1 failed parser validation.' }
           ./scripts/Import-Employers.ps1 | Out-Null
           $registry = Get-Content './config/employers.json' -Raw | ConvertFrom-Json
-
-          if ($registry.recordCount -ne 639 -or $registry.employerCount -ne 625 -or @($registry.employers).Count -ne 625) {
-            throw "Employer universe validation failed: records=$($registry.recordCount), employerCount=$($registry.employerCount), array=$(@($registry.employers).Count)."
-          }
+          if ($registry.recordCount -ne 639 -or $registry.employerCount -ne 625 -or @($registry.employers).Count -ne 625) { throw "Employer universe validation failed: records=$($registry.recordCount), employerCount=$($registry.employerCount), array=$(@($registry.employers).Count)." }
 
       - name: Discover official sources for shard
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
           New-Item -ItemType Directory -Path './artifacts' -Force | Out-Null
-
-          ./scripts/Discover-CareerSources.ps1 `
-            -RefreshExisting `
-            -ShardIndex ${{ matrix.shard }} `
-            -ShardCount 8 `
-            -OutputPath "./artifacts/employers-shard-${{ matrix.shard }}.json" | Out-Null
-
+          ./scripts/Discover-CareerSources.ps1 -RefreshExisting -ShardIndex ${{ matrix.shard }} -ShardCount 8 -OutputPath "./artifacts/employers-shard-${{ matrix.shard }}.json" | Out-Null
           $path = "./artifacts/employers-shard-${{ matrix.shard }}.json"
           $registry = Get-Content $path -Raw | ConvertFrom-Json
-
-          if (@($registry.employers).Count -ne 625) {
-            throw 'Shard output does not contain 625 employers.'
-          }
-
+          if (@($registry.employers).Count -ne 625) { throw 'Shard output does not contain 625 employers.' }
           Write-Host "Shard ${{ matrix.shard }} discovery completed."
 
       - name: Upload discovery shard
@@ -115,81 +97,46 @@ jobs:
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-
           ./scripts/Import-Employers.ps1 | Out-Null
           $registryPath = './config/employers.json'
           $base = Get-Content $registryPath -Raw | ConvertFrom-Json
-
           for ($shard = 0; $shard -lt 8; $shard++) {
             $path = "./artifacts/employers-shard-$shard.json"
             if (-not (Test-Path $path)) { throw "Missing discovery artifact: $path" }
-
             $source = Get-Content $path -Raw | ConvertFrom-Json
             if (@($source.employers).Count -ne 625) { throw "Invalid employer count in $path" }
-
             for ($index = $shard; $index -lt 625; $index += 8) {
               $base.employers[$index].careersUrl = [string]$source.employers[$index].careersUrl
               $base.employers[$index].ats = [string]$source.employers[$index].ats
               $base.employers[$index].lastDiscoveredAt = [string]$source.employers[$index].lastDiscoveredAt
             }
           }
-
           $base.generatedAt = (Get-Date).ToUniversalTime().ToString('o')
-          [System.IO.File]::WriteAllText(
-            (Resolve-Path $registryPath),
-            (($base | ConvertTo-Json -Depth 12) + [Environment]::NewLine),
-            (New-Object System.Text.UTF8Encoding($false))
-          )
-
+          [System.IO.File]::WriteAllText((Resolve-Path $registryPath),(($base | ConvertTo-Json -Depth 12) + [Environment]::NewLine),(New-Object System.Text.UTF8Encoding($false)))
           $registry = Get-Content $registryPath -Raw | ConvertFrom-Json
-          if ($registry.recordCount -ne 639 -or @($registry.employers).Count -ne 625) {
-            throw 'Merged registry changed the employer universe.'
-          }
-
+          if ($registry.recordCount -ne 639 -or @($registry.employers).Count -ne 625) { throw 'Merged registry changed the employer universe.' }
           $withSource = @($registry.employers | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }).Count
-          if ($withSource -lt 100) {
-            throw "Verified-source coverage is too low to publish: $withSource of 625."
-          }
-
-          $requiredEmployers = @(
-            'NYU Langone Health',
-            'Mayo Clinic',
-            'Emory Healthcare',
-            'Cedars-Sinai',
-            'Houston Methodist'
-          )
-
+          if ($withSource -lt 100) { throw "Verified-source coverage is too low to publish: $withSource of 625." }
+          $requiredEmployers = @('NYU Langone Health','Mayo Clinic','Emory Healthcare','Cedars-Sinai','Houston Methodist')
           foreach ($name in $requiredEmployers) {
             $match = @($registry.employers | Where-Object { [string]$_.name -eq $name }) | Select-Object -First 1
-            if (-not $match -or [string]::IsNullOrWhiteSpace([string]$match.careersUrl)) {
-              throw "Required representative employer is missing a verified career source: $name"
-            }
+            if (-not $match -or [string]::IsNullOrWhiteSpace([string]$match.careersUrl)) { throw "Required representative employer is missing a verified career source: $name" }
           }
-
           Write-Host "Verified official-source coverage: $withSource / 625"
 
       - name: Persist source registry
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-
           git config user.name 'career-pipeline-monitor[bot]'
           git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
           git add config/employers.json
           git diff --cached --quiet
-
-          if ($LASTEXITCODE -eq 0) {
-            Write-Host 'No discovery changes to commit.'
-            exit 0
-          }
-
+          if ($LASTEXITCODE -eq 0) { Write-Host 'No discovery changes to commit.'; exit 0 }
           git commit -m 'Career Pipeline Monitor'
           if ($LASTEXITCODE -ne 0) { throw 'Git commit failed.' }
-
           git pull --rebase origin main
           if ($LASTEXITCODE -ne 0) { throw 'Git pull --rebase failed.' }
-
           git push origin HEAD:main
           if ($LASTEXITCODE -ne 0) { throw 'Git push failed.' }
-
           Write-Host 'Verified source registry persisted successfully.'
