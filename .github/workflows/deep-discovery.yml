@@ -1,1 +1,53 @@
+name: Deep Career Source Discovery
+
+on:
+  schedule:
+    - cron: '43 5,17 * * *'
+      timezone: 'America/Chicago'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-pipeline-state
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: windows-latest
+    timeout-minutes: 180
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Refresh employer registry from workbook
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+
+      - name: Discover and refresh official career sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Discover-CareerSources.ps1 -RefreshExisting | Out-Null
+
+      - name: Persist source registry
+        shell: pwsh
+        run: |
+          git config user.name "career-pipeline-monitor[bot]"
+          git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
+          git add config/employers.json
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            git commit -m "Career Pipeline Monitor"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          } else {
+            Write-Host "No discovery changes to commit."
+          }
 
