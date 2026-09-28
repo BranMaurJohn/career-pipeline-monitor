@@ -18,16 +18,31 @@ function Search-BingRss {
     if (-not $response -or [string]::IsNullOrWhiteSpace([string]$response.Content)) { return @() }
 
     try { [xml]$xml = [string]$response.Content } catch { return @() }
-    $items = @($xml.rss.channel.item)
+    $items = @($xml.SelectNodes('//item'))
     $results = @()
 
     foreach ($item in $items | Select-Object -First $Count) {
-        $rawUrl = [string]$item.link
-        if (-not $rawUrl) { continue }
+        if ($null -eq $item) { continue }
+
+        $linkNode = $item.SelectSingleNode('link')
+        if ($null -eq $linkNode -or [string]::IsNullOrWhiteSpace([string]$linkNode.InnerText)) {
+            continue
+        }
+
+        $titleNode = $item.SelectSingleNode('title')
+        $descriptionNode = $item.SelectSingleNode('description')
+
+        $rawUrl = [string]$linkNode.InnerText
+        $title = if ($null -ne $titleNode) { [string]$titleNode.InnerText } else { '' }
+        $description = if ($null -ne $descriptionNode) { [string]$descriptionNode.InnerText } else { '' }
+
+        $resolvedUrl = Resolve-SearchResultUrl -Url $rawUrl
+        if (-not (Test-HttpUrl $resolvedUrl)) { continue }
+
         $results += [pscustomobject]@{
-            Title       = [System.Net.WebUtility]::HtmlDecode([string]$item.title)
-            Url         = Resolve-SearchResultUrl -Url $rawUrl
-            Description = ConvertFrom-HtmlText ([string]$item.description)
+            Title       = [System.Net.WebUtility]::HtmlDecode($title)
+            Url         = $resolvedUrl
+            Description = ConvertFrom-HtmlText $description
             Source      = 'Bing RSS'
         }
     }
@@ -55,9 +70,12 @@ function Search-DuckDuckGoHtml {
     $results = @()
 
     foreach ($match in $matches | Select-Object -First $Count) {
+        $resolvedUrl = Resolve-SearchResultUrl -Url ([System.Net.WebUtility]::HtmlDecode($match.Groups[1].Value))
+        if (-not (Test-HttpUrl $resolvedUrl)) { continue }
+
         $results += [pscustomobject]@{
             Title       = ConvertFrom-HtmlText $match.Groups[2].Value
-            Url         = Resolve-SearchResultUrl -Url ([System.Net.WebUtility]::HtmlDecode($match.Groups[1].Value))
+            Url         = $resolvedUrl
             Description = ConvertFrom-HtmlText $match.Groups[3].Value
             Source      = 'DuckDuckGo HTML'
         }
@@ -76,11 +94,19 @@ function Search-CareerWeb {
 
     $timeout = [int]$Settings.request.timeoutSeconds
     $retries = [int]$Settings.request.retries
-    $results = @(Search-BingRss -Query $Query -Count $Count -TimeoutSec $timeout -Retries $retries)
-    if ($results.Count -eq 0) {
-        $results = @(Search-DuckDuckGoHtml -Query $Query -Count $Count -TimeoutSec $timeout -Retries $retries)
-    }
-    return @($results)
+
+    # Always consult both discovery engines. Bing frequently returns a non-empty
+    # but low-quality result set; treating DuckDuckGo as a zero-result fallback
+    # made the registry clean but mostly blind.
+    $bing = @(Search-BingRss -Query $Query -Count $Count -TimeoutSec $timeout -Retries $retries)
+    $duck = @(Search-DuckDuckGoHtml -Query $Query -Count $Count -TimeoutSec $timeout -Retries $retries)
+
+    return @(
+        @($bing + $duck) |
+            Where-Object { Test-HttpUrl ([string]$_.Url) } |
+            Group-Object { ([string]$_.Url).ToLowerInvariant() } |
+            ForEach-Object { $_.Group | Select-Object -First 1 }
+    )
 }
 
 function Get-AtsNameFromUrl {
@@ -232,21 +258,26 @@ function Find-CareerSource {
         }
     }
 
-    $queries = @()
-    $queries += ('"' + [string]$Employer.name + '" careers jobs employment')
-
+    $aliases = @([string]$Employer.name)
     foreach ($propertyName in @('currentCompany','parentEnterprise','operatingBrandRegion')) {
         if ($null -ne $Employer.PSObject.Properties[$propertyName]) {
             $alias = [string]$Employer.$propertyName
-            if (-not [string]::IsNullOrWhiteSpace($alias) -and $alias -ne [string]$Employer.name) {
-                $queries += ('"' + $alias + '" careers jobs employment')
+            if (-not [string]::IsNullOrWhiteSpace($alias)) {
+                $aliases += $alias
             }
         }
     }
 
+    $queries = @()
+    foreach ($alias in @($aliases | Where-Object { -not [string]::IsNullOrWhiteSpace($_) } | Select-Object -Unique)) {
+        $queries += ('"' + $alias + '" careers')
+        $queries += ('"' + $alias + '" jobs')
+    }
+
     $verificationHost = Get-UriHostKey ([string]$Employer.verificationSource)
     if ($verificationHost) {
-        $queries += ('site:' + $verificationHost + ' careers jobs employment')
+        $queries += ('site:' + $verificationHost + ' careers')
+        $queries += ('site:' + $verificationHost + ' jobs')
     }
 
     $results = @()
