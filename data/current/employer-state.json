@@ -1,4 +1,6255 @@
 {
-  "generatedAt": null,
-  "employers": []
+  "generatedAt": "2026-09-28T21:20:32.1425187Z",
+  "employers": [
+    {
+      "employer": "ACMH",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:50.887455Z",
+      "durationMs": 8,
+      "error": ""
+    },
+    {
+      "employer": "Alameda Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.0532688Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Anderson Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.213719Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Arnot Health | Centralus Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.3822843Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "AtlantiCare",
+      "careersUrl": "https://www.atlanticare.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.0183833Z",
+      "durationMs": 1486,
+      "error": ""
+    },
+    {
+      "employer": "Baptist Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.1836895Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baylor Scott & White Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.3407863Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.4986202Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bon Secours Mercy Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.6567829Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Broadlawns Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.8075756Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cambridge Health Alliance",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.9729244Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Carle Health",
+      "careersUrl": "https://careers.carlehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.6923709Z",
+      "durationMs": 1568,
+      "error": ""
+    },
+    {
+      "employer": "Cedars-Sinai",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.8543658Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.0171656Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s of Alabama",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.1684265Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Citizens Memorial Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.3297082Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Community Health Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.4800311Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Conway Regional Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.6470147Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Covenant Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.7980644Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Day Kimball Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.9630638Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Doylestown Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.1213677Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "El Centro Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.277909Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Englewood Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.4366063Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Exeter Hospital | Beth Israel Lahey Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.610455Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Franciscan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.7624444Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Gerald Champion Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.9264214Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Great Plains Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.0848226Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Harris Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.2428885Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hendrick Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3948456Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Holy Name",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.5583374Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Huntsville Hospital Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.7165357Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Iredell Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.8900132Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "John Muir Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.064111Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Kettering Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.2221097Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lakeland Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.3793141Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Liberty Hospital | The University of Kansas Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.5376037Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Luminis Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.6953213Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MarinHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.8533903Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "McLaren Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.0117285Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Health System of Southwest Oklahoma",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.1856684Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mercy Medical Center – Baltimore",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.3596982Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Methodist Le Bonheur Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.510388Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Montefiore Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.6761989Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MultiCare Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.8343461Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Nebraska Methodist Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.9853812Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "North Mississippi Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.1368734Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northside Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.2971381Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Oaklawn Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.4491578Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Onvida Health",
+      "careersUrl": "https://jobs.onvidahealth.org/jobs",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.435125Z",
+      "durationMs": 812,
+      "error": ""
+    },
+    {
+      "employer": "Owensboro Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.5979344Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Penn Highlands Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.7487622Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Pikeville Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.9044984Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ProHealth Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.062671Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Redlands Community Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.2204317Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Riverside Health Care System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.3791357Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Francis Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.5369478Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Salina Regional Health Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.6941973Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "San Luis Valley Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.8518926Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Schneck Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.0093922Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sharp HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.1667196Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "SJ Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.3263573Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "South Shore Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.4821924Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "SSM Health",
+      "careersUrl": "https://jobs.ssmhealth.com/us/en/home",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.4631091Z",
+      "durationMs": 1823,
+      "error": ""
+    },
+    {
+      "employer": "St. Lawrence Health | Rochester Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.6326301Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Stillwater Medical",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.7840595Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sutter Health",
+      "careersUrl": "https://jobs.sutterhealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.5839031Z",
+      "durationMs": 1635,
+      "error": ""
+    },
+    {
+      "employer": "Texas Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.7359211Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The University of Texas System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.8913694Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "TriState Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.0483191Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UConn Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.2061051Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UMC Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.3562482Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.5222392Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Mississippi Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.6797228Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Upper Peninsula Health Care Solutions",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.8382734Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UW Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.9957804Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Vanderbilt Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.1533546Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Wayne Memorial Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.3111281Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Williamson Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.4678006Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "York Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.6258923Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Adena Fairfield Medical Center | Adena Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.92894Z",
+      "durationMs": 9,
+      "error": ""
+    },
+    {
+      "employer": "Albany Med Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.1067415Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Anderson Regional Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.2576749Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Arrowhead Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.4076599Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Auburn Community Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.5697582Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Baptist Health South Florida",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.7234495Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baystate Health",
+      "careersUrl": "https://baystatehealthjobs.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.8557474Z",
+      "durationMs": 982,
+      "error": ""
+    },
+    {
+      "employer": "Billings Clinic",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.0084868Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Boone Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.1597814Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bronson Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.3230036Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CAMC Health System | Vandalia Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.4816639Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CarolinaEast Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.6398613Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Centra Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.7982437Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Healthcare of Atlanta",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.9564036Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Wisconsin",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.1158225Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cleveland Clinic",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.2663761Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Community Hospital Corporation",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.4327055Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cook Children’s Health Care System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.582885Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Covenant HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.7335267Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Dayton Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.9078209Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Driscoll Childrens Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.0703647Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ellis Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.224436Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Enloe Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.3756548Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Faith Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.5416584Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Frederick Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.6921464Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Glens Falls Hospital | Albany Med Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.8580505Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Great River Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.0164117Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hartford HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.190594Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hendricks Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3485341Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Holzer Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.5070623Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hurley Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.6577695Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "IRMC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.8235126Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Johns Hopkins Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.9745776Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Knox Community Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.1399213Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Larkin Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.2974757Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Licking Memorial Health Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.4557598Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lurie Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.6140582Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Marshall Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.7643756Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "McLeod Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.930278Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.088551Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mercy Medical Center – Cedar Rapids",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.2469304Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MetroHealth System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.4051081Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Monument Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.579245Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Munson Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.7375617Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Nemours Childrens Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.8958496Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "North Oaks Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.0541946Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northwell Health",
+      "careersUrl": "https://jobs.northwell.edu/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.6636524Z",
+      "durationMs": 452,
+      "error": ""
+    },
+    {
+      "employer": "Ochsner Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.8155346Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Orlando Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.9695365Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ozarks Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.1447201Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Penn Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.3040526Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Pipeline Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.463026Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ProMedica",
+      "careersUrl": "https://promedica.wd12.myworkdayjobs.com/en-US/External_Careers/introduceYourself",
+      "ats": "Workday",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.1536913Z",
+      "durationMs": 540,
+      "error": ""
+    },
+    {
+      "employer": "Regional One Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.303047Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Riverside Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.4612548Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Francis Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.6196127Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Salinas Valley Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.7778576Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "San Mateo County Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.9360943Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ScionHealth",
+      "careersUrl": "https://jobs.scionhealth.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.4776698Z",
+      "durationMs": 383,
+      "error": ""
+    },
+    {
+      "employer": "Sharp Tri-City Medical Center | Sharp HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.6330885Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Skagit Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.7843322Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southcoast Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.9507079Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Bernards Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.1089584Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Luke’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.2671194Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Stony Brook Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.4253132Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "T.J. Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.585571Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Texas Health Resources",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.7361765Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ThedaCare | Froedtert ThedaCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.9000691Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tufts Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.0584888Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UF Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.2090088Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UNC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.3591524Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.5175672Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Rochester Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.6777954Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UR Medicine Finger Lakes Health | University of Rochester Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.8341441Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Vail Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.9924352Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "VCU Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.1428776Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "WellSpan Evangelical Community Hospital | WellSpan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.3083598Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Willis-Knighton Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.4667433Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Adena Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.2670087Z",
+      "durationMs": 9,
+      "error": ""
+    },
+    {
+      "employer": "Allegheny Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.4418251Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "AnMed",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.5998Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Asante",
+      "careersUrl": "https://jobs.asante.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.6662083Z",
+      "durationMs": 909,
+      "error": ""
+    },
+    {
+      "employer": "Augusta Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.828763Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baptist Memorial Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.9800513Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Beacon Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.1364155Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bitterroot Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.2952833Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Boone Memorial Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.4533883Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "BronxCare Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.6117993Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Campbell County Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.7707738Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CaroMont Health",
+      "careersUrl": "https://caromonthealth.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.7936781Z",
+      "durationMs": 873,
+      "error": ""
+    },
+    {
+      "employer": "CentraCare",
+      "careersUrl": "https://jobs.centracare.com/us/en/home",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.945244Z",
+      "durationMs": 1986,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Hospital Colorado",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.1059711Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Childrens Minnesota",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.2659681Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Colquitt Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.416301Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Community Memorial Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.5793605Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cook County Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.7298805Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CoxHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.8915973Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "DCH Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.0501464Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Duke Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.2083146Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Emanate Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3666792Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ephraim Mcdowell Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.5249374Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Firelands Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.683171Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Freeman Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.8413362Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Golden Valley Memorial Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.9996154Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Guthrie",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.1498656Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hawaii Health Systems Corporation",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.3161944Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hennepin Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.4743244Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "HonorHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.6262244Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Independence Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.7903549Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Island Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.9526723Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "JPS Health Network",
+      "careersUrl": "https://jpshealthnet.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.9868758Z",
+      "durationMs": 880,
+      "error": ""
+    },
+    {
+      "employer": "Kootenai Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.137021Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "LCMC Health",
+      "careersUrl": "https://careers.lcmchealth.org/us/en/home",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.0137136Z",
+      "durationMs": 1715,
+      "error": ""
+    },
+    {
+      "employer": "LifeBridge Health",
+      "careersUrl": "https://careers.lifebridgehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.6911334Z",
+      "durationMs": 514,
+      "error": ""
+    },
+    {
+      "employer": "M Health Fairview",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.8443968Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Marshall Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.0023147Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Meadville Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.1608484Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.3194953Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mercy Southeast | Mercy",
+      "careersUrl": "https://careers.mercy.net/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.2736941Z",
+      "durationMs": 803,
+      "error": ""
+    },
+    {
+      "employer": "Middlesex Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.4360501Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mosaic Life Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.5879913Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MUSC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.7519887Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NewYork-Presbyterian",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.9039758Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NorthBay Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.0559736Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northwell Health – Nuvance region | Northwell Health",
+      "careersUrl": "https://jobs.northwell.edu/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.8090851Z",
+      "durationMs": 591,
+      "error": ""
+    },
+    {
+      "employer": "OhioHealth",
+      "careersUrl": "https://careers.ohiohealth.com/job-search/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.8683414Z",
+      "durationMs": 899,
+      "error": ""
+    },
+    {
+      "employer": "Oroville Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.0284385Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Palomar Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.1790518Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Penn State Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.3409724Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Pomona Valley Hospital Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.4914201Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Providence",
+      "careersUrl": "https://providence.jobs/jobs/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.3140524Z",
+      "durationMs": 661,
+      "error": ""
+    },
+    {
+      "employer": "Regional West Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.465642Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Riverside University Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.6177115Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Joseph Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.7796217Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Samaritan",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.9316686Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sanford Health",
+      "careersUrl": "https://sanfordcareers.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.6880811Z",
+      "durationMs": 596,
+      "error": ""
+    },
+    {
+      "employer": "Scripps Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.8387676Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Shore Physicians Group",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.0026183Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sky Lakes Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.1544961Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southeast Georgia Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.3066855Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Charles Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.4685204Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Luke’s Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.6203789Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Stormont Vail Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.780456Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tahoe Forest Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.9325795Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The Brooklyn Hospital Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.0929502Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "TidalHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.2429612Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UAB Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.406973Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UHealth – University of Miami Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.5589806Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Union Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.7108248Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University Hospitals",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.8738126Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Utah Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.0243435Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "USA Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.1847709Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valley Children’s Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.3367668Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ventura County Health Care Agency",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.4987854Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "WellSpan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.6508027Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Winona Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.8128618Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "AdventHealth",
+      "careersUrl": "https://jobs.adventhealth.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.1830416Z",
+      "durationMs": 909,
+      "error": ""
+    },
+    {
+      "employer": "Allegiance Health Management",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.3535481Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Antelope Valley Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.5128286Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Ascension",
+      "careersUrl": "https://jobs.ascension.org/us/en",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.2473154Z",
+      "durationMs": 1577,
+      "error": ""
+    },
+    {
+      "employer": "Aultman Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3970927Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Barton Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.5540096Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Beaufort Memorial Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.712141Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "BJC HealthCare | BJC Health",
+      "careersUrl": "https://jobs.bjc.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.9806633Z",
+      "durationMs": 1111,
+      "error": ""
+    },
+    {
+      "employer": "Boston Children’s Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.1390908Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Brookdale University Hospital and Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.2902232Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cape Cod Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.4406481Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Carson Tahoe Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.5983618Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Central Maine Healthcare | Prime Healthcare Foundation",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.7568002Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Hospital Los Angeles",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.9144657Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CHKD",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.0649499Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Columbia Memorial Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.2312311Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cone Health | Risant Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.3893889Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cookeville Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.548079Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Crouse Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.707068Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Deaconess",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.8654082Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "East Alabama Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.0157983Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Emerson Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.1816991Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Episcopal Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.3398895Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "FirstHealth of the Carolinas",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.490424Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Froedtert & the Medical College of Wisconsin",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.6562046Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Good Samaritan",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.8149766Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hackensack Meridian Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.972923Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hawaii Pacific Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.1470385Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Henry Community Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.3053074Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Houston Healthcare | Emory Healthcare",
+      "careersUrl": "https://www.emoryhealthcare.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.0138996Z",
+      "durationMs": 550,
+      "error": ""
+    },
+    {
+      "employer": "Infirmary Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.1773915Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "IU Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.328561Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Jupiter Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.4905192Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Kuakini Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.6409321Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "LECOM Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.8108684Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lifepoint Health",
+      "careersUrl": "https://jobs.lifepointhealth.net/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.2517761Z",
+      "durationMs": 291,
+      "error": ""
+    },
+    {
+      "employer": "Main Line Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.4124989Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mary Lanning Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.5637704Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Med Center Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.7299144Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Hermann Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.8803087Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mercyhealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.0463674Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Midland Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.2049518Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mount Nittany Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.3651475Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "National Jewish Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.5157992Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Niagara Falls Memorial Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.6804305Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northeast Georgia Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.8387019Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northwestern Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.9891627Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "OHSU",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.1553552Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "OSF HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.314152Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Parkland Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.4723086Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Peterson Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.6458852Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Powers Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.8040463Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Pullman Regional Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.9623488Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Reid Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.1126359Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Riverview Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.2786953Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Luke’s | BJC Health",
+      "careersUrl": "https://jobs.bjc.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.1112006Z",
+      "durationMs": 674,
+      "error": ""
+    },
+    {
+      "employer": "Samaritan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.2766574Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sanford Health – Marshfield Clinic region | Sanford Health",
+      "careersUrl": "https://sanfordcareers.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.1607303Z",
+      "durationMs": 733,
+      "error": ""
+    },
+    {
+      "employer": "SEARHC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.3205254Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Shriners Children’s",
+      "careersUrl": "https://www.shrinerschildrens.org/en/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.2059443Z",
+      "durationMs": 727,
+      "error": ""
+    },
+    {
+      "employer": "Slidell Memorial Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.3674407Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southeast Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.51814Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Clair Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.6823044Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Luke’s University Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.8404446Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sturdy Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.9909022Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tallahassee Memorial Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.1410625Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The Christ Hospital Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.2994079Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "TMC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.4569012Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UAMS Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.6142234Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UI Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.7724064Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "United Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.9227985Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University Medical Center of El Paso",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.0889848Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Vermont Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.2472749Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Use current successor organizations",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.4056214Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valley Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.5592143Z",
+      "durationMs": 3,
+      "error": ""
+    },
+    {
+      "employer": "VHC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.7083514Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Wellstar Health System",
+      "careersUrl": "https://careers.wellstar.org/us/en/locations",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:15.3429504Z",
+      "durationMs": 1478,
+      "error": ""
+    },
+    {
+      "employer": "Witham Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:15.4948628Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Adventist Health",
+      "careersUrl": "https://www.adventisthealth.org/careers/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.0079187Z",
+      "durationMs": 913,
+      "error": ""
+    },
+    {
+      "employer": "Allina Health",
+      "careersUrl": "https://www.allinahealth.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.7748316Z",
+      "durationMs": 608,
+      "error": ""
+    },
+    {
+      "employer": "Appalachian Regional Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.9393336Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Aspirus Health",
+      "careersUrl": "https://careers.aspirus.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.3935555Z",
+      "durationMs": 1304,
+      "error": ""
+    },
+    {
+      "employer": "Avera Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.5460083Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bassett Healthcare Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.7016662Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Beebe Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.8526431Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Blanchard Valley Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.0187711Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Boulder Community Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.1704125Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Broward Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3212267Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cape Fear Valley Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.4815788Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Catawba Valley Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.6342848Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CentraState Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.7928667Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Hospital of Philadelphia",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.9436292Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CHOC | Rady Children’s Health",
+      "careersUrl": "https://radychildrens.org/careers/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.5407735Z",
+      "durationMs": 435,
+      "error": ""
+    },
+    {
+      "employer": "Columbus Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.7165804Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Confluence Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.8748455Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cooper Norcross Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.0318348Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cullman Regional",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.1878665Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Delta Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.3453225Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ECMC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.5014458Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Emory Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.6581704Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Erlanger",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.8153607Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Fisher-Titus",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.9720968Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Garnet Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.1272054Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Goshen Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.2836802Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Halifax Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.4400237Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "HaysMed | The University of Kansas Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.5969874Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Henry Ford Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.7544487Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Houston Methodist",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.910577Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Inova",
+      "careersUrl": "https://elar.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
+      "ats": "Oracle Recruiting",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.013014Z",
+      "durationMs": 947,
+      "error": ""
+    },
+    {
+      "employer": "Jackson Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.1635555Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Kaiser Permanente",
+      "careersUrl": "https://www.kaiserpermanentejobs.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.6463281Z",
+      "durationMs": 325,
+      "error": ""
+    },
+    {
+      "employer": "LA Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.8090786Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lee Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.9664846Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "LMH Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.1222658Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MaineGeneral Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.2743459Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mary Washington Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.4334815Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Medisys Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.590343Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Hospital and Health Care Center | Deaconess Memorial Medical Center, Inc.",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.7479881Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Meritus Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.899129Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Missouri Delta Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.0607449Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mount Sinai Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.218953Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Nationwide Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.374783Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Nicklaus Children’s Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.5299718Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northeastern Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.6873791Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Norton Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.8446377Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Olmsted Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.0020693Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "OSF HealthCare St. Katharine Medical Center | OSF HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.1524755Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Parkview Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.3032439Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Phoebe",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.4737144Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Premier Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.6296009Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Quorum Health Corporation",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.7870193Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Renown Health",
+      "careersUrl": "https://www.renown.org/Careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.3306358Z",
+      "durationMs": 388,
+      "error": ""
+    },
+    {
+      "employer": "Rochester Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.481322Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Marys Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.6319299Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Samaritan Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.7932856Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Santa Clara Valley Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.9440826Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Seattle Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.1001695Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Signature Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.256565Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Solutionhealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.4131695Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southern Illinois Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.5701268Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Elizabeth Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.7315274Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Peter’s Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.8821762Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Summa Health System | HATCo / General Catalyst",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.0407392Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tampa General Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.1963995Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The Morris Hospital and Healthcare Centers",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.3542868Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tower Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.5105126Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.6673277Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UI Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.8180773Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "United Regional Health Care System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.9802401Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University Medical Center of Southern Nevada",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.1373462Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UNM Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.2940381Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UT Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.4490057Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valley Health System | Universal Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.606645Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Virtua Health",
+      "careersUrl": "https://www.virtuacareers.com/search-jobs",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.2254061Z",
+      "durationMs": 462,
+      "error": ""
+    },
+    {
+      "employer": "Wellstar MCG Health | Wellstar Health System",
+      "careersUrl": "https://careers.wellstar.org/us/en/locations",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.2753072Z",
+      "durationMs": 887,
+      "error": ""
+    },
+    {
+      "employer": "WMCHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.4336985Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Adventist HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.5373501Z",
+      "durationMs": 9,
+      "error": ""
+    },
+    {
+      "employer": "Alomere Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.7296183Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Archbold",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.8880169Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Aspirus St. Luke’s | Aspirus Health",
+      "careersUrl": "https://careers.aspirus.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.438998Z",
+      "durationMs": 1401,
+      "error": ""
+    },
+    {
+      "employer": "Ballad Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.5899638Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baton Rouge General Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.7415174Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Beloit Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.9024646Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Blessing Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.0533554Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Boys Town National Research Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.214118Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Brown University Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.3645601Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Capital Health",
+      "careersUrl": "https://www.capitalone.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.1285039Z",
+      "durationMs": 608,
+      "error": ""
+    },
+    {
+      "employer": "Catholic Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.2826421Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CGH Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.4341083Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Mercy Kansas City",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.5993153Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ChristianaCare",
+      "careersUrl": "https://careers.christianacare.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.2803017Z",
+      "durationMs": 520,
+      "error": ""
+    },
+    {
+      "employer": "CommonSpirit Health",
+      "careersUrl": "https://www.mountain.commonspirit.org/Careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.7995098Z",
+      "durationMs": 369,
+      "error": ""
+    },
+    {
+      "employer": "Connecticut Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.9510606Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cooper University Hospital Cape Regional | Cooper Norcross Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.1015853Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cuyuna Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.2625646Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Denver Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.4134309Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "ECU Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.5791853Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Emplify Health by Bellin | Emplify Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.737238Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Eskenazi Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.8947135Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "FMOL Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.0455293Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "GBMC HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.1970991Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Grady Health System",
+      "careersUrl": "https://careers.gradyhealth.org/us/en/home",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.998263Z",
+      "durationMs": 1650,
+      "error": ""
+    },
+    {
+      "employer": "Hamilton Health Care System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.1484654Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "HCA Healthcare",
+      "careersUrl": "https://careers.hcahealthcare.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.6762074Z",
+      "durationMs": 373,
+      "error": ""
+    },
+    {
+      "employer": "Heywood Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.8420796Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "HSHS",
+      "careersUrl": "https://hshs.wd1.myworkdayjobs.com/hshscareers",
+      "ats": "Workday",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.5942481Z",
+      "durationMs": 593,
+      "error": ""
+    },
+    {
+      "employer": "Inspira Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.74593Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Jefferson",
+      "careersUrl": "https://www.jeffersonhealth.org/about-us/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.2989629Z",
+      "durationMs": 402,
+      "error": ""
+    },
+    {
+      "employer": "Kaleida Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.4500449Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lake Charles Memorial Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.6010047Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Legacy Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.7613015Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Logan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.9195637Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MaineHealth",
+      "careersUrl": "https://www.careersatmainehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.4133266Z",
+      "durationMs": 335,
+      "error": ""
+    },
+    {
+      "employer": "Mass General Brigham",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.5744537Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MedStar Health",
+      "careersUrl": "https://careers.medstarhealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.9730912Z",
+      "durationMs": 1244,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Hospital of Sweetwater County",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.1231059Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Merrimack Health Lawrence Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.2819098Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MLK Community Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.432306Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mount Sinai Medical Center of Florida",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.5986062Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Natividad",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.7568235Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NKC Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.9153295Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northern Arizona Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.0895493Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Novant Health",
+      "careersUrl": "https://easyapply-novanthealth.icims.com/jobs/search",
+      "ats": "iCIMS",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.6691045Z",
+      "durationMs": 429,
+      "error": ""
+    },
+    {
+      "employer": "Olympic Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.8197103Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Oswego Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.9758932Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Parrish Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.1341323Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Phoenix Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.2965872Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Presbyterian Healthcare Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.4470168Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Rady Children’s Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.609415Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Richmond University Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.7680496Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "RUSH",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.9262929Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Saint Peter’s Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.0848366Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "San Antonio Regional Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.2588225Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sarah Bush Lincoln",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.4172192Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Self Regional Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.5680652Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Silver Cross Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.7334586Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "South Central Regional Medical Center Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.8848888Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southern Ohio Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.05043Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. John’s Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.2085062Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Tammany Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.367249Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Summit Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.5258859Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tanner Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.6840916Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The Ohio State University Wexner Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.8425219Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "TriHealth",
+      "careersUrl": "https://careers.trihealth.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.503354Z",
+      "durationMs": 503,
+      "error": ""
+    },
+    {
+      "employer": "UCHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.6539577Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UK HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.8080981Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Unity Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:12.9664575Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of California Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.1168597Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UofL Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.2831996Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UToledo Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.4414444Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valley Health Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:13.6000656Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "WakeMed",
+      "careersUrl": "https://jobs.wakemed.org/careers-home",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:15.3772485Z",
+      "durationMs": 1617,
+      "error": ""
+    },
+    {
+      "employer": "West Tennessee Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:15.5280986Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Wooster Community Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:15.6900102Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Advocate Health",
+      "careersUrl": "https://careers.advocatehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:49.6651799Z",
+      "durationMs": 879,
+      "error": ""
+    },
+    {
+      "employer": "Altru Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:49.8237722Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ardent Health",
+      "careersUrl": "https://jobs.ardenthealth.com/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.0665414Z",
+      "durationMs": 1087,
+      "error": ""
+    },
+    {
+      "employer": "Astria Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.2182457Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Banner Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.3811627Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baxter Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.5392579Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Benefis Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.6968169Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Blount Memorial | Prisma Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:51.8486137Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bozeman Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.0119935Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bryan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.1700145Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Care New England",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.321702Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Catholic Medical Center | HCA Healthcare",
+      "careersUrl": "https://careers.hcahealthcare.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.7653238Z",
+      "durationMs": 281,
+      "error": ""
+    },
+    {
+      "employer": "Chesapeake Regional Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.923539Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s National",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.080245Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CHRISTUS Health",
+      "careersUrl": "https://careers.christushealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.5768885Z",
+      "durationMs": 345,
+      "error": ""
+    },
+    {
+      "employer": "Community Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.7287266Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Contra Costa Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.879115Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Corewell Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.0417747Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Dartmouth Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.1970439Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "DHR Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.3535264Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Eisenhower Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.5099507Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Emplify Health by Gundersen | Emplify Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.6605194Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Essentia Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.8240411Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Forrest",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:54.9740957Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Geisinger | Risant Health",
+      "careersUrl": "https://jobs.geisinger.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.6650019Z",
+      "durationMs": 527,
+      "error": ""
+    },
+    {
+      "employer": "Grand View Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.8269126Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hancock Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.9839085Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Health First",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.1394456Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hoag",
+      "careersUrl": "https://careers.hoag.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.6804554Z",
+      "durationMs": 384,
+      "error": ""
+    },
+    {
+      "employer": "Hudson Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.8471936Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "INTEGRIS Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.0051308Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Jefferson Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.1611442Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Kaweah Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.331603Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lake Region Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.4884639Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lehigh Valley Health Network | Jefferson",
+      "careersUrl": "https://www.jeffersonhealth.org/about-us/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.0874219Z",
+      "durationMs": 425,
+      "error": ""
+    },
+    {
+      "employer": "Loma Linda University Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.241799Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Major Health Partners",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.3972256Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Maury Regional Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.5544617Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.7106872Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MemorialCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.866343Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Methodist Health System – Dallas",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.0214939Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mohawk Valley Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.1788425Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mountain View Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.335235Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NCH",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.4915291Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Norman Regional Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.6469847Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northern Light Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.8049302Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NYC Health + Hospitals",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.9656366Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "One Brooklyn Health – Interfaith Medical Center | One Brooklyn Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.1186756Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "OU Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.2746322Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "PeaceHealth",
+      "careersUrl": "https://careers.peacehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.8494887Z",
+      "durationMs": 402,
+      "error": ""
+    },
+    {
+      "employer": "Piedmont Healthcare",
+      "careersUrl": "https://piedmontcareers.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.5021034Z",
+      "durationMs": 487,
+      "error": ""
+    },
+    {
+      "employer": "Prime Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.6521245Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Redeemer Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.8021455Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Ridgeview",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.9720847Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Rutland Regional Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.1230239Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Salem Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.2853836Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "San Francisco Health Network",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.4411486Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sarasota Memorial Health Care System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.5928907Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sentara Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.7433572Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Sinai Chicago",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.8964266Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "South County Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.0522128Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Southwell",
+      "careersUrl": "https://careers.mysouthwell.com/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.730685Z",
+      "durationMs": 523,
+      "error": ""
+    },
+    {
+      "employer": "St. Joseph’s Health | Trinity Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.8806625Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Stamford Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.0359294Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "SUNY Downstate Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.1916458Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Temple Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.3632686Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The Queens Health Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.5204354Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Trinity Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:04.6765882Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UCHealth Parkview Medical Center | UCHealth",
+      "careersUrl": "https://careers.uchealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.3750379Z",
+      "durationMs": 541,
+      "error": ""
+    },
+    {
+      "employer": "UK St. Claire | UK HealthCare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.5258483Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UnityPoint Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.6838898Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Maryland Medical System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.8400588Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UPMC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.9965625Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UVA Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.1524047Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valley View",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.3076199Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Washington Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.464493Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Western Wisconsin Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.6152268Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "WVU Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.7773832Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Akron Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:52.9271437Z",
+      "durationMs": 9,
+      "error": ""
+    },
+    {
+      "employer": "American Healthcare Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.1139264Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Arkansas Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.2794242Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Atlantic Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.4304066Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Baptist Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:53.5887662Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Bayhealth",
+      "careersUrl": "https://www.bayhealth.org/careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.0233553Z",
+      "durationMs": 1276,
+      "error": ""
+    },
+    {
+      "employer": "Berkshire Health Systems",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.1760509Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "BMC Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.3275699Z",
+      "durationMs": 1,
+      "error": ""
+    },
+    {
+      "employer": "Bristol Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.4898001Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "CalvertHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:55.6410874Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Carilion Clinic",
+      "careersUrl": "https://carilionclinic.wd12.myworkdayjobs.com/External_Careers",
+      "ats": "Workday",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.3811575Z",
+      "durationMs": 575,
+      "error": ""
+    },
+    {
+      "employer": "Cayuga Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.5331725Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cheyenne Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.6936035Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Children’s Nebraska",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:56.8444076Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cincinnati Children’s",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.0115331Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Community Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.1640088Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Conway Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.3285922Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Cottage Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.48654Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Davis Health System | Vandalia Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.6619386Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Dolly Parton Children’s Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.8208735Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "El Camino Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:57.9716704Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Endeavor Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.1377873Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "EvergreenHealth",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.2959186Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Foundation Health Partners",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.4542364Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Genesis HealthCare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.6285921Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Grande Ronde Hospital and Clinics",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.7869889Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hannibal Regional Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:58.9452955Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "HealthPartners",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.0960343Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Holland Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.2621723Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Hunterdon Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.4128186Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Intermountain Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.563695Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Jefferson Regional",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.7377584Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Keck Medicine of USC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:19:59.8961951Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lake Regional Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.054636Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Lexington Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.2129085Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "LSU Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.363948Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Margaret Mary Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.5292393Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mayo Clinic",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.6876141Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Memorial Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:00.8458729Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Mercy",
+      "careersUrl": "https://careers.mercy.net/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.6622118Z",
+      "durationMs": 658,
+      "error": ""
+    },
+    {
+      "employer": "Methodist Hospitals",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.8121734Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Montage Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:01.9725301Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "MU Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.129361Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Nebraska Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.2804026Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "North Country Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.4466044Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Northfield Hospital and Clinics",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.5971988Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "NYU Langone Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.7631343Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Oneida Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:02.9136645Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Overlake Medical Center & Clinics | MultiCare Health System",
+      "careersUrl": "https://jobs.multicare.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.5063153Z",
+      "durationMs": 441,
+      "error": ""
+    },
+    {
+      "employer": "Pella Regional Health Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:03.6578278Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "PIH Health",
+      "careersUrl": "https://careers.pihhealth.org/us/en/search-results",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.8384672Z",
+      "durationMs": 2014,
+      "error": ""
+    },
+    {
+      "employer": "Prisma Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:05.9900437Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Redington-Fairview General Hospital",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.1509143Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Riverside Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.3089941Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "RWJBarnabas Health",
+      "careersUrl": "https://www.rwjbarnabashealthcareers.org/jobs/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:06.9904345Z",
+      "durationMs": 531,
+      "error": ""
+    },
+    {
+      "employer": "Salem Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.1488931Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "San Juan Regional Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.3071281Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "SBH Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.4654351Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Shannon Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.6238583Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Singing River Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.7822086Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "South Georgia Medical Center",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:07.9403751Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Spartanburg Regional Healthcare System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.0985239Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "St. Joseph’s/Candler",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.2569063Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Stanford Health Care",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.4149692Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "SUNY Upstate Medical University",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.5654735Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Tenet Healthcare",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.7316477Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "The University of Kansas Health System",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:08.8829066Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Trinity Health | CommonSpirit Health",
+      "careersUrl": "https://www.mountain.commonspirit.org/Careers",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.3440543Z",
+      "durationMs": 311,
+      "error": ""
+    },
+    {
+      "employer": "UChicago Medicine",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.5059796Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UMass Memorial Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.664281Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Universal Health Services",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.8226722Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "University of Michigan Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:09.9731709Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UPMC Washington | UPMC",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.1239731Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "UW Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.297606Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Valleywise Health",
+      "careersUrl": "https://jobs.valleywisehealth.org/",
+      "ats": "custom",
+      "status": "monitored",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.8206401Z",
+      "durationMs": 365,
+      "error": ""
+    },
+    {
+      "employer": "Washington Regional",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:10.9710405Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "White River Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.1318314Z",
+      "durationMs": 0,
+      "error": ""
+    },
+    {
+      "employer": "Yale New Haven Health",
+      "careersUrl": "",
+      "ats": "",
+      "status": "source missing",
+      "rolesFound": 0,
+      "checkedAt": "2026-09-28T21:20:11.2820451Z",
+      "durationMs": 0,
+      "error": ""
+    }
+  ]
 }
