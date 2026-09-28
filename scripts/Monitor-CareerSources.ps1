@@ -59,6 +59,7 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
 
     $name = [string]$employer.name
     $hasVerifiedOverride = $overrideMap.ContainsKey($name)
+    $override = $null
     if ($hasVerifiedOverride) {
         $override = $overrideMap[$name]
         $employer.careersUrl = [string]$override.careersUrl
@@ -93,9 +94,6 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
                     -DeepSearch:$DeepSearch
             )
 
-            # Branded source overrides are already verified as belonging to the employer.
-            # Search that host directly without forcing the employer name into the query;
-            # some official job pages do not repeat the corporate name in indexed snippets.
             if ($hasVerifiedOverride) {
                 $domain = Utilities\Get-UriHostKey ([string]$employer.careersUrl)
                 if ($domain) {
@@ -132,6 +130,40 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
                                 source     = [string]$result.Source
                                 verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
                             }
+                        }
+                    }
+                }
+
+                # Some employer job searches are client-rendered and are not reliably
+                # indexable. Recheck known official job URLs directly and only retain
+                # them while the official page is reachable and still relevant.
+                if ($null -ne $override.PSObject.Properties['verifiedJobs']) {
+                    foreach ($seed in @($override.verifiedJobs)) {
+                        $seedTitle = [string]$seed.title
+                        $seedUrl = [string]$seed.jobUrl
+                        if ([string]::IsNullOrWhiteSpace($seedTitle) -or -not (Utilities\Test-HttpUrl $seedUrl)) { continue }
+                        if (-not (JobMatching\Test-OfficialJobUrl -Url $seedUrl -Employer $employer -Settings $settings -EvidenceText ($seedTitle + ' ' + $name))) { continue }
+
+                        $response = Utilities\Invoke-WebRequestRetry `
+                            -Uri $seedUrl `
+                            -TimeoutSec ([int]$settings.request.timeoutSeconds) `
+                            -Retries 1
+                        if (-not $response -or [string]::IsNullOrWhiteSpace([string]$response.Content)) { continue }
+
+                        $pageText = Utilities\ConvertFrom-HtmlText ([string]$response.Content)
+                        if ($pageText -match '(?i)(job is no longer available|position is no longer available|position has been filled|requisition is closed|job not found|page not found)') { continue }
+                        if (-not (JobMatching\Test-JobRelevance -Title $seedTitle -Text $pageText -Keywords $keywords)) { continue }
+                        if (-not (JobMatching\Test-LooksLikeRoleTitle -Title $seedTitle)) { continue }
+
+                        $employerJobs += [pscustomobject]@{
+                            employer   = $name
+                            roleTitle  = $seedTitle
+                            workModel  = JobMatching\Get-WorkModelFromText -Text ($seedTitle + ' ' + $pageText)
+                            salary     = JobMatching\Get-SalaryFromText -Text $pageText
+                            jobUrl     = $seedUrl
+                            careersUrl = [string]$employer.careersUrl
+                            source     = 'Verified official job URL'
+                            verifiedAt = (Get-Date).ToUniversalTime().ToString('o')
                         }
                     }
                 }
