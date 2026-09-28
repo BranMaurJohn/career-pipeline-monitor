@@ -5,11 +5,6 @@ on:
     - cron: '43 5,17 * * *'
       timezone: 'America/Chicago'
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deep-discovery.yml'
 
 permissions:
   contents: write
@@ -76,7 +71,7 @@ jobs:
           $registry = Get-Content $path -Raw | ConvertFrom-Json
 
           if (@($registry.employers).Count -ne 625) {
-            throw "Shard output does not contain 625 employers."
+            throw 'Shard output does not contain 625 employers.'
           }
 
           Write-Host "Shard ${{ matrix.shard }} discovery completed."
