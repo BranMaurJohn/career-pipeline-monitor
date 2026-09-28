@@ -1,1 +1,113 @@
+# ==============================
+# Career Pipeline Monitor
+# ==============================
 
+# Secrets / environment files
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+secrets/
+config/local.settings.json
+
+# PowerShell
+*.ps1.user
+*.psm1.user
+*.psd1.user
+*.clixml
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+~$*
+
+# Local credentials / tokens
+*.token
+*.key
+*.pem
+credentials.json
+auth.json
+
+# Generated career pipeline output
+career-pipeline-output/
+output/
+outputs/
+logs/*
+!logs/.gitkeep
+
+# Generated audit/report artifacts
+*-audit-*.csv
+*roles-identified-*.csv
+*clickup-proposed-changes-*.csv
+*search-diagnostics-*.csv
+*career-pipeline-results-*.xlsx
+*career-pipeline-*.log
+
+# Runtime state / cache
+.cache/
+cache/
+state/
+tmp/
+temp/
+
+# Local snapshots generated during monitoring
+data/current/*
+data/previous/*
+data/changes/*
+data/audit/*
+
+# Keep directory placeholders
+!data/current/.gitkeep
+!data/previous/.gitkeep
+!data/changes/.gitkeep
+!data/audit/.gitkeep
+
+# Raw local input files
+# Keep source-of-truth JSON/config in Git instead.
+input/*.xlsx
+input/*.xls
+input/*.csv
+
+# If you intentionally want to commit a sanitized input file,
+# add an exception such as:
+# !input/health-systems-public.xlsx
+
+# Python / tooling artifacts
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node tooling artifacts
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage output
+coverage/
+TestResults/
+*.trx
+
+# IDE / editor
+.vscode/
+.idea/
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# GitHub Actions local tooling
+.actrc
+.github/.local/
+
+# Miscellaneous archives
+*.zip
+*.7z
+*.tar
+*.gz
