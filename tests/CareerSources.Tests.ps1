@@ -13,7 +13,7 @@ BeforeAll {
         -Force `
         -Global
 
-    $script:settings = Get-JsonFile `
+    $script:settings = Utilities\Get-JsonFile `
         -Path (Join-Path $root 'config\settings.json')
 
     if ($null -eq $script:settings) {
@@ -24,21 +24,21 @@ BeforeAll {
 Describe 'CareerSources' {
 
     It 'identifies Workday from an ATS URL' {
-        Get-AtsNameFromUrl `
+        CareerSources\Get-AtsNameFromUrl `
             -Url 'https://example.wd5.myworkdayjobs.com/en-US/jobs' `
             -Settings $script:settings |
             Should -Be 'Workday'
     }
 
     It 'blocks job aggregators' {
-        Test-BlockedDomain `
+        CareerSources\Test-BlockedDomain `
             -Url 'https://www.indeed.com/viewjob?jk=123' `
             -Settings $script:settings |
             Should -BeTrue
     }
 
     It 'does not block an official health system domain' {
-        Test-BlockedDomain `
+        CareerSources\Test-BlockedDomain `
             -Url 'https://careers.examplehealth.org/jobs/123' `
             -Settings $script:settings |
             Should -BeFalse
@@ -47,7 +47,7 @@ Describe 'CareerSources' {
     It 'unwraps a DuckDuckGo destination URL' {
         $target = 'https%3A%2F%2Fcareers.example.org%2Fjobs%2F123'
 
-        Resolve-SearchResultUrl `
+        Utilities\Resolve-SearchResultUrl `
             -Url ('https://duckduckgo.com/l/?uddg=' + $target) |
             Should -Be 'https://careers.example.org/jobs/123'
     }
