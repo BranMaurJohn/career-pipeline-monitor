@@ -2,85 +2,413 @@ name: Validate Career Pipeline
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
     paths:
-      - '.github/workflows/**'
-      - 'modules/**'
-      - 'scripts/**'
-      - 'tests/**'
-      - 'config/keywords.json'
-      - 'config/settings.json'
-      - 'README.md'
-      - '.gitignore'
+      - ".github/workflows/**"
+      - "modules/**"
+      - "scripts/**"
+      - "tests/**"
+      - "config/keywords.json"
+      - "config/settings.json"
+      - "README.md"
+      - ".gitignore"
+
   pull_request:
+    branches:
+      - main
     paths:
-      - '.github/workflows/**'
-      - 'modules/**'
-      - 'scripts/**'
-      - 'tests/**'
-      - 'config/keywords.json'
-      - 'config/settings.json'
+      - ".github/workflows/**"
+      - "modules/**"
+      - "scripts/**"
+      - "tests/**"
+      - "config/keywords.json"
+      - "config/settings.json"
+      - "README.md"
+      - ".gitignore"
+
+  workflow_dispatch:
 
 permissions:
   contents: read
 
+concurrency:
+  group: validate-career-pipeline-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validate:
+    name: Validate
     runs-on: windows-latest
     timeout-minutes: 20
 
     steps:
       - name: Checkout
         uses: actions/checkout@v7
+        with:
+          fetch-depth: 1
+
+      - name: Display PowerShell environment
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          Write-Host "PowerShell version: $($PSVersionTable.PSVersion)"
+          Write-Host "PowerShell edition: $($PSVersionTable.PSEdition)"
+          Write-Host "Repository: $env:GITHUB_REPOSITORY"
+          Write-Host "Commit: $env:GITHUB_SHA"
 
       - name: Install validation modules
         shell: pwsh
         run: |
-          Set-PSRepository PSGallery -InstallationPolicy Trusted
-          Install-Module PSScriptAnalyzer -Scope CurrentUser -Force -MaximumVersion 1.99.99
-          Install-Module Pester -Scope CurrentUser -Force -MaximumVersion 5.99.99 -SkipPublisherCheck
+          $ErrorActionPreference = 'Stop'
+          $ProgressPreference = 'SilentlyContinue'
+
+          Set-PSRepository `
+            -Name PSGallery `
+            -InstallationPolicy Trusted
+
+          Install-Module `
+            -Name PSScriptAnalyzer `
+            -Scope CurrentUser `
+            -Force `
+            -MaximumVersion 1.99.99 `
+            -Repository PSGallery
+
+          Install-Module `
+            -Name Pester `
+            -Scope CurrentUser `
+            -Force `
+            -MaximumVersion 5.99.99 `
+            -SkipPublisherCheck `
+            -Repository PSGallery
+
+          Import-Module PSScriptAnalyzer -Force
+          Import-Module Pester -MaximumVersion 5.99.99 -Force
+
+          Write-Host "PSScriptAnalyzer version: $((Get-Module PSScriptAnalyzer).Version)"
+          Write-Host "Pester version: $((Get-Module Pester).Version)"
 
       - name: Parse PowerShell
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          $files = Get-ChildItem modules,scripts,tests -Recurse -Include *.ps1,*.psm1
-          $failed = $false
+
+          $files = @(
+            Get-ChildItem `
+              -Path modules,scripts,tests `
+              -Recurse `
+              -File `
+              -Include *.ps1,*.psm1
+          )
+
+          if ($files.Count -eq 0) {
+            throw 'No PowerShell files were found to validate.'
+          }
+
+          $parseFailures = @()
+
           foreach ($file in $files) {
             $tokens = $null
-            $errors = $null
-            [System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$tokens, [ref]$errors) | Out-Null
-            if ($errors.Count -gt 0) {
-              $failed = $true
-              $errors | ForEach-Object { Write-Error "$($file.FullName): $($_.Message)" }
+            $parseErrors = $null
+
+            [System.Management.Automation.Language.Parser]::ParseFile(
+              $file.FullName,
+              [ref]$tokens,
+              [ref]$parseErrors
+            ) | Out-Null
+
+            if (@($parseErrors).Count -gt 0) {
+              foreach ($parseError in @($parseErrors)) {
+                $parseFailures += [pscustomobject]@{
+                  File    = $file.FullName
+                  Line    = $parseError.Extent.StartLineNumber
+                  Column  = $parseError.Extent.StartColumnNumber
+                  Message = $parseError.Message
+                }
+
+                Write-Host (
+                  "::error file={0},line={1},col={2}::{3}" -f `
+                    $file.FullName,
+                    $parseError.Extent.StartLineNumber,
+                    $parseError.Extent.StartColumnNumber,
+                    $parseError.Message
+                )
+              }
+            }
+            else {
+              Write-Host "Parser passed: $($file.FullName)"
             }
           }
-          if ($failed) { throw 'PowerShell parser validation failed.' }
+
+          if ($parseFailures.Count -gt 0) {
+            $parseFailures |
+              Format-Table -AutoSize |
+              Out-String |
+              Write-Host
+
+            throw "$($parseFailures.Count) PowerShell parser error(s) detected."
+          }
+
+          Write-Host "PowerShell parser validation passed for $($files.Count) file(s)."
+
+      - name: Validate module imports
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $modules = @(
+            'Utilities.psm1',
+            'JobMatching.psm1',
+            'CareerSources.psm1',
+            'ClickUp.psm1'
+          )
+
+          foreach ($moduleName in $modules) {
+            $modulePath = Join-Path `
+              $PWD `
+              (Join-Path 'modules' $moduleName)
+
+            if (-not (Test-Path -LiteralPath $modulePath)) {
+              throw "Required module not found: $modulePath"
+            }
+
+            Remove-Module `
+              ([System.IO.Path]::GetFileNameWithoutExtension($moduleName)) `
+              -Force `
+              -ErrorAction SilentlyContinue
+
+            Import-Module `
+              $modulePath `
+              -Force `
+              -ErrorAction Stop
+
+            Write-Host "Module import passed: $moduleName"
+          }
 
       - name: Run PSScriptAnalyzer
         shell: pwsh
         run: |
+          $ErrorActionPreference = 'Stop'
+
+          Import-Module PSScriptAnalyzer -Force
+
           $issues = @()
-          foreach ($path in @('modules','scripts')) {
-            $issues += Invoke-ScriptAnalyzer -Path $path -Recurse -Severity Error
+
+          foreach ($path in @('modules', 'scripts')) {
+            if (-not (Test-Path -LiteralPath $path)) {
+              throw "Required validation path not found: $path"
+            }
+
+            $results = @(
+              Invoke-ScriptAnalyzer `
+                -Path $path `
+                -Recurse `
+                -Severity Error
+            )
+
+            if ($results.Count -gt 0) {
+              $issues += $results
+            }
           }
-          if ($issues) {
-            $issues | Format-Table -AutoSize | Out-String | Write-Host
-            throw 'PSScriptAnalyzer reported errors.'
+
+          if ($issues.Count -gt 0) {
+            foreach ($issue in $issues) {
+              $line = 1
+              $column = 1
+
+              if ($null -ne $issue.Line -and $issue.Line -gt 0) {
+                $line = $issue.Line
+              }
+
+              if ($null -ne $issue.Column -and $issue.Column -gt 0) {
+                $column = $issue.Column
+              }
+
+              Write-Host (
+                "::error file={0},line={1},col={2}::{3}: {4}" -f `
+                  $issue.ScriptPath,
+                  $line,
+                  $column,
+                  $issue.RuleName,
+                  $issue.Message
+              )
+            }
+
+            $issues |
+              Select-Object `
+                ScriptPath,
+                Line,
+                Column,
+                RuleName,
+                Severity,
+                Message |
+              Format-Table -AutoSize |
+              Out-String |
+              Write-Host
+
+            throw "PSScriptAnalyzer reported $($issues.Count) error(s)."
           }
+
+          Write-Host 'PSScriptAnalyzer validation passed.'
 
       - name: Validate JSON
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
-          Get-ChildItem config,data -Recurse -Filter *.json | ForEach-Object {
-            Get-Content $_.FullName -Raw | ConvertFrom-Json | Out-Null
-            Write-Host "Valid JSON: $($_.FullName)"
+
+          $jsonFiles = @()
+
+          foreach ($path in @('config', 'data')) {
+            if (Test-Path -LiteralPath $path) {
+              $jsonFiles += @(
+                Get-ChildItem `
+                  -Path $path `
+                  -Recurse `
+                  -File `
+                  -Filter *.json
+              )
+            }
           }
+
+          if ($jsonFiles.Count -eq 0) {
+            throw 'No JSON files were found under config or data.'
+          }
+
+          foreach ($file in $jsonFiles) {
+            try {
+              $raw = Get-Content `
+                -LiteralPath $file.FullName `
+                -Raw `
+                -ErrorAction Stop
+
+              if ([string]::IsNullOrWhiteSpace($raw)) {
+                throw 'JSON file is empty.'
+              }
+
+              $raw |
+                ConvertFrom-Json `
+                  -ErrorAction Stop |
+                Out-Null
+
+              Write-Host "Valid JSON: $($file.FullName)"
+            }
+            catch {
+              Write-Host (
+                "::error file={0}::Invalid JSON: {1}" -f `
+                  $file.FullName,
+                  $_.Exception.Message
+              )
+
+              throw "JSON validation failed: $($file.FullName)"
+            }
+          }
+
+          Write-Host "JSON validation passed for $($jsonFiles.Count) file(s)."
+
+      - name: Validate required configuration
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          $requiredFiles = @(
+            'config/keywords.json',
+            'config/settings.json'
+          )
+
+          foreach ($requiredFile in $requiredFiles) {
+            if (-not (Test-Path -LiteralPath $requiredFile)) {
+              throw "Required configuration file is missing: $requiredFile"
+            }
+          }
+
+          $keywords = Get-Content `
+            -LiteralPath 'config/keywords.json' `
+            -Raw |
+            ConvertFrom-Json
+
+          $settings = Get-Content `
+            -LiteralPath 'config/settings.json' `
+            -Raw |
+            ConvertFrom-Json
+
+          if ($null -eq $keywords.primary) {
+            throw 'config/keywords.json is missing primary keywords.'
+          }
+
+          if ($null -eq $keywords.secondary) {
+            throw 'config/keywords.json is missing secondary keywords.'
+          }
+
+          if ($null -eq $keywords.exclude) {
+            throw 'config/keywords.json is missing exclude keywords.'
+          }
+
+          if ($null -eq $settings.request) {
+            throw 'config/settings.json is missing request configuration.'
+          }
+
+          if ($null -eq $settings.search) {
+            throw 'config/settings.json is missing search configuration.'
+          }
+
+          if ($null -eq $settings.aggregatorDomains) {
+            throw 'config/settings.json is missing aggregatorDomains.'
+          }
+
+          if ($null -eq $settings.officialAtsDomains) {
+            throw 'config/settings.json is missing officialAtsDomains.'
+          }
+
+          Write-Host 'Required configuration validation passed.'
 
       - name: Run Pester
         shell: pwsh
         run: |
-          Import-Module Pester -MaximumVersion 5.99.99 -Force
-          $result = Invoke-Pester -Path tests -PassThru -Output Detailed
-          if ($result.FailedCount -gt 0) { throw "$($result.FailedCount) Pester test(s) failed." }
+          $ErrorActionPreference = 'Stop'
+
+          Import-Module `
+            Pester `
+            -MaximumVersion 5.99.99 `
+            -Force
+
+          $configuration = New-PesterConfiguration
+
+          $configuration.Run.Path = @(
+            (Join-Path $PWD 'tests')
+          )
+
+          $configuration.Run.PassThru = $true
+          $configuration.Run.Exit = $false
+
+          $configuration.Output.Verbosity = 'Detailed'
+
+          $result = Invoke-Pester `
+            -Configuration $configuration
+
+          Write-Host ''
+          Write-Host 'Pester summary'
+          Write-Host "Passed:       $($result.PassedCount)"
+          Write-Host "Failed:       $($result.FailedCount)"
+          Write-Host "Skipped:      $($result.SkippedCount)"
+          Write-Host "Not run:      $($result.NotRunCount)"
+          Write-Host "Total:        $($result.TotalCount)"
+
+          if ($result.FailedCount -gt 0) {
+            throw "$($result.FailedCount) Pester test(s) failed."
+          }
+
+          if ($result.TotalCount -eq 0) {
+            throw 'Pester discovered zero tests.'
+          }
+
+          Write-Host 'Pester validation passed.'
+
+      - name: Validation complete
+        shell: pwsh
+        run: |
+          Write-Host '========================================'
+          Write-Host 'Career Pipeline validation PASSED'
+          Write-Host '========================================'
+          Write-Host "Repository: $env:GITHUB_REPOSITORY"
+          Write-Host "Commit:     $env:GITHUB_SHA"
