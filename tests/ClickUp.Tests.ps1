@@ -17,7 +17,7 @@ BeforeAll {
 Describe 'ClickUp safety helpers' {
 
     It 'builds the expected role task name' {
-        Get-ClickUpRoleTaskName `
+        JobMatching\Get-ClickUpRoleTaskName `
             -Company 'NYU Langone Health' `
             -RoleTitle 'Sr Developer - UKG Pro WFM Solutions' |
             Should -Be 'NYU Langone Health - Sr Developer - UKG Pro WFM Solutions'
@@ -41,7 +41,7 @@ Describe 'ClickUp safety helpers' {
             }
         )
 
-        $result = Find-ClickUpTaskByExactName `
+        $result = ClickUp\Find-ClickUpTaskByExactName `
             -Tasks $tasks `
             -Name 'adena health'
 
@@ -49,15 +49,15 @@ Describe 'ClickUp safety helpers' {
     }
 
     It 'only promotes unprogressed role tasks' {
-        Test-CanPromoteRoleStatus `
+        JobMatching\Test-CanPromoteRoleStatus `
             -Status 'target company' |
             Should -BeTrue
 
-        Test-CanPromoteRoleStatus `
+        JobMatching\Test-CanPromoteRoleStatus `
             -Status 'applied' |
             Should -BeFalse
 
-        Test-CanPromoteRoleStatus `
+        JobMatching\Test-CanPromoteRoleStatus `
             -Status 'technical interview' |
             Should -BeFalse
     }
@@ -74,7 +74,7 @@ Describe 'ClickUp safety helpers' {
             verifiedAt = '2026-09-27T00:00:00Z'
         }
 
-        New-RoleDescription -Job $job |
+        ClickUp\New-RoleDescription -Job $job |
             Should -Match 'never automatically deleted or demoted'
     }
 }
