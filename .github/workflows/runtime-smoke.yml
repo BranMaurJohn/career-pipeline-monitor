@@ -1,0 +1,81 @@
+name: Career Pipeline Runtime Smoke
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/runtime-smoke.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Import employer universe
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Import-Employers.ps1 | Out-Null
+          $registry = Get-Content './config/employers.json' -Raw | ConvertFrom-Json
+          if ($registry.recordCount -ne 639) { throw "Expected 639 records, found $($registry.recordCount)." }
+          if ($registry.employerCount -ne 625) { throw "Expected 625 employers, found $($registry.employerCount)." }
+          Write-Host "Workbook import passed: 639 records / 625 employers."
+
+      - name: Discover one official career source
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Path './artifacts' -Force | Out-Null
+          ./scripts/Discover-CareerSources.ps1 `
+            -ShardIndex 0 `
+            -ShardCount 625 `
+            -OutputPath './artifacts/employers-smoke.json' | Out-Null
+          Get-Content './artifacts/employers-smoke.json' -Raw | ConvertFrom-Json | Out-Null
+          Write-Host 'Discovery script completed successfully.'
+
+      - name: Monitor one employer
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Monitor-CareerSources.ps1 `
+            -EmployersPath './artifacts/employers-smoke.json' `
+            -ShardIndex 0 `
+            -ShardCount 625 `
+            -OutputPath './artifacts/jobs-shard-0.json' `
+            -EmployerStatePath './artifacts/state-shard-0.json' | Out-Null
+          Get-Content './artifacts/jobs-shard-0.json' -Raw | ConvertFrom-Json | Out-Null
+          Get-Content './artifacts/state-shard-0.json' -Raw | ConvertFrom-Json | Out-Null
+          Write-Host 'Monitoring script completed successfully.'
+
+      - name: Exercise hourly aggregation
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          ./scripts/Invoke-CareerPipeline.ps1 `
+            -Mode HourlyAggregate `
+            -ArtifactDirectory './artifacts'
+          Write-Host 'Hourly aggregation completed successfully.'
+
+      - name: Exercise ClickUp sync in dry-run mode
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          if ([string]::IsNullOrWhiteSpace($env:CLICKUP_API_TOKEN)) { throw 'CLICKUP_API_TOKEN is missing.' }
+          ./scripts/Sync-ClickUp.ps1 -DryRun | Out-Null
+          Write-Host 'ClickUp dry-run completed successfully with no writes.'
+
+      - name: Smoke test complete
+        shell: pwsh
+        run: |
+          Write-Host 'Career Pipeline runtime smoke PASSED.'
