@@ -1,0 +1,59 @@
+name: Career Source Discovery Smoke
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/source-discovery-smoke.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  verify-sources:
+    runs-on: windows-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+
+      - name: Verify representative official sources
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          Import-Module './modules/JobMatching.psm1' -Force
+          Import-Module './modules/CareerSources.psm1' -Force
+          Import-Module './modules/Utilities.psm1' -Force
+
+          $settings = Utilities\Get-JsonFile -Path './config/settings.json'
+          if (-not $settings) { throw 'settings.json could not be loaded.' }
+
+          $employers = @(
+            [pscustomobject]@{ name='NYU Langone Health'; currentCompany='NYU Langone Health'; parentEnterprise=''; operatingBrandRegion=''; verificationSource=''; careersUrl=''; ats='' },
+            [pscustomobject]@{ name='Mayo Clinic'; currentCompany='Mayo Clinic'; parentEnterprise=''; operatingBrandRegion=''; verificationSource=''; careersUrl=''; ats='' },
+            [pscustomobject]@{ name='Emory Healthcare'; currentCompany='Emory Healthcare'; parentEnterprise=''; operatingBrandRegion=''; verificationSource=''; careersUrl=''; ats='' },
+            [pscustomobject]@{ name='Cedars-Sinai'; currentCompany='Cedars-Sinai'; parentEnterprise=''; operatingBrandRegion=''; verificationSource=''; careersUrl=''; ats='' },
+            [pscustomobject]@{ name='Houston Methodist'; currentCompany='Houston Methodist'; parentEnterprise=''; operatingBrandRegion=''; verificationSource=''; careersUrl=''; ats='' }
+          )
+
+          $failures = @()
+          foreach ($employer in $employers) {
+            Write-Host "Resolving: $($employer.name)"
+            $source = CareerSources\Find-CareerSource -Employer $employer -Settings $settings -IgnoreRegistry
+            if (-not $source -or [string]::IsNullOrWhiteSpace([string]$source.careersUrl)) {
+              $failures += $employer.name
+              Write-Host "::error::No verified official career source resolved for $($employer.name)"
+              continue
+            }
+
+            Write-Host "VERIFIED $($employer.name) -> $($source.careersUrl) [$($source.ats)]"
+          }
+
+          if ($failures.Count -gt 0) {
+            throw "Source discovery failed for: $($failures -join ', ')"
+          }
+
+          Write-Host 'Representative career source discovery PASSED.'
