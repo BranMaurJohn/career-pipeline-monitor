@@ -5,18 +5,13 @@ on:
     - cron: '43 5,17 * * *'
       timezone: 'America/Chicago'
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - '.github/workflows/deep-discovery.yml'
 
 permissions:
   contents: write
 
 concurrency:
   group: career-pipeline-state
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   discover:
