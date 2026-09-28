@@ -11,6 +11,7 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 Import-Module (Join-Path $PSScriptRoot '..\modules\Utilities.psm1') -Force
+Import-Module (Join-Path $PSScriptRoot '..\modules\JobMatching.psm1') -Force
 
 $root = Resolve-Path (Join-Path $PSScriptRoot '..')
 $employersPath = Join-Path $root 'config\employers.json'
@@ -71,6 +72,8 @@ function Write-AuditRow {
 }
 
 Ensure-EmployerRegistry
+$keywords = Get-JsonFile -Path $keywordsPath -Default $null
+if (-not $keywords) { throw "Keywords file is empty: $keywordsPath" }
 
 switch ($Mode) {
     'DeepDiscovery' {
@@ -109,6 +112,22 @@ switch ($Mode) {
             $payload = Get-JsonFile -Path $file.FullName -Default ([pscustomobject]@{ jobs = @() })
             $allJobs += @($payload.jobs)
         }
+
+        $preValidationCount = $allJobs.Count
+        $allJobs = @(
+            $allJobs |
+                Where-Object {
+                    JobMatching\Test-JobRelevance `
+                        -Title ([string]$_.roleTitle) `
+                        -Text '' `
+                        -Keywords $keywords
+                }
+        )
+        $removedByValidation = $preValidationCount - $allJobs.Count
+        if ($removedByValidation -gt 0) {
+            Write-PipelineLog ("Aggregate relevance revalidation removed {0} artifact role(s)." -f $removedByValidation) -Level Warn
+        }
+
         $allJobs = @(
             $allJobs |
                 Group-Object { (ConvertTo-NormalizedText $_.employer) + '|' + (ConvertTo-NormalizedText $_.roleTitle) + '|' + ([string]$_.jobUrl).ToLowerInvariant() } |
