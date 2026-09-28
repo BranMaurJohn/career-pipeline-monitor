@@ -5,6 +5,11 @@ on:
     - cron: '43 5,17 * * *'
       timezone: 'America/Chicago'
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/deep-discovery.yml'
 
 permissions:
   contents: write
@@ -15,8 +20,14 @@ concurrency:
 
 jobs:
   discover:
+    name: Discover shard ${{ matrix.shard }}
     runs-on: windows-latest
-    timeout-minutes: 180
+    timeout-minutes: 60
+
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
 
     steps:
       - name: Checkout
@@ -24,123 +35,143 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Validate PowerShell parser
+      - name: Validate and import employer universe
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
 
-          $files = @(
-            './scripts/Import-Employers.ps1',
-            './scripts/Discover-CareerSources.ps1'
-          )
+          $tokens = $null
+          $errors = $null
+          [System.Management.Automation.Language.Parser]::ParseFile(
+            (Resolve-Path './scripts/Discover-CareerSources.ps1'),
+            [ref]$tokens,
+            [ref]$errors
+          ) | Out-Null
 
-          foreach ($file in $files) {
-            if (-not (Test-Path -LiteralPath $file)) {
-              throw "Required PowerShell file not found: $file"
-            }
-
-            $tokens = $null
-            $errors = $null
-
-            [System.Management.Automation.Language.Parser]::ParseFile(
-              (Resolve-Path -LiteralPath $file),
-              [ref]$tokens,
-              [ref]$errors
-            ) | Out-Null
-
-            if (@($errors).Count -gt 0) {
-              foreach ($parseError in @($errors)) {
-                Write-Host (
-                  "::error file={0},line={1},col={2}::{3}" -f `
-                    $file,
-                    $parseError.Extent.StartLineNumber,
-                    $parseError.Extent.StartColumnNumber,
-                    $parseError.Message
-                )
-              }
-
-              throw "PowerShell parser validation failed for $file"
-            }
-
-            Write-Host "Parser validation passed: $file"
+          if (@($errors).Count -gt 0) {
+            $errors | ForEach-Object { Write-Host "::error::$($_.Message)" }
+            throw 'Discover-CareerSources.ps1 failed parser validation.'
           }
 
-      - name: Refresh employer registry from workbook
+          ./scripts/Import-Employers.ps1 | Out-Null
+          $registry = Get-Content './config/employers.json' -Raw | ConvertFrom-Json
+
+          if ($registry.recordCount -ne 639 -or $registry.employerCount -ne 625 -or @($registry.employers).Count -ne 625) {
+            throw "Employer universe validation failed: records=$($registry.recordCount), employerCount=$($registry.employerCount), array=$(@($registry.employers).Count)."
+          }
+
+      - name: Discover official sources for shard
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          New-Item -ItemType Directory -Path './artifacts' -Force | Out-Null
+
+          ./scripts/Discover-CareerSources.ps1 `
+            -RefreshExisting `
+            -ShardIndex ${{ matrix.shard }} `
+            -ShardCount 8 `
+            -OutputPath "./artifacts/employers-shard-${{ matrix.shard }}.json" | Out-Null
+
+          $path = "./artifacts/employers-shard-${{ matrix.shard }}.json"
+          $registry = Get-Content $path -Raw | ConvertFrom-Json
+
+          if (@($registry.employers).Count -ne 625) {
+            throw "Shard output does not contain 625 employers."
+          }
+
+          Write-Host "Shard ${{ matrix.shard }} discovery completed."
+
+      - name: Upload discovery shard
+        uses: actions/upload-artifact@v7
+        with:
+          name: discovery-shard-${{ matrix.shard }}
+          path: artifacts/employers-shard-${{ matrix.shard }}.json
+          if-no-files-found: error
+          retention-days: 2
+
+  aggregate:
+    name: Merge and persist verified sources
+    needs: discover
+    if: ${{ success() }}
+    runs-on: windows-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Refresh checkout from main
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          git pull --rebase origin main
+          if ($LASTEXITCODE -ne 0) { throw 'Unable to refresh main before registry merge.' }
+
+      - name: Download discovery shards
+        uses: actions/download-artifact@v8
+        with:
+          pattern: discovery-shard-*
+          path: artifacts
+          merge-multiple: true
+
+      - name: Merge and validate official-source registry
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
 
           ./scripts/Import-Employers.ps1 | Out-Null
-
           $registryPath = './config/employers.json'
+          $base = Get-Content $registryPath -Raw | ConvertFrom-Json
 
-          if (-not (Test-Path -LiteralPath $registryPath)) {
-            throw 'Employer registry was not created.'
-          }
+          for ($shard = 0; $shard -lt 8; $shard++) {
+            $path = "./artifacts/employers-shard-$shard.json"
+            if (-not (Test-Path $path)) { throw "Missing discovery artifact: $path" }
 
-          $registry = Get-Content `
-            -LiteralPath $registryPath `
-            -Raw |
-            ConvertFrom-Json
+            $source = Get-Content $path -Raw | ConvertFrom-Json
+            if (@($source.employers).Count -ne 625) { throw "Invalid employer count in $path" }
 
-          if ($registry.recordCount -ne 639) {
-            throw "Expected 639 workbook records but found $($registry.recordCount)."
-          }
-
-          if ($registry.employerCount -ne 625) {
-            throw "Expected 625 unique employers but found $($registry.employerCount)."
-          }
-
-          if (@($registry.employers).Count -ne 625) {
-            throw "Employer array contains $(@($registry.employers).Count) records instead of 625."
-          }
-
-          Write-Host 'Employer registry validated.'
-          Write-Host "Workbook records: $($registry.recordCount)"
-          Write-Host "Unique employers: $($registry.employerCount)"
-
-      - name: Discover and refresh official career sources
-        shell: pwsh
-        run: |
-          $ErrorActionPreference = 'Stop'
-          ./scripts/Discover-CareerSources.ps1 -RefreshExisting | Out-Null
-
-      - name: Validate refreshed employer registry
-        shell: pwsh
-        run: |
-          $ErrorActionPreference = 'Stop'
-
-          $registry = Get-Content `
-            -LiteralPath './config/employers.json' `
-            -Raw |
-            ConvertFrom-Json
-
-          if ($registry.recordCount -ne 639) {
-            throw "Discovery changed the workbook record count. Found $($registry.recordCount)."
-          }
-
-          if (@($registry.employers).Count -ne 625) {
-            throw "Discovery changed the employer universe unexpectedly. Found $(@($registry.employers).Count) employers."
-          }
-
-          $withCareersUrl = @(
-            $registry.employers |
-            Where-Object {
-              -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl)
+            for ($index = $shard; $index -lt 625; $index += 8) {
+              $base.employers[$index].careersUrl = [string]$source.employers[$index].careersUrl
+              $base.employers[$index].ats = [string]$source.employers[$index].ats
+              $base.employers[$index].lastDiscoveredAt = [string]$source.employers[$index].lastDiscoveredAt
             }
-          ).Count
+          }
 
-          $withAts = @(
-            $registry.employers |
-            Where-Object {
-              -not [string]::IsNullOrWhiteSpace([string]$_.ats)
+          $base.generatedAt = (Get-Date).ToUniversalTime().ToString('o')
+          [System.IO.File]::WriteAllText(
+            (Resolve-Path $registryPath),
+            (($base | ConvertTo-Json -Depth 12) + [Environment]::NewLine),
+            (New-Object System.Text.UTF8Encoding($false))
+          )
+
+          $registry = Get-Content $registryPath -Raw | ConvertFrom-Json
+          if ($registry.recordCount -ne 639 -or @($registry.employers).Count -ne 625) {
+            throw 'Merged registry changed the employer universe.'
+          }
+
+          $withSource = @($registry.employers | Where-Object { -not [string]::IsNullOrWhiteSpace([string]$_.careersUrl) }).Count
+          if ($withSource -lt 100) {
+            throw "Verified-source coverage is too low to publish: $withSource of 625."
+          }
+
+          $requiredEmployers = @(
+            'NYU Langone Health',
+            'Mayo Clinic',
+            'Emory Healthcare',
+            'Cedars-Sinai',
+            'Houston Methodist'
+          )
+
+          foreach ($name in $requiredEmployers) {
+            $match = @($registry.employers | Where-Object { [string]$_.name -eq $name }) | Select-Object -First 1
+            if (-not $match -or [string]::IsNullOrWhiteSpace([string]$match.careersUrl)) {
+              throw "Required representative employer is missing a verified career source: $name"
             }
-          ).Count
+          }
 
-          Write-Host 'Registry validation passed.'
-          Write-Host 'Employers: 625'
-          Write-Host "Employers with careers URL: $withCareersUrl"
-          Write-Host "Employers with detected ATS: $withAts"
+          Write-Host "Verified official-source coverage: $withSource / 625"
 
       - name: Persist source registry
         shell: pwsh
@@ -149,7 +180,6 @@ jobs:
 
           git config user.name 'career-pipeline-monitor[bot]'
           git config user.email 'career-pipeline-monitor[bot]@users.noreply.github.com'
-
           git add config/employers.json
           git diff --cached --quiet
 
@@ -167,4 +197,4 @@ jobs:
           git push origin HEAD:main
           if ($LASTEXITCODE -ne 0) { throw 'Git push failed.' }
 
-          Write-Host 'Career source registry persisted successfully.'
+          Write-Host 'Verified source registry persisted successfully.'
