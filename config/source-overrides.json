@@ -1,0 +1,22 @@
+{
+  "overrides": [
+    {
+      "name": "Cedars-Sinai",
+      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
+      "ats": "custom",
+      "reason": "Verified branded Cedars-Sinai IT careers page exposes live UKG roles."
+    },
+    {
+      "name": "NYU Langone Health",
+      "careersUrl": "https://jobs.nyulangone.org/",
+      "ats": "custom",
+      "reason": "Verified branded NYU Langone Health jobs domain exposes live UKG Pro WFM roles."
+    },
+    {
+      "name": "Beth Israel Lahey Health",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "ats": "custom",
+      "reason": "Verified branded BILH IT careers page exposes live UKG WFM roles."
+    }
+  ]
+}
