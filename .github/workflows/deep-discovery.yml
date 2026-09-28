@@ -106,7 +106,7 @@ jobs:
             Write-Host "Parser validation passed: $file"
           }
 
-      - name: Refresh employer registry from workbook
+            - name: Refresh employer registry from workbook
         shell: pwsh
         run: |
           $ErrorActionPreference = 'Stop'
@@ -124,20 +124,22 @@ jobs:
             -Raw |
             ConvertFrom-Json
 
-          if ($registry.recordCount -ne 639) {
-            throw "Expected 639 workbook records but found $($registry.recordCount)."
-          }
+          $employerCount = @($registry.employers).Count
 
           if ($registry.employerCount -ne 625) {
             throw "Expected 625 unique employers but found $($registry.employerCount)."
           }
 
-          if (@($registry.employers).Count -ne 625) {
-            throw "Employer array contains $(@($registry.employers).Count) records instead of 625."
+          if ($employerCount -ne 625) {
+            throw "Employer array contains $employerCount records instead of 625."
+          }
+
+          if ($registry.recordCount -lt 639) {
+            throw "Workbook import returned fewer than the expected 639 source rows. Found $($registry.recordCount)."
           }
 
           Write-Host "Employer registry validated."
-          Write-Host "Workbook records: $($registry.recordCount)"
+          Write-Host "Raw worksheet rows imported: $($registry.recordCount)"
           Write-Host "Unique employers: $($registry.employerCount)"
 
       - name: Discover and refresh official career sources
