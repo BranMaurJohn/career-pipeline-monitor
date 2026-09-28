@@ -1,1 +1,58 @@
+name: Manual Full Career Scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      apply_clickup:
+        description: 'Write company monitors and qualifying official-source roles to ClickUp'
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: career-pipeline-state
+  cancel-in-progress: false
+
+jobs:
+  full-scan:
+    runs-on: windows-latest
+    timeout-minutes: 240
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+
+      - name: Run full discovery and job scan
+        shell: pwsh
+        env:
+          CLICKUP_API_TOKEN: ${{ secrets.CLICKUP_API_TOKEN }}
+          CLICKUP_LIST_ID: ${{ secrets.CLICKUP_LIST_ID }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $apply = '${{ inputs.apply_clickup }}' -eq 'true'
+          if ($apply) {
+            ./scripts/Invoke-CareerPipeline.ps1 -Mode Full -ApplyChanges
+          } else {
+            ./scripts/Invoke-CareerPipeline.ps1 -Mode Full
+          }
+
+      - name: Persist registry and monitoring state
+        shell: pwsh
+        run: |
+          git config user.name "career-pipeline-monitor[bot]"
+          git config user.email "career-pipeline-monitor[bot]@users.noreply.github.com"
+          git add config/employers.json data/current data/previous data/changes data/audit
+          git diff --cached --quiet
+          if ($LASTEXITCODE -ne 0) {
+            git commit -m "Career Pipeline Monitor"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          } else {
+            Write-Host "No changes to commit."
+          }
 
