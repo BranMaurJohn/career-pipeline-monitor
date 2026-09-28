@@ -3,6 +3,7 @@ param(
     [string]$EmployersPath = (Join-Path $PSScriptRoot '..\config\employers.json'),
     [string]$SettingsPath = (Join-Path $PSScriptRoot '..\config\settings.json'),
     [string]$KeywordsPath = (Join-Path $PSScriptRoot '..\config\keywords.json'),
+    [string]$SourceOverridesPath = (Join-Path $PSScriptRoot '..\config\source-overrides.json'),
     [string]$OutputPath = (Join-Path $PSScriptRoot '..\data\current\jobs.json'),
     [string]$EmployerStatePath = '',
     [int]$ShardIndex = 0,
@@ -22,12 +23,23 @@ Import-Module $utilitiesModule -Force -ErrorAction Stop
 $registry = Utilities\Get-JsonFile -Path $EmployersPath -Default $null
 $settings = Utilities\Get-JsonFile -Path $SettingsPath -Default $null
 $keywords = Utilities\Get-JsonFile -Path $KeywordsPath -Default $null
+$sourceOverrides = Utilities\Get-JsonFile -Path $SourceOverridesPath -Default $null
 
 if (-not $registry -or -not $registry.employers) { throw "Employer registry is empty: $EmployersPath" }
 if (-not $settings) { throw "Settings file is empty: $SettingsPath" }
 if (-not $keywords) { throw "Keywords file is empty: $KeywordsPath" }
 if ($ShardCount -lt 1) { throw 'ShardCount must be at least 1.' }
 if ($ShardIndex -lt 0 -or $ShardIndex -ge $ShardCount) { throw 'ShardIndex must be between 0 and ShardCount - 1.' }
+
+$overrideMap = @{}
+if ($sourceOverrides -and $sourceOverrides.overrides) {
+    foreach ($entry in @($sourceOverrides.overrides)) {
+        $name = [string]$entry.name
+        $url = [string]$entry.careersUrl
+        if ([string]::IsNullOrWhiteSpace($name) -or -not (Utilities\Test-HttpUrl $url)) { continue }
+        $overrideMap[$name] = $entry
+    }
+}
 
 $jobs = @()
 $states = @()
@@ -43,6 +55,16 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
     }
     if (-not $isActive) { continue }
 
+    $name = [string]$employer.name
+    if ($overrideMap.ContainsKey($name)) {
+        $override = $overrideMap[$name]
+        $employer.careersUrl = [string]$override.careersUrl
+        if (-not [string]::IsNullOrWhiteSpace([string]$override.ats)) {
+            $employer.ats = [string]$override.ats
+        }
+        Utilities\Write-PipelineLog ("Using verified source override for {0}: {1}" -f $name, [string]$employer.careersUrl)
+    }
+
     $started = Get-Date
     $status = 'monitored'
     $errorMessage = ''
@@ -57,7 +79,7 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
                 "Monitoring [{0}/{1}] {2}" -f `
                     ($index + 1),
                     $employers.Count,
-                    [string]$employer.name
+                    $name
             )
 
             $employerJobs = @(
@@ -73,13 +95,13 @@ for ($index = 0; $index -lt $employers.Count; $index++) {
             $status = 'error'
             $errorMessage = $_.Exception.Message
             Utilities\Write-PipelineLog (
-                "Monitor error for {0}: {1}" -f [string]$employer.name, $errorMessage
+                "Monitor error for {0}: {1}" -f $name, $errorMessage
             ) -Level Warn
         }
     }
 
     $states += [pscustomobject][ordered]@{
-        employer   = [string]$employer.name
+        employer   = $name
         careersUrl = [string]$employer.careersUrl
         ats        = [string]$employer.ats
         status     = $status
