@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-09-29T08:33:21.8196387Z",
-  "currentJobCount": 6,
-  "previousJobCount": 7,
-  "newJobCount": 0,
-  "removedJobCount": 1,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-09-29T15:54:27.1974253Z",
+  "currentJobCount": 7,
+  "previousJobCount": 6,
+  "newJobCount": 1,
+  "removedJobCount": 0,
+  "newJobs": [
     {
       "employer": "UF Health",
       "roleTitle": "Senior, HRIS Peoplesoft Business Analyst",
@@ -14,8 +13,9 @@
       "jobUrl": "https://jobs.ufhealth.org/careers-home/jobs/60625?lang=en-us",
       "careersUrl": "https://jobs.ufhealth.org/",
       "source": "Bing RSS",
-      "verifiedAt": "2026-09-29T01:58:47.0147401Z"
+      "verifiedAt": "2026-09-29T15:53:19.1038551Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
