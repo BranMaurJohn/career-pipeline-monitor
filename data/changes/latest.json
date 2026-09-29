@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-09-29T15:54:27.1974253Z",
-  "currentJobCount": 7,
-  "previousJobCount": 6,
-  "newJobCount": 1,
-  "removedJobCount": 0,
-  "newJobs": [
+  "generatedAt": "2026-09-29T20:49:49.1310429Z",
+  "currentJobCount": 6,
+  "previousJobCount": 7,
+  "newJobCount": 0,
+  "removedJobCount": 1,
+  "newJobs": [],
+  "removedJobs": [
     {
       "employer": "UF Health",
       "roleTitle": "Senior, HRIS Peoplesoft Business Analyst",
@@ -16,6 +17,5 @@
       "verifiedAt": "2026-09-29T15:53:19.1038551Z"
     }
   ],
-  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
