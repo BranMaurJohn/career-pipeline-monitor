@@ -1,52 +1,10 @@
 {
-  "generatedAt": "2026-09-28T23:44:55.1250324Z",
+  "generatedAt": "2026-09-29T02:00:01.9602544Z",
   "currentJobCount": 7,
-  "previousJobCount": 9,
-  "newJobCount": 1,
-  "removedJobCount": 3,
-  "newJobs": [
-    {
-      "employer": "Cedars-Sinai",
-      "roleTitle": "ERP Solutions Analyst (UKG Timekeeping and Scheduling) - Remote",
-      "workModel": "Remote",
-      "salary": "$98,000 - $142,000",
-      "jobUrl": "https://careers.cshs.org/job/los-angeles/erp-solutions-analyst-ukg-timekeeping-and-scheduling-remote/252/99864489680",
-      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
-      "source": "Verified official job URL",
-      "verifiedAt": "2026-09-28T23:43:30.3254591Z"
-    }
-  ],
-  "removedJobs": [
-    {
-      "employer": "Carilion Clinic",
-      "roleTitle": "EPIC APPLICATION ANALYST II, Cadence/SER",
-      "workModel": "Remote",
-      "salary": "Not disclosed",
-      "jobUrl": "https://carilionclinic.wd12.myworkdayjobs.com/en-US/External_Careers/job/EPIC-APPLICATION-ANALYST-II--Cadence-SER_R162068",
-      "careersUrl": "https://carilionclinic.wd12.myworkdayjobs.com/External_Careers",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-09-28T23:29:55.3727116Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Executive Director, AI Engineering and EHR Systems",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/executive-director-ai-engineering-and-ehr-systems-charlestown-ma-jr102947/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-09-28T23:29:45.448607Z"
-    },
-    {
-      "employer": "Carilion Clinic",
-      "roleTitle": "Epic Application Analyst III",
-      "workModel": "Remote",
-      "salary": "Not disclosed",
-      "jobUrl": "https://carilionclinic.wd12.myworkdayjobs.com/en-US/External_Careers/job/Epic-Application-Analyst-III---Cadence-SER_R161869",
-      "careersUrl": "https://carilionclinic.wd12.myworkdayjobs.com/External_Careers",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-09-28T23:29:55.3746958Z"
-    }
-  ],
+  "previousJobCount": 7,
+  "newJobCount": 0,
+  "removedJobCount": 0,
+  "newJobs": [],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
