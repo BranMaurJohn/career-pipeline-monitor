@@ -1,51 +1,10 @@
 {
-  "generatedAt": "2026-10-01T19:12:12.6367818Z",
+  "generatedAt": "2026-10-01T23:29:38.3118847Z",
   "currentJobCount": 6,
-  "previousJobCount": 2,
-  "newJobCount": 4,
+  "previousJobCount": 6,
+  "newJobCount": 0,
   "removedJobCount": 0,
-  "newJobs": [
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Scheduling Analyst",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-charlestown-ma-jr96189/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-01T18:56:22.9172191Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Timekeeping Analyst",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-timekeeping-analyst-charlestown-ma-jr96188/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-01T18:56:22.918337Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Integration Developer",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-integration-developer-charlestown-ma-jr93455/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-01T18:56:22.9229537Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Scheduling Analyst (Remote)",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-remote-charlestown-ma-jr93454/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-01T18:56:22.9241967Z"
-    }
-  ],
+  "newJobs": [],
   "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
