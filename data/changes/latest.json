@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-10-07T22:38:42.2055587Z",
+  "generatedAt": "2026-10-08T02:35:50.0364118Z",
   "currentJobCount": 6,
-  "previousJobCount": 7,
+  "previousJobCount": 6,
   "newJobCount": 0,
-  "removedJobCount": 1,
+  "removedJobCount": 0,
   "newJobs": [],
-  "removedJobs": [
-    {
-      "employer": "Jefferson Healthcare",
-      "roleTitle": "HRIS Analyst",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jeffersonhealthcare.applicantpro.com/fbapp/4065462.html",
-      "careersUrl": "https://jeffersonhealthcare.applicantpro.com/jobs/",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-10-07T16:30:33.1562591Z"
-    }
-  ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
