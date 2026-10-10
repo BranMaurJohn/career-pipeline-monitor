@@ -1,10 +1,21 @@
 {
-  "generatedAt": "2026-10-09T21:36:47.1949271Z",
-  "currentJobCount": 6,
+  "generatedAt": "2026-10-10T01:31:22.1782384Z",
+  "currentJobCount": 7,
   "previousJobCount": 6,
-  "newJobCount": 0,
+  "newJobCount": 1,
   "removedJobCount": 0,
-  "newJobs": [],
+  "newJobs": [
+    {
+      "employer": "HSHS",
+      "roleTitle": "Workday Integration Architect (Requisition ID: c381_365_R1038569)",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.hshs.org/job/c381_365_R1038569/workday-integration-architect/information-technology/springfield/il?state=IL&amp;category=information+technology",
+      "careersUrl": "https://jobs.hshs.org/job-search?page=1",
+      "source": "Official career page",
+      "verifiedAt": "2026-10-10T00:52:55.081264Z"
+    }
+  ],
   "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
