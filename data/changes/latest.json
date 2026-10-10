@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-10T07:47:47.1109245Z",
-  "currentJobCount": 6,
-  "previousJobCount": 7,
-  "newJobCount": 0,
-  "removedJobCount": 1,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-10-10T14:22:28.8442933Z",
+  "currentJobCount": 7,
+  "previousJobCount": 6,
+  "newJobCount": 1,
+  "removedJobCount": 0,
+  "newJobs": [
     {
-      "employer": "HSHS",
-      "roleTitle": "Workday Integration Architect (Requisition ID: c381_365_R1038569)",
+      "employer": "Grady Health System",
+      "roleTitle": "Senior HRIS Analyst – Workday Benefits & HCM",
       "workModel": "Not stated",
       "salary": "Not disclosed",
-      "jobUrl": "https://jobs.hshs.org/job/c381_365_R1038569/workday-integration-architect/information-technology/springfield/il?state=IL&amp;category=information+technology",
-      "careersUrl": "https://jobs.hshs.org/job-search?page=1",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-10T00:52:55.081264Z"
+      "jobUrl": "https://careers.gradyhealth.org/us/en/job/R26004127/Senior-HRIS-Analyst-Workday-Benefits-HCM",
+      "careersUrl": "https://careers.gradyhealth.org/us/en/c/nursing-jobs",
+      "source": "Bing RSS",
+      "verifiedAt": "2026-10-10T13:44:07.7831934Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
