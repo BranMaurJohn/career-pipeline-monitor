@@ -1,41 +1,10 @@
 {
-  "generatedAt": "2026-10-14T12:33:07.0573048Z",
+  "generatedAt": "2026-10-14T17:50:42.6023851Z",
   "currentJobCount": 6,
-  "previousJobCount": 9,
+  "previousJobCount": 6,
   "newJobCount": 0,
-  "removedJobCount": 3,
+  "removedJobCount": 0,
   "newJobs": [],
-  "removedJobs": [
-    {
-      "employer": "Cedars-Sinai",
-      "roleTitle": "Senior HRIS Analyst (Oracle HCM Benefits)",
-      "workModel": "Remote",
-      "salary": "Not disclosed",
-      "jobUrl": "https://careers.cshs.org/en/job/los-angeles/senior-hris-analyst-oracle-hcm-benefits-remote/252/99456997376",
-      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-10-14T00:20:41.1076673Z"
-    },
-    {
-      "employer": "Cedars-Sinai",
-      "roleTitle": "ERP Solutions Analyst (UKG Timekeeping and Scheduling)",
-      "workModel": "Remote",
-      "salary": "Not disclosed",
-      "jobUrl": "https://careers.cshs.org/job/los-angeles/erp-solutions-analyst-ukg-timekeeping-and-scheduling-remote/252/99864489680",
-      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-10-14T00:20:41.1101363Z"
-    },
-    {
-      "employer": "Cedars-Sinai",
-      "roleTitle": "Associate Director, ERP Application Developer (Payroll & UKG)",
-      "workModel": "Remote",
-      "salary": "Not disclosed",
-      "jobUrl": "https://careers.cshs.org/job/los-angeles/associate-director-erp-application-developer-payroll-and-ukg-remote/252/100461036624",
-      "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
-      "source": "Bing RSS",
-      "verifiedAt": "2026-10-14T00:20:41.1091011Z"
-    }
-  ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
