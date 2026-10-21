@@ -1,10 +1,21 @@
 {
-  "generatedAt": "2026-10-21T10:49:41.6912969Z",
-  "currentJobCount": 7,
+  "generatedAt": "2026-10-21T15:54:53.7437240Z",
+  "currentJobCount": 6,
   "previousJobCount": 7,
   "newJobCount": 0,
-  "removedJobCount": 0,
+  "removedJobCount": 1,
   "newJobs": [],
-  "removedJobs": [],
+  "removedJobs": [
+    {
+      "employer": "Cooper University Hospital Cape Regional | Cooper Norcross Health",
+      "roleTitle": "IT PRODUCT MANAGER - ERP & WFM - BUSINESS APPLICATIONS",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.cooperhealth.org/job/camden/it-product-manager-erp-and-wfm-business-applications/338/98057621232",
+      "careersUrl": "https://jobs.cooperhealth.org/search-jobs",
+      "source": "Official career page",
+      "verifiedAt": "2026-10-21T10:09:55.4376125Z"
+    }
+  ],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
