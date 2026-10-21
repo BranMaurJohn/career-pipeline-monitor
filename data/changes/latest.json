@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-21T15:54:53.7437240Z",
-  "currentJobCount": 6,
-  "previousJobCount": 7,
-  "newJobCount": 0,
-  "removedJobCount": 1,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-10-21T20:00:25.3842780Z",
+  "currentJobCount": 7,
+  "previousJobCount": 6,
+  "newJobCount": 1,
+  "removedJobCount": 0,
+  "newJobs": [
     {
-      "employer": "Cooper University Hospital Cape Regional | Cooper Norcross Health",
-      "roleTitle": "IT PRODUCT MANAGER - ERP & WFM - BUSINESS APPLICATIONS",
-      "workModel": "Not stated",
+      "employer": "NYU Langone Health",
+      "roleTitle": "Sr Developer - UKG Pro Workforce Management Solutions (Hybrid NYC)",
+      "workModel": "Hybrid",
       "salary": "Not disclosed",
-      "jobUrl": "https://jobs.cooperhealth.org/job/camden/it-product-manager-erp-and-wfm-business-applications/338/98057621232",
-      "careersUrl": "https://jobs.cooperhealth.org/search-jobs",
-      "source": "Official career page",
-      "verifiedAt": "2026-10-21T10:09:55.4376125Z"
+      "jobUrl": "https://jobs.nyulangone.org/job/23276544/sr-developer-ukg-pro-workforce-management-solutions-hybrid-nyc-new-york-ny/",
+      "careersUrl": "https://jobs.nyulangone.org/",
+      "source": "Verified official job URL",
+      "verifiedAt": "2026-10-21T19:22:36.9576915Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
