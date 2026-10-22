@@ -1,21 +1,10 @@
 {
-  "generatedAt": "2026-10-22T00:05:03.0931903Z",
+  "generatedAt": "2026-10-22T05:27:03.6988097Z",
   "currentJobCount": 6,
-  "previousJobCount": 7,
+  "previousJobCount": 6,
   "newJobCount": 0,
-  "removedJobCount": 1,
+  "removedJobCount": 0,
   "newJobs": [],
-  "removedJobs": [
-    {
-      "employer": "NYU Langone Health",
-      "roleTitle": "Sr Developer - UKG Pro Workforce Management Solutions (Hybrid NYC)",
-      "workModel": "Hybrid",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.nyulangone.org/job/23276544/sr-developer-ukg-pro-workforce-management-solutions-hybrid-nyc-new-york-ny/",
-      "careersUrl": "https://jobs.nyulangone.org/",
-      "source": "Verified official job URL",
-      "verifiedAt": "2026-10-21T19:22:36.9576915Z"
-    }
-  ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
