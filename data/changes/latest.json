@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-10-21T20:00:25.3842780Z",
-  "currentJobCount": 7,
-  "previousJobCount": 6,
-  "newJobCount": 1,
-  "removedJobCount": 0,
-  "newJobs": [
+  "generatedAt": "2026-10-22T00:05:03.0931903Z",
+  "currentJobCount": 6,
+  "previousJobCount": 7,
+  "newJobCount": 0,
+  "removedJobCount": 1,
+  "newJobs": [],
+  "removedJobs": [
     {
       "employer": "NYU Langone Health",
       "roleTitle": "Sr Developer - UKG Pro Workforce Management Solutions (Hybrid NYC)",
@@ -16,6 +17,5 @@
       "verifiedAt": "2026-10-21T19:22:36.9576915Z"
     }
   ],
-  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
