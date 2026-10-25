@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-10-25T06:52:00.9017991Z",
-  "currentJobCount": 5,
-  "previousJobCount": 6,
-  "newJobCount": 0,
-  "removedJobCount": 1,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-10-25T12:11:21.8882203Z",
+  "currentJobCount": 6,
+  "previousJobCount": 5,
+  "newJobCount": 1,
+  "removedJobCount": 0,
+  "newJobs": [
     {
       "employer": "Cedars-Sinai",
       "roleTitle": "Associate Director, ERP Application Developer (Payroll & UKG) - Remote",
@@ -14,8 +13,9 @@
       "jobUrl": "https://careers.cshs.org/job/los-angeles/associate-director-erp-application-developer-payroll-and-ukg-remote/252/100461036624",
       "careersUrl": "https://careers.cshs.org/choose-your-area-of-interest-information-technology",
       "source": "Verified official job URL",
-      "verifiedAt": "2026-10-25T01:31:44.7662846Z"
+      "verifiedAt": "2026-10-25T11:32:28.2170039Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
