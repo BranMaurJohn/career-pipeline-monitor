@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T15:00:55.2076366Z",
+  "generatedAt": "2026-10-29T21:00:04.7924390Z",
   "employers": [
     {
       "employer": "ACMH",
@@ -7,8 +7,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:02.6178934Z",
-      "durationMs": 2633,
+      "checkedAt": "2026-10-29T20:19:03.8198796Z",
+      "durationMs": 2481,
       "error": ""
     },
     {
@@ -17,8 +17,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:03.8172156Z",
-      "durationMs": 1037,
+      "checkedAt": "2026-10-29T20:19:04.8443398Z",
+      "durationMs": 847,
       "error": ""
     },
     {
@@ -27,7 +27,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:03.9805756Z",
+      "checkedAt": "2026-10-29T20:19:05.0011577Z",
       "durationMs": 0,
       "error": ""
     },
@@ -37,18 +37,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.4198972Z",
-      "durationMs": 7281,
+      "checkedAt": "2026-10-29T20:19:12.1444911Z",
+      "durationMs": 6983,
       "error": ""
     },
     {
       "employer": "AtlantiCare",
-      "careersUrl": "https://ibywjb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/",
-      "ats": "Oracle Recruiting",
+      "careersUrl": "https://www.atlanticare.org/careers",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.3112618Z",
-      "durationMs": 1740,
+      "checkedAt": "2026-10-29T20:19:13.0922819Z",
+      "durationMs": 796,
       "error": ""
     },
     {
@@ -57,8 +57,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.550602Z",
-      "durationMs": 2088,
+      "checkedAt": "2026-10-29T20:19:15.1664921Z",
+      "durationMs": 1917,
       "error": ""
     },
     {
@@ -67,8 +67,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.6387116Z",
-      "durationMs": 936,
+      "checkedAt": "2026-10-29T20:19:16.1290445Z",
+      "durationMs": 813,
       "error": ""
     },
     {
@@ -77,8 +77,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 4,
-      "checkedAt": "2026-10-29T14:21:18.863069Z",
-      "durationMs": 2068,
+      "checkedAt": "2026-10-29T20:19:17.9124059Z",
+      "durationMs": 1629,
       "error": ""
     },
     {
@@ -87,7 +87,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.0139873Z",
+      "checkedAt": "2026-10-29T20:19:18.0638193Z",
       "durationMs": 0,
       "error": ""
     },
@@ -97,8 +97,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.0594801Z",
-      "durationMs": 892,
+      "checkedAt": "2026-10-29T20:19:18.9636102Z",
+      "durationMs": 739,
       "error": ""
     },
     {
@@ -107,7 +107,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.2092899Z",
+      "checkedAt": "2026-10-29T20:19:19.1146174Z",
       "durationMs": 0,
       "error": ""
     },
@@ -117,8 +117,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.9187049Z",
-      "durationMs": 1542,
+      "checkedAt": "2026-10-29T20:19:20.7997411Z",
+      "durationMs": 1525,
       "error": ""
     },
     {
@@ -127,18 +127,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 2,
-      "checkedAt": "2026-10-29T14:21:23.9282821Z",
-      "durationMs": 1852,
+      "checkedAt": "2026-10-29T20:19:22.9415037Z",
+      "durationMs": 1989,
       "error": ""
     },
     {
       "employer": "Children’s Health",
-      "careersUrl": "https://jobsearch.childrens.com/",
+      "careersUrl": "https://jobsearch.childrens.com/c/administrative-clerical-support-jobs",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.0805218Z",
-      "durationMs": 1989,
+      "checkedAt": "2026-10-29T20:19:25.2885675Z",
+      "durationMs": 2197,
       "error": ""
     },
     {
@@ -147,7 +147,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.2306677Z",
+      "checkedAt": "2026-10-29T20:19:25.4396674Z",
       "durationMs": 0,
       "error": ""
     },
@@ -157,7 +157,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.3827956Z",
+      "checkedAt": "2026-10-29T20:19:25.6044369Z",
       "durationMs": 0,
       "error": ""
     },
@@ -167,8 +167,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:27.2213268Z",
-      "durationMs": 673,
+      "checkedAt": "2026-10-29T20:19:26.5772684Z",
+      "durationMs": 817,
       "error": ""
     },
     {
@@ -177,18 +177,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:27.3800464Z",
+      "checkedAt": "2026-10-29T20:19:26.7449882Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Covenant Health",
-      "careersUrl": "https://careers.covenanthealthcare.com/",
-      "ats": "custom",
+      "careersUrl": "https://careers-covenanthealth.icims.com/",
+      "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.238413Z",
-      "durationMs": 1701,
+      "checkedAt": "2026-10-29T20:19:27.6644022Z",
+      "durationMs": 763,
       "error": ""
     },
     {
@@ -197,7 +197,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.4051935Z",
+      "checkedAt": "2026-10-29T20:19:27.8150088Z",
       "durationMs": 0,
       "error": ""
     },
@@ -207,7 +207,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.5630593Z",
+      "checkedAt": "2026-10-29T20:19:27.9695978Z",
       "durationMs": 0,
       "error": ""
     },
@@ -217,7 +217,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.7134243Z",
+      "checkedAt": "2026-10-29T20:19:28.1267337Z",
       "durationMs": 0,
       "error": ""
     },
@@ -227,18 +227,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:30.8901909Z",
-      "durationMs": 1013,
+      "checkedAt": "2026-10-29T20:19:29.31616Z",
+      "durationMs": 1033,
       "error": ""
     },
     {
       "employer": "Exeter Hospital | Beth Israel Lahey Health",
-      "careersUrl": "https://bilh.wd1.myworkdayjobs.com/External",
-      "ats": "Workday",
+      "careersUrl": "https://exeterhospital.org/careers",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:38.0390451Z",
-      "durationMs": 6998,
+      "checkedAt": "2026-10-29T20:19:36.3663791Z",
+      "durationMs": 6898,
       "error": ""
     },
     {
@@ -247,8 +247,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:41.5447298Z",
-      "durationMs": 3340,
+      "checkedAt": "2026-10-29T20:19:39.1382252Z",
+      "durationMs": 2611,
       "error": ""
     },
     {
@@ -257,7 +257,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:41.6962398Z",
+      "checkedAt": "2026-10-29T20:19:39.2884122Z",
       "durationMs": 0,
       "error": ""
     },
@@ -267,8 +267,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:44.408532Z",
-      "durationMs": 2551,
+      "checkedAt": "2026-10-29T20:19:41.6211845Z",
+      "durationMs": 2172,
       "error": ""
     },
     {
@@ -277,8 +277,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:45.4066912Z",
-      "durationMs": 847,
+      "checkedAt": "2026-10-29T20:19:42.6987641Z",
+      "durationMs": 913,
       "error": ""
     },
     {
@@ -287,8 +287,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:47.6394077Z",
-      "durationMs": 2082,
+      "checkedAt": "2026-10-29T20:19:44.0968694Z",
+      "durationMs": 1247,
       "error": ""
     },
     {
@@ -297,8 +297,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:48.4608086Z",
-      "durationMs": 669,
+      "checkedAt": "2026-10-29T20:19:44.8700583Z",
+      "durationMs": 611,
       "error": ""
     },
     {
@@ -307,7 +307,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:48.6121936Z",
+      "checkedAt": "2026-10-29T20:19:45.0218279Z",
       "durationMs": 0,
       "error": ""
     },
@@ -317,8 +317,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.0249432Z",
-      "durationMs": 2246,
+      "checkedAt": "2026-10-29T20:19:46.4868216Z",
+      "durationMs": 1302,
       "error": ""
     },
     {
@@ -327,8 +327,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.199216Z",
-      "durationMs": 1023,
+      "checkedAt": "2026-10-29T20:19:47.958128Z",
+      "durationMs": 1298,
       "error": ""
     },
     {
@@ -337,8 +337,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.0350394Z",
-      "durationMs": 686,
+      "checkedAt": "2026-10-29T20:19:48.7287162Z",
+      "durationMs": 609,
       "error": ""
     },
     {
@@ -347,7 +347,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.1982967Z",
+      "checkedAt": "2026-10-29T20:19:48.8793929Z",
       "durationMs": 0,
       "error": ""
     },
@@ -357,8 +357,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:00.3029896Z",
-      "durationMs": 6954,
+      "checkedAt": "2026-10-29T20:19:56.1015652Z",
+      "durationMs": 7071,
       "error": ""
     },
     {
@@ -367,8 +367,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:01.2741449Z",
-      "durationMs": 806,
+      "checkedAt": "2026-10-29T20:19:57.5785979Z",
+      "durationMs": 1326,
       "error": ""
     },
     {
@@ -377,8 +377,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:02.6471488Z",
-      "durationMs": 1220,
+      "checkedAt": "2026-10-29T20:19:59.0127352Z",
+      "durationMs": 1279,
       "error": ""
     },
     {
@@ -387,8 +387,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:03.9410448Z",
-      "durationMs": 1130,
+      "checkedAt": "2026-10-29T20:20:00.1465164Z",
+      "durationMs": 985,
       "error": ""
     },
     {
@@ -397,7 +397,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:04.1021667Z",
+      "checkedAt": "2026-10-29T20:20:00.2974869Z",
       "durationMs": 0,
       "error": ""
     },
@@ -407,7 +407,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:04.258493Z",
+      "checkedAt": "2026-10-29T20:20:00.4625414Z",
       "durationMs": 0,
       "error": ""
     },
@@ -417,8 +417,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:08.741341Z",
-      "durationMs": 4327,
+      "checkedAt": "2026-10-29T20:20:04.6330895Z",
+      "durationMs": 4013,
       "error": ""
     },
     {
@@ -427,7 +427,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:08.8926758Z",
+      "checkedAt": "2026-10-29T20:20:04.7848848Z",
       "durationMs": 0,
       "error": ""
     },
@@ -437,8 +437,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:17.3936371Z",
-      "durationMs": 8337,
+      "checkedAt": "2026-10-29T20:20:13.4665406Z",
+      "durationMs": 8522,
       "error": ""
     },
     {
@@ -447,7 +447,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:17.5531992Z",
+      "checkedAt": "2026-10-29T20:20:13.6177313Z",
       "durationMs": 0,
       "error": ""
     },
@@ -457,18 +457,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:17.7106346Z",
+      "checkedAt": "2026-10-29T20:20:13.7696374Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Northside Hospital",
-      "careersUrl": "https://careers-northside.icims.com/jobs/intro?mobile=true&needsRedirect=false",
-      "ats": "iCIMS",
+      "careersUrl": "https://jobs.northside.com/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:24.7286698Z",
-      "durationMs": 6861,
+      "checkedAt": "2026-10-29T20:20:20.6460954Z",
+      "durationMs": 6720,
       "error": ""
     },
     {
@@ -477,18 +477,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:32.0204227Z",
-      "durationMs": 7141,
+      "checkedAt": "2026-10-29T20:20:27.7502032Z",
+      "durationMs": 6953,
       "error": ""
     },
     {
       "employer": "Onvida Health",
-      "careersUrl": "https://jobs.onvidahealth.org/jobs",
+      "careersUrl": "https://jobs.onvidahealth.org/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:39.443644Z",
-      "durationMs": 7256,
+      "checkedAt": "2026-10-29T20:20:34.9399214Z",
+      "durationMs": 7029,
       "error": ""
     },
     {
@@ -497,8 +497,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:46.7592502Z",
-      "durationMs": 7165,
+      "checkedAt": "2026-10-29T20:20:42.1766496Z",
+      "durationMs": 7082,
       "error": ""
     },
     {
@@ -507,7 +507,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:46.911733Z",
+      "checkedAt": "2026-10-29T20:20:42.3374087Z",
       "durationMs": 0,
       "error": ""
     },
@@ -517,7 +517,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:47.0628533Z",
+      "checkedAt": "2026-10-29T20:20:42.4881346Z",
       "durationMs": 0,
       "error": ""
     },
@@ -527,8 +527,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:54.3875892Z",
-      "durationMs": 7161,
+      "checkedAt": "2026-10-29T20:20:49.9251442Z",
+      "durationMs": 7281,
       "error": ""
     },
     {
@@ -537,7 +537,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:54.5395746Z",
+      "checkedAt": "2026-10-29T20:20:50.0904708Z",
       "durationMs": 0,
       "error": ""
     },
@@ -547,7 +547,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:54.6914079Z",
+      "checkedAt": "2026-10-29T20:20:50.241017Z",
       "durationMs": 0,
       "error": ""
     },
@@ -557,8 +557,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:01.8690966Z",
-      "durationMs": 7014,
+      "checkedAt": "2026-10-29T20:20:57.2806689Z",
+      "durationMs": 6889,
       "error": ""
     },
     {
@@ -567,8 +567,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:09.7962904Z",
-      "durationMs": 7775,
+      "checkedAt": "2026-10-29T20:21:04.8701445Z",
+      "durationMs": 7438,
       "error": ""
     },
     {
@@ -577,7 +577,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:09.9572725Z",
+      "checkedAt": "2026-10-29T20:21:05.0194839Z",
       "durationMs": 0,
       "error": ""
     },
@@ -587,18 +587,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:16.9875612Z",
-      "durationMs": 6874,
+      "checkedAt": "2026-10-29T20:21:11.8715022Z",
+      "durationMs": 6689,
       "error": ""
     },
     {
       "employer": "Sharp HealthCare",
-      "careersUrl": "https://careers.sharp.com/",
-      "ats": "custom",
+      "careersUrl": "https://sharp.wd1.myworkdayjobs.com/External",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:24.1008364Z",
-      "durationMs": 6947,
+      "checkedAt": "2026-10-29T20:21:18.9791135Z",
+      "durationMs": 6956,
       "error": ""
     },
     {
@@ -607,7 +607,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:24.2502684Z",
+      "checkedAt": "2026-10-29T20:21:19.1302992Z",
       "durationMs": 0,
       "error": ""
     },
@@ -617,8 +617,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:31.5008344Z",
-      "durationMs": 7090,
+      "checkedAt": "2026-10-29T20:21:26.3202863Z",
+      "durationMs": 7017,
       "error": ""
     },
     {
@@ -627,8 +627,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:38.5881327Z",
-      "durationMs": 6928,
+      "checkedAt": "2026-10-29T20:21:33.3877478Z",
+      "durationMs": 6918,
       "error": ""
     },
     {
@@ -637,8 +637,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:46.4106084Z",
-      "durationMs": 67672,
+      "checkedAt": "2026-10-29T20:22:41.2187404Z",
+      "durationMs": 67679,
       "error": ""
     },
     {
@@ -647,18 +647,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:26:15.2787669Z",
-      "durationMs": 88718,
+      "checkedAt": "2026-10-29T20:24:10.2698452Z",
+      "durationMs": 88900,
       "error": ""
     },
     {
       "employer": "Sutter Health",
-      "careersUrl": "https://sutterhealth.wd1.myworkdayjobs.com/SH",
-      "ats": "Workday",
+      "careersUrl": "https://apcjobs-sutterhealth.icims.com/jobs/intro",
+      "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:44.4624806Z",
-      "durationMs": 89031,
+      "checkedAt": "2026-10-29T20:25:39.1234038Z",
+      "durationMs": 88697,
       "error": ""
     },
     {
@@ -667,8 +667,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:13.8940574Z",
-      "durationMs": 89279,
+      "checkedAt": "2026-10-29T20:27:08.6506185Z",
+      "durationMs": 89376,
       "error": ""
     },
     {
@@ -677,7 +677,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:14.0683532Z",
+      "checkedAt": "2026-10-29T20:27:08.8158173Z",
       "durationMs": 0,
       "error": ""
     },
@@ -687,7 +687,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:14.2194769Z",
+      "checkedAt": "2026-10-29T20:27:08.9672159Z",
       "durationMs": 0,
       "error": ""
     },
@@ -697,8 +697,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:44.260407Z",
-      "durationMs": 89875,
+      "checkedAt": "2026-10-29T20:28:38.5149588Z",
+      "durationMs": 89388,
       "error": ""
     },
     {
@@ -707,7 +707,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:44.4107403Z",
+      "checkedAt": "2026-10-29T20:28:38.6655366Z",
       "durationMs": 0,
       "error": ""
     },
@@ -717,8 +717,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:32:13.8164639Z",
-      "durationMs": 89255,
+      "checkedAt": "2026-10-29T20:30:07.9466944Z",
+      "durationMs": 89114,
       "error": ""
     },
     {
@@ -727,8 +727,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:43.5859325Z",
-      "durationMs": 89619,
+      "checkedAt": "2026-10-29T20:31:37.2427322Z",
+      "durationMs": 89145,
       "error": ""
     },
     {
@@ -737,18 +737,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:43.7378395Z",
+      "checkedAt": "2026-10-29T20:31:37.3937517Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "UW Medicine",
-      "careersUrl": "https://give.uwmedicine.org/careers-uw-medicine-advancement/",
+      "careersUrl": "https://www.uwmedicine.org/jobs",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:35:12.9514211Z",
-      "durationMs": 89051,
+      "checkedAt": "2026-10-29T20:33:06.2246596Z",
+      "durationMs": 88681,
       "error": ""
     },
     {
@@ -757,8 +757,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:42.3205295Z",
-      "durationMs": 89204,
+      "checkedAt": "2026-10-29T20:34:35.5664352Z",
+      "durationMs": 89186,
       "error": ""
     },
     {
@@ -767,7 +767,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:42.478727Z",
+      "checkedAt": "2026-10-29T20:34:35.7262255Z",
       "durationMs": 0,
       "error": ""
     },
@@ -777,8 +777,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:38:12.0845185Z",
-      "durationMs": 89446,
+      "checkedAt": "2026-10-29T20:36:05.1762805Z",
+      "durationMs": 89299,
       "error": ""
     },
     {
@@ -787,8 +787,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:41.1885598Z",
-      "durationMs": 88948,
+      "checkedAt": "2026-10-29T20:37:34.1434907Z",
+      "durationMs": 88796,
       "error": ""
     },
     {
@@ -797,8 +797,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:10.3818189Z",
-      "durationMs": 8724,
+      "checkedAt": "2026-10-29T20:19:14.5432708Z",
+      "durationMs": 8933,
       "error": ""
     },
     {
@@ -807,8 +807,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.1578752Z",
-      "durationMs": 1594,
+      "checkedAt": "2026-10-29T20:19:16.1867457Z",
+      "durationMs": 1479,
       "error": ""
     },
     {
@@ -817,7 +817,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.3243524Z",
+      "checkedAt": "2026-10-29T20:19:16.3471249Z",
       "durationMs": 0,
       "error": ""
     },
@@ -827,7 +827,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.4745214Z",
+      "checkedAt": "2026-10-29T20:19:16.4983155Z",
       "durationMs": 0,
       "error": ""
     },
@@ -837,7 +837,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.625643Z",
+      "checkedAt": "2026-10-29T20:19:16.6730827Z",
       "durationMs": 0,
       "error": ""
     },
@@ -847,8 +847,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.8540952Z",
-      "durationMs": 1070,
+      "checkedAt": "2026-10-29T20:19:17.8005143Z",
+      "durationMs": 977,
       "error": ""
     },
     {
@@ -857,8 +857,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.9017209Z",
-      "durationMs": 897,
+      "checkedAt": "2026-10-29T20:19:18.8840318Z",
+      "durationMs": 933,
       "error": ""
     },
     {
@@ -867,8 +867,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.7863235Z",
-      "durationMs": 720,
+      "checkedAt": "2026-10-29T20:19:19.6257634Z",
+      "durationMs": 592,
       "error": ""
     },
     {
@@ -877,8 +877,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.921129Z",
-      "durationMs": 985,
+      "checkedAt": "2026-10-29T20:19:20.767198Z",
+      "durationMs": 990,
       "error": ""
     },
     {
@@ -887,8 +887,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:18.054391Z",
-      "durationMs": 970,
+      "checkedAt": "2026-10-29T20:19:21.9270294Z",
+      "durationMs": 1009,
       "error": ""
     },
     {
@@ -897,8 +897,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:24.941697Z",
-      "durationMs": 6721,
+      "checkedAt": "2026-10-29T20:19:29.1104294Z",
+      "durationMs": 7019,
       "error": ""
     },
     {
@@ -907,8 +907,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:25.9051757Z",
-      "durationMs": 805,
+      "checkedAt": "2026-10-29T20:19:29.9614985Z",
+      "durationMs": 686,
       "error": ""
     },
     {
@@ -917,8 +917,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:27.3946508Z",
-      "durationMs": 1328,
+      "checkedAt": "2026-10-29T20:19:31.4070317Z",
+      "durationMs": 1292,
       "error": ""
     },
     {
@@ -927,8 +927,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.5227356Z",
-      "durationMs": 965,
+      "checkedAt": "2026-10-29T20:19:32.3371359Z",
+      "durationMs": 778,
       "error": ""
     },
     {
@@ -937,7 +937,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.6821085Z",
+      "checkedAt": "2026-10-29T20:19:32.487856Z",
       "durationMs": 0,
       "error": ""
     },
@@ -947,8 +947,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.8098617Z",
-      "durationMs": 970,
+      "checkedAt": "2026-10-29T20:19:33.613882Z",
+      "durationMs": 975,
       "error": ""
     },
     {
@@ -957,7 +957,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.9828656Z",
+      "checkedAt": "2026-10-29T20:19:33.7703369Z",
       "durationMs": 0,
       "error": ""
     },
@@ -967,8 +967,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.2209335Z",
-      "durationMs": 1078,
+      "checkedAt": "2026-10-29T20:19:35.0064749Z",
+      "durationMs": 1085,
       "error": ""
     },
     {
@@ -977,8 +977,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:32.7077851Z",
-      "durationMs": 1330,
+      "checkedAt": "2026-10-29T20:19:37.216333Z",
+      "durationMs": 2060,
       "error": ""
     },
     {
@@ -987,8 +987,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:33.7922336Z",
-      "durationMs": 933,
+      "checkedAt": "2026-10-29T20:19:38.3446914Z",
+      "durationMs": 964,
       "error": ""
     },
     {
@@ -997,7 +997,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:33.9436299Z",
+      "checkedAt": "2026-10-29T20:19:38.5044882Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1007,8 +1007,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:35.667306Z",
-      "durationMs": 1560,
+      "checkedAt": "2026-10-29T20:19:40.4133739Z",
+      "durationMs": 1751,
       "error": ""
     },
     {
@@ -1017,8 +1017,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.7604503Z",
-      "durationMs": 943,
+      "checkedAt": "2026-10-29T20:19:41.4878386Z",
+      "durationMs": 925,
       "error": ""
     },
     {
@@ -1027,7 +1027,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.9106493Z",
+      "checkedAt": "2026-10-29T20:19:41.6378453Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1037,8 +1037,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:38.9229423Z",
-      "durationMs": 1854,
+      "checkedAt": "2026-10-29T20:19:43.7392464Z",
+      "durationMs": 1943,
       "error": ""
     },
     {
@@ -1047,8 +1047,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.3366987Z",
-      "durationMs": 7239,
+      "checkedAt": "2026-10-29T20:19:51.3526999Z",
+      "durationMs": 7462,
       "error": ""
     },
     {
@@ -1057,7 +1057,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.4984443Z",
+      "checkedAt": "2026-10-29T20:19:51.5051551Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1067,8 +1067,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:47.4602968Z",
-      "durationMs": 799,
+      "checkedAt": "2026-10-29T20:19:52.3694673Z",
+      "durationMs": 714,
       "error": ""
     },
     {
@@ -1077,8 +1077,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:48.9906218Z",
-      "durationMs": 1381,
+      "checkedAt": "2026-10-29T20:19:55.2550798Z",
+      "durationMs": 2735,
       "error": ""
     },
     {
@@ -1087,8 +1087,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:49.7875582Z",
-      "durationMs": 643,
+      "checkedAt": "2026-10-29T20:19:55.9923831Z",
+      "durationMs": 584,
       "error": ""
     },
     {
@@ -1097,8 +1097,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:50.7582457Z",
-      "durationMs": 805,
+      "checkedAt": "2026-10-29T20:19:56.9462447Z",
+      "durationMs": 794,
       "error": ""
     },
     {
@@ -1107,8 +1107,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.5328259Z",
-      "durationMs": 1625,
+      "checkedAt": "2026-10-29T20:19:58.7356985Z",
+      "durationMs": 1639,
       "error": ""
     },
     {
@@ -1117,7 +1117,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.6931636Z",
+      "checkedAt": "2026-10-29T20:19:58.8863788Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1127,7 +1127,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.8555332Z",
+      "checkedAt": "2026-10-29T20:19:59.0464481Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1137,7 +1137,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.0144209Z",
+      "checkedAt": "2026-10-29T20:19:59.2049949Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1147,7 +1147,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.1751052Z",
+      "checkedAt": "2026-10-29T20:19:59.3551282Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1157,8 +1157,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:54.1411302Z",
-      "durationMs": 809,
+      "checkedAt": "2026-10-29T20:20:00.3963554Z",
+      "durationMs": 875,
       "error": ""
     },
     {
@@ -1167,8 +1167,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:55.7530232Z",
-      "durationMs": 1437,
+      "checkedAt": "2026-10-29T20:20:01.3075202Z",
+      "durationMs": 757,
       "error": ""
     },
     {
@@ -1177,8 +1177,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:56.5510357Z",
-      "durationMs": 635,
+      "checkedAt": "2026-10-29T20:20:02.0620595Z",
+      "durationMs": 603,
       "error": ""
     },
     {
@@ -1187,8 +1187,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:57.7064047Z",
-      "durationMs": 999,
+      "checkedAt": "2026-10-29T20:20:04.5362864Z",
+      "durationMs": 2307,
       "error": ""
     },
     {
@@ -1197,7 +1197,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:57.8796825Z",
+      "checkedAt": "2026-10-29T20:20:04.6958418Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1207,7 +1207,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:58.0381299Z",
+      "checkedAt": "2026-10-29T20:20:04.8538597Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1217,8 +1217,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:59.2105024Z",
-      "durationMs": 1022,
+      "checkedAt": "2026-10-29T20:20:07.5537045Z",
+      "durationMs": 2542,
       "error": ""
     },
     {
@@ -1227,8 +1227,8 @@
       "ats": "SmartRecruiters",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:06.3245273Z",
-      "durationMs": 6963,
+      "checkedAt": "2026-10-29T20:20:14.7631434Z",
+      "durationMs": 7060,
       "error": ""
     },
     {
@@ -1237,7 +1237,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:06.4760817Z",
+      "checkedAt": "2026-10-29T20:20:14.9179661Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1247,28 +1247,28 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:13.3368242Z",
-      "durationMs": 6697,
+      "checkedAt": "2026-10-29T20:20:21.98111Z",
+      "durationMs": 6905,
       "error": ""
     },
     {
       "employer": "Northwell Health",
-      "careersUrl": "https://jobs.northwell.edu/",
-      "ats": "custom",
+      "careersUrl": "https://jobs.jobvite.com/nuvance/search",
+      "ats": "Jobvite",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:20.3805894Z",
-      "durationMs": 6893,
+      "checkedAt": "2026-10-29T20:20:29.2815497Z",
+      "durationMs": 7135,
       "error": ""
     },
     {
       "employer": "Ochsner Health",
-      "careersUrl": "https://dev.ochsner.org/careers/",
+      "careersUrl": "https://careers.ochsner.org/search-jobs",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:29.3034439Z",
-      "durationMs": 8768,
+      "checkedAt": "2026-10-29T20:20:37.0023519Z",
+      "durationMs": 7546,
       "error": ""
     },
     {
@@ -1277,8 +1277,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:36.8194096Z",
-      "durationMs": 7366,
+      "checkedAt": "2026-10-29T20:20:44.6746099Z",
+      "durationMs": 7522,
       "error": ""
     },
     {
@@ -1287,8 +1287,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:43.7010221Z",
-      "durationMs": 6732,
+      "checkedAt": "2026-10-29T20:20:51.597837Z",
+      "durationMs": 6773,
       "error": ""
     },
     {
@@ -1297,8 +1297,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:50.5703727Z",
-      "durationMs": 6718,
+      "checkedAt": "2026-10-29T20:20:58.5710007Z",
+      "durationMs": 6820,
       "error": ""
     },
     {
@@ -1307,8 +1307,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:58.2522732Z",
-      "durationMs": 7531,
+      "checkedAt": "2026-10-29T20:21:06.1616098Z",
+      "durationMs": 7439,
       "error": ""
     },
     {
@@ -1317,8 +1317,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:05.2669971Z",
-      "durationMs": 6851,
+      "checkedAt": "2026-10-29T20:21:13.0969323Z",
+      "durationMs": 6772,
       "error": ""
     },
     {
@@ -1327,7 +1327,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:05.4212996Z",
+      "checkedAt": "2026-10-29T20:21:13.2480616Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1337,8 +1337,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:12.6984042Z",
-      "durationMs": 7119,
+      "checkedAt": "2026-10-29T20:21:20.785892Z",
+      "durationMs": 7371,
       "error": ""
     },
     {
@@ -1347,7 +1347,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:12.8538017Z",
+      "checkedAt": "2026-10-29T20:21:20.9371577Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1357,8 +1357,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:19.70215Z",
-      "durationMs": 6690,
+      "checkedAt": "2026-10-29T20:21:27.9562635Z",
+      "durationMs": 6865,
       "error": ""
     },
     {
@@ -1367,18 +1367,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:19.8723747Z",
+      "checkedAt": "2026-10-29T20:21:28.1172389Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "ScionHealth",
-      "careersUrl": "https://jobs.scionhealth.com/Benefits",
+      "careersUrl": "https://jobs.scionhealth.com/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:26.9857689Z",
-      "durationMs": 6955,
+      "checkedAt": "2026-10-29T20:21:35.4182068Z",
+      "durationMs": 7144,
       "error": ""
     },
     {
@@ -1387,8 +1387,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:35.4819175Z",
-      "durationMs": 68339,
+      "checkedAt": "2026-10-29T20:22:43.702328Z",
+      "durationMs": 68131,
       "error": ""
     },
     {
@@ -1397,8 +1397,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:26:04.357851Z",
-      "durationMs": 88725,
+      "checkedAt": "2026-10-29T20:24:12.4387028Z",
+      "durationMs": 88576,
       "error": ""
     },
     {
@@ -1407,8 +1407,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:33.7263578Z",
-      "durationMs": 89208,
+      "checkedAt": "2026-10-29T20:25:41.3766354Z",
+      "durationMs": 88782,
       "error": ""
     },
     {
@@ -1417,7 +1417,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:33.8758815Z",
+      "checkedAt": "2026-10-29T20:25:41.5372589Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1427,8 +1427,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:03.3801549Z",
-      "durationMs": 89336,
+      "checkedAt": "2026-10-29T20:27:10.7521281Z",
+      "durationMs": 89065,
       "error": ""
     },
     {
@@ -1437,8 +1437,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:32.4343999Z",
-      "durationMs": 88892,
+      "checkedAt": "2026-10-29T20:28:39.6355872Z",
+      "durationMs": 88725,
       "error": ""
     },
     {
@@ -1447,7 +1447,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:32.5855685Z",
+      "checkedAt": "2026-10-29T20:28:39.785325Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1457,8 +1457,8 @@
       "ats": "SmartRecruiters",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:32:01.8864558Z",
-      "durationMs": 89144,
+      "checkedAt": "2026-10-29T20:30:08.94057Z",
+      "durationMs": 88994,
       "error": ""
     },
     {
@@ -1467,8 +1467,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:30.9827896Z",
-      "durationMs": 88935,
+      "checkedAt": "2026-10-29T20:31:37.9081311Z",
+      "durationMs": 88805,
       "error": ""
     },
     {
@@ -1477,8 +1477,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:35:00.2518417Z",
-      "durationMs": 89119,
+      "checkedAt": "2026-10-29T20:33:06.908498Z",
+      "durationMs": 88838,
       "error": ""
     },
     {
@@ -1487,8 +1487,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:29.6593875Z",
-      "durationMs": 89250,
+      "checkedAt": "2026-10-29T20:34:36.2012761Z",
+      "durationMs": 89123,
       "error": ""
     },
     {
@@ -1497,8 +1497,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:37:58.5565223Z",
-      "durationMs": 88732,
+      "checkedAt": "2026-10-29T20:36:04.735531Z",
+      "durationMs": 88385,
       "error": ""
     },
     {
@@ -1507,8 +1507,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:27.3570943Z",
-      "durationMs": 88648,
+      "checkedAt": "2026-10-29T20:37:33.7280892Z",
+      "durationMs": 88836,
       "error": ""
     },
     {
@@ -1517,7 +1517,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:27.5072306Z",
+      "checkedAt": "2026-10-29T20:37:33.8796687Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1527,8 +1527,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:40:56.4391446Z",
-      "durationMs": 88765,
+      "checkedAt": "2026-10-29T20:39:02.7543026Z",
+      "durationMs": 88715,
       "error": ""
     },
     {
@@ -1537,8 +1537,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:27.5318357Z",
-      "durationMs": 90943,
+      "checkedAt": "2026-10-29T20:40:31.6152536Z",
+      "durationMs": 88701,
       "error": ""
     },
     {
@@ -1547,8 +1547,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:43:56.6440281Z",
-      "durationMs": 88961,
+      "checkedAt": "2026-10-29T20:42:00.551056Z",
+      "durationMs": 88775,
       "error": ""
     },
     {
@@ -1557,8 +1557,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:26.044447Z",
-      "durationMs": 89250,
+      "checkedAt": "2026-10-29T20:43:29.5185538Z",
+      "durationMs": 88818,
       "error": ""
     },
     {
@@ -1567,7 +1567,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:26.1948073Z",
+      "checkedAt": "2026-10-29T20:43:29.6778133Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1577,8 +1577,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:04.6365349Z",
-      "durationMs": 3577,
+      "checkedAt": "2026-10-29T20:19:08.8402335Z",
+      "durationMs": 3848,
       "error": ""
     },
     {
@@ -1587,8 +1587,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:07.2548068Z",
-      "durationMs": 2455,
+      "checkedAt": "2026-10-29T20:19:11.905234Z",
+      "durationMs": 2899,
       "error": ""
     },
     {
@@ -1597,8 +1597,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:08.1652476Z",
-      "durationMs": 759,
+      "checkedAt": "2026-10-29T20:19:13.0180761Z",
+      "durationMs": 948,
       "error": ""
     },
     {
@@ -1607,8 +1607,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:08.8661117Z",
-      "durationMs": 539,
+      "checkedAt": "2026-10-29T20:19:13.8873247Z",
+      "durationMs": 707,
       "error": ""
     },
     {
@@ -1617,8 +1617,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:10.3999251Z",
-      "durationMs": 1376,
+      "checkedAt": "2026-10-29T20:19:15.7728271Z",
+      "durationMs": 1735,
       "error": ""
     },
     {
@@ -1627,7 +1627,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:10.5618191Z",
+      "checkedAt": "2026-10-29T20:19:15.9239393Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1637,8 +1637,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.9824405Z",
-      "durationMs": 1262,
+      "checkedAt": "2026-10-29T20:19:17.747685Z",
+      "durationMs": 1665,
       "error": ""
     },
     {
@@ -1647,8 +1647,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.2450395Z",
-      "durationMs": 1099,
+      "checkedAt": "2026-10-29T20:19:19.2134077Z",
+      "durationMs": 1315,
       "error": ""
     },
     {
@@ -1657,7 +1657,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.4146563Z",
+      "checkedAt": "2026-10-29T20:19:19.3629738Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1667,7 +1667,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.588912Z",
+      "checkedAt": "2026-10-29T20:19:19.5224998Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1677,8 +1677,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.0068448Z",
-      "durationMs": 1260,
+      "checkedAt": "2026-10-29T20:19:20.9199873Z",
+      "durationMs": 1239,
       "error": ""
     },
     {
@@ -1687,8 +1687,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.9026714Z",
-      "durationMs": 746,
+      "checkedAt": "2026-10-29T20:19:22.461345Z",
+      "durationMs": 1381,
       "error": ""
     },
     {
@@ -1697,8 +1697,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.9478164Z",
-      "durationMs": 893,
+      "checkedAt": "2026-10-29T20:19:23.7417107Z",
+      "durationMs": 1130,
       "error": ""
     },
     {
@@ -1707,8 +1707,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.7336312Z",
-      "durationMs": 2625,
+      "checkedAt": "2026-10-29T20:19:26.7308163Z",
+      "durationMs": 2839,
       "error": ""
     },
     {
@@ -1717,7 +1717,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.8844281Z",
+      "checkedAt": "2026-10-29T20:19:26.8826802Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1727,7 +1727,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.0480061Z",
+      "checkedAt": "2026-10-29T20:19:27.04501Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1737,8 +1737,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.8009418Z",
-      "durationMs": 603,
+      "checkedAt": "2026-10-29T20:19:28.0345973Z",
+      "durationMs": 840,
       "error": ""
     },
     {
@@ -1747,8 +1747,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.6323977Z",
-      "durationMs": 681,
+      "checkedAt": "2026-10-29T20:19:29.0187277Z",
+      "durationMs": 818,
       "error": ""
     },
     {
@@ -1757,8 +1757,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:22.5487118Z",
-      "durationMs": 760,
+      "checkedAt": "2026-10-29T20:19:30.4028551Z",
+      "durationMs": 1232,
       "error": ""
     },
     {
@@ -1767,8 +1767,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:23.2012661Z",
-      "durationMs": 495,
+      "checkedAt": "2026-10-29T20:19:31.3486159Z",
+      "durationMs": 797,
       "error": ""
     },
     {
@@ -1777,8 +1777,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:25.3661328Z",
-      "durationMs": 2012,
+      "checkedAt": "2026-10-29T20:19:33.7100645Z",
+      "durationMs": 2209,
       "error": ""
     },
     {
@@ -1787,8 +1787,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.3143847Z",
-      "durationMs": 798,
+      "checkedAt": "2026-10-29T20:19:34.834359Z",
+      "durationMs": 974,
       "error": ""
     },
     {
@@ -1797,7 +1797,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.4725431Z",
+      "checkedAt": "2026-10-29T20:19:34.9944217Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1807,8 +1807,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:27.6090272Z",
-      "durationMs": 978,
+      "checkedAt": "2026-10-29T20:19:36.6966422Z",
+      "durationMs": 1552,
       "error": ""
     },
     {
@@ -1817,8 +1817,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.5675215Z",
-      "durationMs": 809,
+      "checkedAt": "2026-10-29T20:19:37.7585875Z",
+      "durationMs": 897,
       "error": ""
     },
     {
@@ -1827,7 +1827,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.7185617Z",
+      "checkedAt": "2026-10-29T20:19:37.9093478Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1837,8 +1837,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.760887Z",
-      "durationMs": 884,
+      "checkedAt": "2026-10-29T20:19:39.2861415Z",
+      "durationMs": 1221,
       "error": ""
     },
     {
@@ -1847,7 +1847,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.9213966Z",
+      "checkedAt": "2026-10-29T20:19:39.4452482Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1857,8 +1857,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:30.5233064Z",
-      "durationMs": 450,
+      "checkedAt": "2026-10-29T20:19:40.1842904Z",
+      "durationMs": 580,
       "error": ""
     },
     {
@@ -1867,8 +1867,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.3590156Z",
-      "durationMs": 679,
+      "checkedAt": "2026-10-29T20:19:41.1594901Z",
+      "durationMs": 824,
       "error": ""
     },
     {
@@ -1877,18 +1877,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.8362901Z",
-      "durationMs": 319,
+      "checkedAt": "2026-10-29T20:19:41.8870479Z",
+      "durationMs": 574,
       "error": ""
     },
     {
       "employer": "Island Health",
-      "careersUrl": "https://careers.islandhealth.ca/apply-now/",
-      "ats": "custom",
+      "careersUrl": "https://recruiting2.ultipro.com/ISL1001ISLAN/JobBoard/e5b91c51-cf06-445e-9aed-84859d230b57/?o=postedDateDesc",
+      "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:32.5810376Z",
-      "durationMs": 589,
+      "checkedAt": "2026-10-29T20:19:43.9551878Z",
+      "durationMs": 1917,
       "error": ""
     },
     {
@@ -1897,8 +1897,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:34.6592134Z",
-      "durationMs": 1927,
+      "checkedAt": "2026-10-29T20:19:44.9789503Z",
+      "durationMs": 863,
       "error": ""
     },
     {
@@ -1907,18 +1907,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:34.810547Z",
+      "checkedAt": "2026-10-29T20:19:45.1295311Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "LCMC Health",
-      "careersUrl": "https://careers.lcmchealth.org/us/en/candidates",
+      "careersUrl": "https://careers.lcmchealth.org/us/en/home",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.7255866Z",
-      "durationMs": 1759,
+      "checkedAt": "2026-10-29T20:19:47.1939642Z",
+      "durationMs": 1891,
       "error": ""
     },
     {
@@ -1927,8 +1927,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.4596786Z",
-      "durationMs": 580,
+      "checkedAt": "2026-10-29T20:19:51.0709469Z",
+      "durationMs": 3727,
       "error": ""
     },
     {
@@ -1937,8 +1937,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:44.4920437Z",
-      "durationMs": 6883,
+      "checkedAt": "2026-10-29T20:19:58.2447487Z",
+      "durationMs": 7024,
       "error": ""
     },
     {
@@ -1947,7 +1947,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:44.6480948Z",
+      "checkedAt": "2026-10-29T20:19:58.3943596Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1957,8 +1957,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.0568843Z",
-      "durationMs": 7250,
+      "checkedAt": "2026-10-29T20:20:06.2036443Z",
+      "durationMs": 7649,
       "error": ""
     },
     {
@@ -1967,8 +1967,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:59.0133374Z",
-      "durationMs": 6802,
+      "checkedAt": "2026-10-29T20:20:13.4409736Z",
+      "durationMs": 7070,
       "error": ""
     },
     {
@@ -1977,8 +1977,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:06.4150188Z",
-      "durationMs": 7241,
+      "checkedAt": "2026-10-29T20:20:20.7849098Z",
+      "durationMs": 7176,
       "error": ""
     },
     {
@@ -1987,7 +1987,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:06.5782812Z",
+      "checkedAt": "2026-10-29T20:20:20.9549292Z",
       "durationMs": 0,
       "error": ""
     },
@@ -1997,8 +1997,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:13.9149807Z",
-      "durationMs": 7178,
+      "checkedAt": "2026-10-29T20:20:28.235631Z",
+      "durationMs": 7123,
       "error": ""
     },
     {
@@ -2007,8 +2007,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:20.8902898Z",
-      "durationMs": 6812,
+      "checkedAt": "2026-10-29T20:20:35.5017641Z",
+      "durationMs": 7106,
       "error": ""
     },
     {
@@ -2017,8 +2017,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:27.7428755Z",
-      "durationMs": 6688,
+      "checkedAt": "2026-10-29T20:20:42.6341604Z",
+      "durationMs": 6975,
       "error": ""
     },
     {
@@ -2027,8 +2027,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:35.0634492Z",
-      "durationMs": 7159,
+      "checkedAt": "2026-10-29T20:20:49.9597183Z",
+      "durationMs": 7175,
       "error": ""
     },
     {
@@ -2037,18 +2037,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:41.8495013Z",
-      "durationMs": 6636,
+      "checkedAt": "2026-10-29T20:21:58.0762947Z",
+      "durationMs": 67947,
       "error": ""
     },
     {
       "employer": "OhioHealth",
-      "careersUrl": "https://ohiohealth.wd5.myworkdayjobs.com/OhioHealthJobs",
-      "ats": "Workday",
+      "careersUrl": "https://careers.ohiohealth.com/job-search/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:49.1962208Z",
-      "durationMs": 7198,
+      "checkedAt": "2026-10-29T20:23:26.9602646Z",
+      "durationMs": 88733,
       "error": ""
     },
     {
@@ -2057,18 +2057,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:56.1787949Z",
-      "durationMs": 6824,
+      "checkedAt": "2026-10-29T20:24:56.1855206Z",
+      "durationMs": 89072,
       "error": ""
     },
     {
       "employer": "Palomar Health",
-      "careersUrl": "https://palomarhealth.wd5.myworkdayjobs.com/PH",
+      "careersUrl": "https://palomarhealth.wd5.myworkdayjobs.com/PHMG",
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:03.2656819Z",
-      "durationMs": 6934,
+      "checkedAt": "2026-10-29T20:26:26.122955Z",
+      "durationMs": 89778,
       "error": ""
     },
     {
@@ -2077,8 +2077,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:10.1620559Z",
-      "durationMs": 6744,
+      "checkedAt": "2026-10-29T20:27:55.0967674Z",
+      "durationMs": 88822,
       "error": ""
     },
     {
@@ -2087,18 +2087,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:10.316552Z",
+      "checkedAt": "2026-10-29T20:27:55.2466532Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Providence",
-      "careersUrl": "https://evac.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
-      "ats": "Oracle Recruiting",
+      "careersUrl": "https://www.providence.org/locations/facey-medical-group/about-us/careers",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:17.541781Z",
-      "durationMs": 7075,
+      "checkedAt": "2026-10-29T20:29:24.7302791Z",
+      "durationMs": 89332,
       "error": ""
     },
     {
@@ -2107,7 +2107,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:17.7054375Z",
+      "checkedAt": "2026-10-29T20:29:24.9046383Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2117,7 +2117,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:17.8628728Z",
+      "checkedAt": "2026-10-29T20:29:25.0628613Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2127,8 +2127,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:24.9765838Z",
-      "durationMs": 6956,
+      "checkedAt": "2026-10-29T20:30:54.3031016Z",
+      "durationMs": 89082,
       "error": ""
     },
     {
@@ -2137,8 +2137,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:31.9606716Z",
-      "durationMs": 6822,
+      "checkedAt": "2026-10-29T20:32:23.2493364Z",
+      "durationMs": 88788,
       "error": ""
     },
     {
@@ -2147,18 +2147,18 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:38.8756072Z",
-      "durationMs": 6766,
+      "checkedAt": "2026-10-29T20:33:52.2577342Z",
+      "durationMs": 88856,
       "error": ""
     },
     {
       "employer": "Scripps Health",
-      "careersUrl": "https://scripps.taleo.net/careersection/2/jobsearch.ftl?lang=en",
-      "ats": "Oracle Taleo",
+      "careersUrl": "https://careers.scripps.org/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:45.7720712Z",
-      "durationMs": 6744,
+      "checkedAt": "2026-10-29T20:35:21.2604386Z",
+      "durationMs": 88853,
       "error": ""
     },
     {
@@ -2167,7 +2167,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:45.922719Z",
+      "checkedAt": "2026-10-29T20:35:21.4356864Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2177,8 +2177,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:53.8853408Z",
-      "durationMs": 7804,
+      "checkedAt": "2026-10-29T20:36:50.593344Z",
+      "durationMs": 89000,
       "error": ""
     },
     {
@@ -2187,7 +2187,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:54.0386993Z",
+      "checkedAt": "2026-10-29T20:36:50.753122Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2197,8 +2197,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:01.7815846Z",
-      "durationMs": 7569,
+      "checkedAt": "2026-10-29T20:38:20.079923Z",
+      "durationMs": 89177,
       "error": ""
     },
     {
@@ -2207,8 +2207,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:08.4244701Z",
-      "durationMs": 6490,
+      "checkedAt": "2026-10-29T20:39:48.8185503Z",
+      "durationMs": 88571,
       "error": ""
     },
     {
@@ -2217,8 +2217,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:15.3289013Z",
-      "durationMs": 6748,
+      "checkedAt": "2026-10-29T20:41:18.1046658Z",
+      "durationMs": 89111,
       "error": ""
     },
     {
@@ -2227,8 +2227,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:22.5726055Z",
-      "durationMs": 7078,
+      "checkedAt": "2026-10-29T20:42:48.031039Z",
+      "durationMs": 89777,
       "error": ""
     },
     {
@@ -2237,7 +2237,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:22.7389939Z",
+      "checkedAt": "2026-10-29T20:42:48.1802318Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2247,8 +2247,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:30.8296548Z",
-      "durationMs": 7933,
+      "checkedAt": "2026-10-29T20:44:17.3946115Z",
+      "durationMs": 89049,
       "error": ""
     },
     {
@@ -2257,8 +2257,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:39.8201965Z",
-      "durationMs": 8841,
+      "checkedAt": "2026-10-29T20:45:48.6828663Z",
+      "durationMs": 91138,
       "error": ""
     },
     {
@@ -2267,7 +2267,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:39.9861303Z",
+      "checkedAt": "2026-10-29T20:45:48.8331665Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2277,8 +2277,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:47.4793515Z",
-      "durationMs": 7335,
+      "checkedAt": "2026-10-29T20:47:20.0006957Z",
+      "durationMs": 91011,
       "error": ""
     },
     {
@@ -2287,8 +2287,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:54.3272823Z",
-      "durationMs": 6683,
+      "checkedAt": "2026-10-29T20:48:48.9433552Z",
+      "durationMs": 88781,
       "error": ""
     },
     {
@@ -2297,8 +2297,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:01.009286Z",
-      "durationMs": 6532,
+      "checkedAt": "2026-10-29T20:50:17.7815926Z",
+      "durationMs": 88688,
       "error": ""
     },
     {
@@ -2307,8 +2307,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:08.063039Z",
-      "durationMs": 6892,
+      "checkedAt": "2026-10-29T20:51:47.1273444Z",
+      "durationMs": 89196,
       "error": ""
     },
     {
@@ -2317,8 +2317,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:15.5626967Z",
-      "durationMs": 7349,
+      "checkedAt": "2026-10-29T20:53:16.2160408Z",
+      "durationMs": 88932,
       "error": ""
     },
     {
@@ -2327,7 +2327,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:15.7118068Z",
+      "checkedAt": "2026-10-29T20:53:16.3759796Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2337,8 +2337,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:22.91537Z",
-      "durationMs": 7035,
+      "checkedAt": "2026-10-29T20:54:45.5112609Z",
+      "durationMs": 88985,
       "error": ""
     },
     {
@@ -2347,8 +2347,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:30.1113216Z",
-      "durationMs": 7034,
+      "checkedAt": "2026-10-29T20:56:14.9245663Z",
+      "durationMs": 89262,
       "error": ""
     },
     {
@@ -2357,8 +2357,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:05.7248758Z",
-      "durationMs": 2319,
+      "checkedAt": "2026-10-29T20:19:06.5728147Z",
+      "durationMs": 2266,
       "error": ""
     },
     {
@@ -2367,7 +2367,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:05.8852414Z",
+      "checkedAt": "2026-10-29T20:19:06.7350975Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2377,7 +2377,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:06.0496312Z",
+      "checkedAt": "2026-10-29T20:19:06.9053456Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2387,8 +2387,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:09.8129773Z",
-      "durationMs": 3600,
+      "checkedAt": "2026-10-29T20:19:10.2704865Z",
+      "durationMs": 3207,
       "error": ""
     },
     {
@@ -2397,7 +2397,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:09.964436Z",
+      "checkedAt": "2026-10-29T20:19:10.424976Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2407,8 +2407,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.0131291Z",
-      "durationMs": 889,
+      "checkedAt": "2026-10-29T20:19:11.3627356Z",
+      "durationMs": 778,
       "error": ""
     },
     {
@@ -2417,8 +2417,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.8190761Z",
-      "durationMs": 2650,
+      "checkedAt": "2026-10-29T20:19:12.8245047Z",
+      "durationMs": 1290,
       "error": ""
     },
     {
@@ -2427,8 +2427,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.7692682Z",
-      "durationMs": 7800,
+      "checkedAt": "2026-10-29T20:19:20.1600269Z",
+      "durationMs": 7185,
       "error": ""
     },
     {
@@ -2437,8 +2437,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:23.2464786Z",
-      "durationMs": 1326,
+      "checkedAt": "2026-10-29T20:19:21.0990805Z",
+      "durationMs": 777,
       "error": ""
     },
     {
@@ -2447,7 +2447,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:23.4052427Z",
+      "checkedAt": "2026-10-29T20:19:21.248467Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2457,8 +2457,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:24.5159962Z",
-      "durationMs": 959,
+      "checkedAt": "2026-10-29T20:19:22.2968297Z",
+      "durationMs": 887,
       "error": ""
     },
     {
@@ -2467,8 +2467,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.5606005Z",
-      "durationMs": 1888,
+      "checkedAt": "2026-10-29T20:19:24.1713993Z",
+      "durationMs": 1710,
       "error": ""
     },
     {
@@ -2477,8 +2477,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:35.8614301Z",
-      "durationMs": 9140,
+      "checkedAt": "2026-10-29T20:19:33.5535491Z",
+      "durationMs": 9208,
       "error": ""
     },
     {
@@ -2487,7 +2487,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.0121473Z",
+      "checkedAt": "2026-10-29T20:19:33.7051682Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2497,8 +2497,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.4767163Z",
-      "durationMs": 1287,
+      "checkedAt": "2026-10-29T20:19:37.1440034Z",
+      "durationMs": 3273,
       "error": ""
     },
     {
@@ -2507,7 +2507,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.6265007Z",
+      "checkedAt": "2026-10-29T20:19:37.3057701Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2517,8 +2517,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:45.2548587Z",
-      "durationMs": 7464,
+      "checkedAt": "2026-10-29T20:19:44.1797677Z",
+      "durationMs": 6716,
       "error": ""
     },
     {
@@ -2527,7 +2527,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:45.4180292Z",
+      "checkedAt": "2026-10-29T20:19:44.3303456Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2537,7 +2537,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:45.5766547Z",
+      "checkedAt": "2026-10-29T20:19:44.4906175Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2547,8 +2547,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:49.1775194Z",
-      "durationMs": 3442,
+      "checkedAt": "2026-10-29T20:19:46.5946871Z",
+      "durationMs": 1946,
       "error": ""
     },
     {
@@ -2557,8 +2557,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.865449Z",
-      "durationMs": 2531,
+      "checkedAt": "2026-10-29T20:19:48.2753389Z",
+      "durationMs": 1522,
       "error": ""
     },
     {
@@ -2567,8 +2567,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.0025519Z",
-      "durationMs": 987,
+      "checkedAt": "2026-10-29T20:19:49.1990179Z",
+      "durationMs": 773,
       "error": ""
     },
     {
@@ -2577,7 +2577,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.1564615Z",
+      "checkedAt": "2026-10-29T20:19:49.3513511Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2587,7 +2587,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.3146063Z",
+      "checkedAt": "2026-10-29T20:19:49.5015466Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2597,7 +2597,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.4655812Z",
+      "checkedAt": "2026-10-29T20:19:49.6676825Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2607,8 +2607,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:55.0736729Z",
-      "durationMs": 1447,
+      "checkedAt": "2026-10-29T20:19:51.2472482Z",
+      "durationMs": 1421,
       "error": ""
     },
     {
@@ -2617,8 +2617,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:56.4351281Z",
-      "durationMs": 1200,
+      "checkedAt": "2026-10-29T20:19:52.1690487Z",
+      "durationMs": 771,
       "error": ""
     },
     {
@@ -2627,8 +2627,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:58.2294077Z",
-      "durationMs": 1633,
+      "checkedAt": "2026-10-29T20:19:53.0518202Z",
+      "durationMs": 732,
       "error": ""
     },
     {
@@ -2637,7 +2637,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:58.389043Z",
+      "checkedAt": "2026-10-29T20:19:53.2022739Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2647,8 +2647,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:06.248651Z",
-      "durationMs": 7701,
+      "checkedAt": "2026-10-29T20:20:00.3509537Z",
+      "durationMs": 6993,
       "error": ""
     },
     {
@@ -2657,8 +2657,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:07.8371123Z",
-      "durationMs": 1425,
+      "checkedAt": "2026-10-29T20:20:01.5392301Z",
+      "durationMs": 1038,
       "error": ""
     },
     {
@@ -2667,8 +2667,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:09.0590519Z",
-      "durationMs": 1046,
+      "checkedAt": "2026-10-29T20:20:02.6310213Z",
+      "durationMs": 935,
       "error": ""
     },
     {
@@ -2677,8 +2677,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:10.3850148Z",
-      "durationMs": 1165,
+      "checkedAt": "2026-10-29T20:20:04.002628Z",
+      "durationMs": 1220,
       "error": ""
     },
     {
@@ -2687,7 +2687,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:10.5497296Z",
+      "checkedAt": "2026-10-29T20:20:04.1652243Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2697,7 +2697,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:10.7085738Z",
+      "checkedAt": "2026-10-29T20:20:04.3234227Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2707,8 +2707,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:11.9966517Z",
-      "durationMs": 1130,
+      "checkedAt": "2026-10-29T20:20:05.3835423Z",
+      "durationMs": 902,
       "error": ""
     },
     {
@@ -2717,8 +2717,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:13.3942123Z",
-      "durationMs": 1242,
+      "checkedAt": "2026-10-29T20:20:06.3633103Z",
+      "durationMs": 828,
       "error": ""
     },
     {
@@ -2727,8 +2727,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:14.9358169Z",
-      "durationMs": 1391,
+      "checkedAt": "2026-10-29T20:20:07.5763102Z",
+      "durationMs": 1052,
       "error": ""
     },
     {
@@ -2737,7 +2737,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:15.0872397Z",
+      "checkedAt": "2026-10-29T20:20:07.7260262Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2747,8 +2747,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:16.2505406Z",
-      "durationMs": 1005,
+      "checkedAt": "2026-10-29T20:20:08.6686961Z",
+      "durationMs": 793,
       "error": ""
     },
     {
@@ -2757,8 +2757,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:17.5398822Z",
-      "durationMs": 1137,
+      "checkedAt": "2026-10-29T20:20:09.8470387Z",
+      "durationMs": 1028,
       "error": ""
     },
     {
@@ -2767,8 +2767,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:18.8705698Z",
-      "durationMs": 1180,
+      "checkedAt": "2026-10-29T20:20:10.6973337Z",
+      "durationMs": 677,
       "error": ""
     },
     {
@@ -2777,8 +2777,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:20.6584082Z",
-      "durationMs": 1624,
+      "checkedAt": "2026-10-29T20:20:12.0141341Z",
+      "durationMs": 1167,
       "error": ""
     },
     {
@@ -2787,8 +2787,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:22.1760889Z",
-      "durationMs": 1368,
+      "checkedAt": "2026-10-29T20:20:13.4922098Z",
+      "durationMs": 1328,
       "error": ""
     },
     {
@@ -2797,7 +2797,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:22.3265866Z",
+      "checkedAt": "2026-10-29T20:20:13.6444385Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2807,8 +2807,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:23.6611457Z",
-      "durationMs": 1183,
+      "checkedAt": "2026-10-29T20:20:14.669773Z",
+      "durationMs": 867,
       "error": ""
     },
     {
@@ -2817,8 +2817,8 @@
       "ats": "SmartRecruiters",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:28.4337696Z",
-      "durationMs": 4622,
+      "checkedAt": "2026-10-29T20:20:15.9482306Z",
+      "durationMs": 1128,
       "error": ""
     },
     {
@@ -2827,8 +2827,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:35.9539056Z",
-      "durationMs": 7360,
+      "checkedAt": "2026-10-29T20:20:19.842889Z",
+      "durationMs": 3743,
       "error": ""
     },
     {
@@ -2837,8 +2837,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:44.0394789Z",
-      "durationMs": 7924,
+      "checkedAt": "2026-10-29T20:20:27.4164213Z",
+      "durationMs": 7423,
       "error": ""
     },
     {
@@ -2847,8 +2847,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:53.1290384Z",
-      "durationMs": 8931,
+      "checkedAt": "2026-10-29T20:20:36.1718887Z",
+      "durationMs": 8599,
       "error": ""
     },
     {
@@ -2857,8 +2857,8 @@
       "ats": "Jobvite",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:00.7824431Z",
-      "durationMs": 7503,
+      "checkedAt": "2026-10-29T20:20:43.3009652Z",
+      "durationMs": 6960,
       "error": ""
     },
     {
@@ -2867,8 +2867,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:08.7930408Z",
-      "durationMs": 7845,
+      "checkedAt": "2026-10-29T20:20:50.5706323Z",
+      "durationMs": 7119,
       "error": ""
     },
     {
@@ -2877,8 +2877,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:16.4568857Z",
-      "durationMs": 7499,
+      "checkedAt": "2026-10-29T20:20:59.5524452Z",
+      "durationMs": 8832,
       "error": ""
     },
     {
@@ -2887,8 +2887,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:23.8746337Z",
-      "durationMs": 7267,
+      "checkedAt": "2026-10-29T20:21:06.7188787Z",
+      "durationMs": 7007,
       "error": ""
     },
     {
@@ -2897,18 +2897,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:24.024871Z",
+      "checkedAt": "2026-10-29T20:21:06.8842722Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Saint Luke’s | BJC Health",
-      "careersUrl": "https://saintlukes.wd1.myworkdayjobs.com/saintlukeshealthcareers",
-      "ats": "Workday",
+      "careersUrl": "https://jobs.bjc.org/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:32.368962Z",
-      "durationMs": 68183,
+      "checkedAt": "2026-10-29T20:22:15.2496386Z",
+      "durationMs": 68208,
       "error": ""
     },
     {
@@ -2917,8 +2917,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:26:01.6926636Z",
-      "durationMs": 89172,
+      "checkedAt": "2026-10-29T20:23:44.4841976Z",
+      "durationMs": 89075,
       "error": ""
     },
     {
@@ -2927,18 +2927,18 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:30.7790992Z",
-      "durationMs": 88937,
+      "checkedAt": "2026-10-29T20:25:13.6429743Z",
+      "durationMs": 88990,
       "error": ""
     },
     {
       "employer": "SEARHC",
-      "careersUrl": "https://searhc.wd5.myworkdayjobs.com/SEARHC",
+      "careersUrl": "https://searhc.wd5.myworkdayjobs.com/SEARHC/job/AK---Sitka/Resident_JR101462-1",
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:28:59.8876388Z",
-      "durationMs": 88944,
+      "checkedAt": "2026-10-29T20:26:42.8478826Z",
+      "durationMs": 89045,
       "error": ""
     },
     {
@@ -2947,8 +2947,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:29.258097Z",
-      "durationMs": 89215,
+      "checkedAt": "2026-10-29T20:28:12.2292594Z",
+      "durationMs": 89220,
       "error": ""
     },
     {
@@ -2957,8 +2957,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:58.6927629Z",
-      "durationMs": 89276,
+      "checkedAt": "2026-10-29T20:29:42.3824615Z",
+      "durationMs": 90003,
       "error": ""
     },
     {
@@ -2967,8 +2967,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:27.7373369Z",
-      "durationMs": 88886,
+      "checkedAt": "2026-10-29T20:31:11.3715108Z",
+      "durationMs": 88839,
       "error": ""
     },
     {
@@ -2977,8 +2977,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:56.4553424Z",
-      "durationMs": 88568,
+      "checkedAt": "2026-10-29T20:32:40.3490692Z",
+      "durationMs": 88821,
       "error": ""
     },
     {
@@ -2987,7 +2987,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:56.6083424Z",
+      "checkedAt": "2026-10-29T20:32:40.5003837Z",
       "durationMs": 0,
       "error": ""
     },
@@ -2997,7 +2997,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:56.7594168Z",
+      "checkedAt": "2026-10-29T20:32:40.664244Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3007,7 +3007,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:56.9265816Z",
+      "checkedAt": "2026-10-29T20:32:40.8143391Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3017,8 +3017,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:26.8130213Z",
-      "durationMs": 89728,
+      "checkedAt": "2026-10-29T20:34:10.4419646Z",
+      "durationMs": 89461,
       "error": ""
     },
     {
@@ -3027,8 +3027,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:37:57.5344872Z",
-      "durationMs": 90559,
+      "checkedAt": "2026-10-29T20:35:39.7344831Z",
+      "durationMs": 89117,
       "error": ""
     },
     {
@@ -3037,8 +3037,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:26.8040079Z",
-      "durationMs": 89112,
+      "checkedAt": "2026-10-29T20:37:08.6885849Z",
+      "durationMs": 88784,
       "error": ""
     },
     {
@@ -3047,8 +3047,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:40:55.909584Z",
-      "durationMs": 88950,
+      "checkedAt": "2026-10-29T20:38:37.8410224Z",
+      "durationMs": 88979,
       "error": ""
     },
     {
@@ -3057,7 +3057,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:40:56.0602734Z",
+      "checkedAt": "2026-10-29T20:38:37.9993637Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3067,8 +3067,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:26.4755852Z",
-      "durationMs": 90261,
+      "checkedAt": "2026-10-29T20:40:08.2629357Z",
+      "durationMs": 90105,
       "error": ""
     },
     {
@@ -3077,7 +3077,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:26.6270885Z",
+      "checkedAt": "2026-10-29T20:40:08.4188517Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3087,7 +3087,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:26.7919833Z",
+      "checkedAt": "2026-10-29T20:40:08.5767313Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3097,8 +3097,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:43:55.7405293Z",
-      "durationMs": 88786,
+      "checkedAt": "2026-10-29T20:41:37.5032375Z",
+      "durationMs": 88768,
       "error": ""
     },
     {
@@ -3107,8 +3107,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:24.7066185Z",
-      "durationMs": 88807,
+      "checkedAt": "2026-10-29T20:43:06.587619Z",
+      "durationMs": 88916,
       "error": ""
     },
     {
@@ -3117,8 +3117,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:46:54.9956043Z",
-      "durationMs": 90137,
+      "checkedAt": "2026-10-29T20:44:37.0121869Z",
+      "durationMs": 90273,
       "error": ""
     },
     {
@@ -3127,18 +3127,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:46:55.1654065Z",
+      "checkedAt": "2026-10-29T20:44:37.1637402Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Adventist Health",
-      "careersUrl": "https://ecvz.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1",
-      "ats": "Oracle Recruiting",
+      "careersUrl": "https://adventisthealthcare.wd1.myworkdayjobs.com/AdventistHealthCareCareers",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:07.6317322Z",
-      "durationMs": 2548,
+      "checkedAt": "2026-10-29T20:19:06.2603207Z",
+      "durationMs": 2660,
       "error": ""
     },
     {
@@ -3147,8 +3147,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:09.9637974Z",
-      "durationMs": 2172,
+      "checkedAt": "2026-10-29T20:19:09.8615212Z",
+      "durationMs": 3440,
       "error": ""
     },
     {
@@ -3157,7 +3157,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:10.1398646Z",
+      "checkedAt": "2026-10-29T20:19:10.0123813Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3167,8 +3167,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.9687266Z",
-      "durationMs": 1678,
+      "checkedAt": "2026-10-29T20:19:12.6710097Z",
+      "durationMs": 2501,
       "error": ""
     },
     {
@@ -3177,8 +3177,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.8546266Z",
-      "durationMs": 735,
+      "checkedAt": "2026-10-29T20:19:14.687673Z",
+      "durationMs": 1866,
       "error": ""
     },
     {
@@ -3187,8 +3187,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.250403Z",
-      "durationMs": 1235,
+      "checkedAt": "2026-10-29T20:19:17.2256723Z",
+      "durationMs": 2387,
       "error": ""
     },
     {
@@ -3197,8 +3197,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.5479989Z",
-      "durationMs": 1147,
+      "checkedAt": "2026-10-29T20:19:19.510657Z",
+      "durationMs": 2120,
       "error": ""
     },
     {
@@ -3207,8 +3207,8 @@
       "ats": "Greenhouse",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.4727671Z",
-      "durationMs": 768,
+      "checkedAt": "2026-10-29T20:19:21.7469822Z",
+      "durationMs": 2077,
       "error": ""
     },
     {
@@ -3217,7 +3217,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.6234247Z",
+      "checkedAt": "2026-10-29T20:19:21.9035333Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3227,8 +3227,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.3551633Z",
-      "durationMs": 2571,
+      "checkedAt": "2026-10-29T20:19:26.5434128Z",
+      "durationMs": 4482,
       "error": ""
     },
     {
@@ -3237,8 +3237,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.705589Z",
-      "durationMs": 1197,
+      "checkedAt": "2026-10-29T20:19:29.0405973Z",
+      "durationMs": 2346,
       "error": ""
     },
     {
@@ -3247,7 +3247,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.8571356Z",
+      "checkedAt": "2026-10-29T20:19:29.201392Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3257,7 +3257,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.0132598Z",
+      "checkedAt": "2026-10-29T20:19:29.3513278Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3267,18 +3267,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.1719875Z",
+      "checkedAt": "2026-10-29T20:19:29.5124376Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "CHOC | Rady Children’s Health",
-      "careersUrl": "https://choc.org/careers/",
-      "ats": "custom",
+      "careersUrl": "https://rch.wd108.myworkdayjobs.com/Careers",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.543957Z",
-      "durationMs": 7214,
+      "checkedAt": "2026-10-29T20:19:36.523437Z",
+      "durationMs": 6852,
       "error": ""
     },
     {
@@ -3287,7 +3287,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.7012136Z",
+      "checkedAt": "2026-10-29T20:19:36.67948Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3297,8 +3297,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.960346Z",
-      "durationMs": 1101,
+      "checkedAt": "2026-10-29T20:19:39.1777076Z",
+      "durationMs": 2340,
       "error": ""
     },
     {
@@ -3307,8 +3307,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:30.9411732Z",
-      "durationMs": 816,
+      "checkedAt": "2026-10-29T20:19:42.3279347Z",
+      "durationMs": 3000,
       "error": ""
     },
     {
@@ -3317,8 +3317,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.8882543Z",
-      "durationMs": 797,
+      "checkedAt": "2026-10-29T20:19:44.5516233Z",
+      "durationMs": 2072,
       "error": ""
     },
     {
@@ -3327,8 +3327,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:32.7436879Z",
-      "durationMs": 705,
+      "checkedAt": "2026-10-29T20:19:46.6541565Z",
+      "durationMs": 1952,
       "error": ""
     },
     {
@@ -3337,8 +3337,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:35.1070498Z",
-      "durationMs": 2207,
+      "checkedAt": "2026-10-29T20:19:49.438256Z",
+      "durationMs": 2621,
       "error": ""
     },
     {
@@ -3347,8 +3347,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.4836274Z",
-      "durationMs": 1223,
+      "checkedAt": "2026-10-29T20:19:51.9204264Z",
+      "durationMs": 2333,
       "error": ""
     },
     {
@@ -3357,8 +3357,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.4025307Z",
-      "durationMs": 765,
+      "checkedAt": "2026-10-29T20:19:54.2871344Z",
+      "durationMs": 2217,
       "error": ""
     },
     {
@@ -3367,8 +3367,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:39.8155504Z",
-      "durationMs": 2260,
+      "checkedAt": "2026-10-29T20:19:57.1629871Z",
+      "durationMs": 2724,
       "error": ""
     },
     {
@@ -3377,8 +3377,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.8237831Z",
-      "durationMs": 858,
+      "checkedAt": "2026-10-29T20:19:59.4192997Z",
+      "durationMs": 2097,
       "error": ""
     },
     {
@@ -3387,8 +3387,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:43.3657155Z",
-      "durationMs": 2389,
+      "checkedAt": "2026-10-29T20:20:03.0298853Z",
+      "durationMs": 3459,
       "error": ""
     },
     {
@@ -3397,8 +3397,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:44.4354927Z",
-      "durationMs": 910,
+      "checkedAt": "2026-10-29T20:20:04.8954346Z",
+      "durationMs": 1716,
       "error": ""
     },
     {
@@ -3407,8 +3407,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.7604849Z",
-      "durationMs": 7175,
+      "checkedAt": "2026-10-29T20:20:12.1312656Z",
+      "durationMs": 7085,
       "error": ""
     },
     {
@@ -3417,8 +3417,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.6708925Z",
-      "durationMs": 750,
+      "checkedAt": "2026-10-29T20:20:13.219511Z",
+      "durationMs": 938,
       "error": ""
     },
     {
@@ -3427,8 +3427,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.6305446Z",
-      "durationMs": 796,
+      "checkedAt": "2026-10-29T20:20:14.2954625Z",
+      "durationMs": 912,
       "error": ""
     },
     {
@@ -3437,8 +3437,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:55.4034431Z",
-      "durationMs": 1619,
+      "checkedAt": "2026-10-29T20:20:16.3731595Z",
+      "durationMs": 1913,
       "error": ""
     },
     {
@@ -3447,8 +3447,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:58.7621124Z",
-      "durationMs": 3209,
+      "checkedAt": "2026-10-29T20:20:19.6769753Z",
+      "durationMs": 3143,
       "error": ""
     },
     {
@@ -3457,8 +3457,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:59.7479838Z",
-      "durationMs": 833,
+      "checkedAt": "2026-10-29T20:20:20.7243462Z",
+      "durationMs": 883,
       "error": ""
     },
     {
@@ -3467,7 +3467,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:59.9122737Z",
+      "checkedAt": "2026-10-29T20:20:20.8870336Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3477,7 +3477,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:00.0706292Z",
+      "checkedAt": "2026-10-29T20:20:21.0612424Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3487,8 +3487,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:01.2492418Z",
-      "durationMs": 1021,
+      "checkedAt": "2026-10-29T20:20:22.2884999Z",
+      "durationMs": 1070,
       "error": ""
     },
     {
@@ -3497,7 +3497,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:01.400352Z",
+      "checkedAt": "2026-10-29T20:20:22.4522812Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3507,8 +3507,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:05.5486267Z",
-      "durationMs": 3990,
+      "checkedAt": "2026-10-29T20:20:23.7313831Z",
+      "durationMs": 1129,
       "error": ""
     },
     {
@@ -3517,7 +3517,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:05.6985121Z",
+      "checkedAt": "2026-10-29T20:20:23.8833098Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3527,7 +3527,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:05.8646723Z",
+      "checkedAt": "2026-10-29T20:20:24.0513727Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3537,8 +3537,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:14.8074072Z",
-      "durationMs": 8785,
+      "checkedAt": "2026-10-29T20:20:25.6863906Z",
+      "durationMs": 1485,
       "error": ""
     },
     {
@@ -3547,7 +3547,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:14.9809904Z",
+      "checkedAt": "2026-10-29T20:20:25.841092Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3557,8 +3557,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:23.8105034Z",
-      "durationMs": 8671,
+      "checkedAt": "2026-10-29T20:20:27.7201364Z",
+      "durationMs": 1721,
       "error": ""
     },
     {
@@ -3567,8 +3567,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:31.0612904Z",
-      "durationMs": 7102,
+      "checkedAt": "2026-10-29T20:20:28.892517Z",
+      "durationMs": 1011,
       "error": ""
     },
     {
@@ -3577,8 +3577,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:38.7005895Z",
-      "durationMs": 7476,
+      "checkedAt": "2026-10-29T20:20:29.8477208Z",
+      "durationMs": 796,
       "error": ""
     },
     {
@@ -3587,7 +3587,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:38.8520146Z",
+      "checkedAt": "2026-10-29T20:20:29.9994835Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3597,8 +3597,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:46.0283646Z",
-      "durationMs": 7013,
+      "checkedAt": "2026-10-29T20:20:30.9646474Z",
+      "durationMs": 806,
       "error": ""
     },
     {
@@ -3607,8 +3607,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:53.5153829Z",
-      "durationMs": 7314,
+      "checkedAt": "2026-10-29T20:20:33.3981178Z",
+      "durationMs": 2274,
       "error": ""
     },
     {
@@ -3617,8 +3617,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:02.2438155Z",
-      "durationMs": 68578,
+      "checkedAt": "2026-10-29T20:20:40.9115102Z",
+      "durationMs": 7364,
       "error": ""
     },
     {
@@ -3627,8 +3627,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:31.4557801Z",
-      "durationMs": 89049,
+      "checkedAt": "2026-10-29T20:20:42.0500738Z",
+      "durationMs": 988,
       "error": ""
     },
     {
@@ -3637,8 +3637,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:00.3872172Z",
-      "durationMs": 88774,
+      "checkedAt": "2026-10-29T20:20:42.9689043Z",
+      "durationMs": 768,
       "error": ""
     },
     {
@@ -3647,8 +3647,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:28:29.6522609Z",
-      "durationMs": 89106,
+      "checkedAt": "2026-10-29T20:20:44.5333415Z",
+      "durationMs": 1412,
       "error": ""
     },
     {
@@ -3657,7 +3657,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:28:29.8118192Z",
+      "checkedAt": "2026-10-29T20:20:44.683303Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3667,8 +3667,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:58.3699584Z",
-      "durationMs": 88398,
+      "checkedAt": "2026-10-29T20:20:45.395009Z",
+      "durationMs": 550,
       "error": ""
     },
     {
@@ -3677,8 +3677,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:27.3142776Z",
-      "durationMs": 88795,
+      "checkedAt": "2026-10-29T20:20:46.4393435Z",
+      "durationMs": 895,
       "error": ""
     },
     {
@@ -3687,7 +3687,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:27.475758Z",
+      "checkedAt": "2026-10-29T20:20:46.6012774Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3697,7 +3697,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:27.6312366Z",
+      "checkedAt": "2026-10-29T20:20:46.7635644Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3707,8 +3707,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:32:56.1582273Z",
-      "durationMs": 88377,
+      "checkedAt": "2026-10-29T20:20:47.4880234Z",
+      "durationMs": 570,
       "error": ""
     },
     {
@@ -3717,8 +3717,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:24.9840707Z",
-      "durationMs": 88665,
+      "checkedAt": "2026-10-29T20:20:48.3612327Z",
+      "durationMs": 723,
       "error": ""
     },
     {
@@ -3727,8 +3727,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:35:54.3749005Z",
-      "durationMs": 89239,
+      "checkedAt": "2026-10-29T20:20:49.5349746Z",
+      "durationMs": 1024,
       "error": ""
     },
     {
@@ -3737,8 +3737,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:37:23.1833359Z",
-      "durationMs": 88649,
+      "checkedAt": "2026-10-29T20:20:50.387959Z",
+      "durationMs": 699,
       "error": ""
     },
     {
@@ -3747,7 +3747,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:37:23.3338668Z",
+      "checkedAt": "2026-10-29T20:20:50.5451063Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3757,8 +3757,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:38:52.5344101Z",
-      "durationMs": 89030,
+      "checkedAt": "2026-10-29T20:20:51.5383278Z",
+      "durationMs": 835,
       "error": ""
     },
     {
@@ -3767,7 +3767,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:38:52.6842658Z",
+      "checkedAt": "2026-10-29T20:20:51.688388Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3777,8 +3777,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:40:22.7063763Z",
-      "durationMs": 89858,
+      "checkedAt": "2026-10-29T20:20:59.3747365Z",
+      "durationMs": 7532,
       "error": ""
     },
     {
@@ -3787,8 +3787,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:41:51.3952331Z",
-      "durationMs": 88533,
+      "checkedAt": "2026-10-29T20:21:00.4520624Z",
+      "durationMs": 915,
       "error": ""
     },
     {
@@ -3797,8 +3797,8 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:41:51.5464629Z",
-      "durationMs": 0,
+      "checkedAt": "2026-10-29T20:21:00.6134683Z",
+      "durationMs": 1,
       "error": ""
     },
     {
@@ -3807,18 +3807,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:43:20.532581Z",
-      "durationMs": 88818,
+      "checkedAt": "2026-10-29T20:21:01.560064Z",
+      "durationMs": 796,
       "error": ""
     },
     {
       "employer": "UC Health",
-      "careersUrl": "https://eswt.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001/jobs",
+      "careersUrl": "https://eswt.fa.us6.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1001",
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:44:49.8856429Z",
-      "durationMs": 89196,
+      "checkedAt": "2026-10-29T20:21:09.1595083Z",
+      "durationMs": 7437,
       "error": ""
     },
     {
@@ -3827,7 +3827,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:44:50.0467945Z",
+      "checkedAt": "2026-10-29T20:21:09.3095395Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3837,8 +3837,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:46:19.0557963Z",
-      "durationMs": 88835,
+      "checkedAt": "2026-10-29T20:21:16.6354485Z",
+      "durationMs": 7162,
       "error": ""
     },
     {
@@ -3847,7 +3847,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:46:19.2058063Z",
+      "checkedAt": "2026-10-29T20:21:16.7973477Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3857,8 +3857,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:47:48.3142051Z",
-      "durationMs": 88950,
+      "checkedAt": "2026-10-29T20:21:24.0140398Z",
+      "durationMs": 7053,
       "error": ""
     },
     {
@@ -3867,7 +3867,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:47:48.4634371Z",
+      "checkedAt": "2026-10-29T20:21:24.1767657Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3877,8 +3877,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:49:17.2672136Z",
-      "durationMs": 88654,
+      "checkedAt": "2026-10-29T20:21:31.1467878Z",
+      "durationMs": 6812,
       "error": ""
     },
     {
@@ -3887,8 +3887,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:50:47.0459062Z",
-      "durationMs": 89626,
+      "checkedAt": "2026-10-29T20:21:38.7965034Z",
+      "durationMs": 7497,
       "error": ""
     },
     {
@@ -3897,8 +3897,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:52:16.917597Z",
-      "durationMs": 89721,
+      "checkedAt": "2026-10-29T20:21:46.8264778Z",
+      "durationMs": 7870,
       "error": ""
     },
     {
@@ -3907,8 +3907,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:53:47.2111767Z",
-      "durationMs": 90143,
+      "checkedAt": "2026-10-29T20:21:55.3248683Z",
+      "durationMs": 8346,
       "error": ""
     },
     {
@@ -3917,8 +3917,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:03.0232323Z",
-      "durationMs": 2093,
+      "checkedAt": "2026-10-29T20:19:07.3097954Z",
+      "durationMs": 2170,
       "error": ""
     },
     {
@@ -3927,8 +3927,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:04.4302038Z",
-      "durationMs": 1241,
+      "checkedAt": "2026-10-29T20:19:09.2086375Z",
+      "durationMs": 1738,
       "error": ""
     },
     {
@@ -3937,8 +3937,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:05.2502635Z",
-      "durationMs": 668,
+      "checkedAt": "2026-10-29T20:19:10.3994886Z",
+      "durationMs": 1040,
       "error": ""
     },
     {
@@ -3947,8 +3947,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.9478587Z",
-      "durationMs": 7536,
+      "checkedAt": "2026-10-29T20:19:18.1716163Z",
+      "durationMs": 7608,
       "error": ""
     },
     {
@@ -3957,8 +3957,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.1362422Z",
-      "durationMs": 1037,
+      "checkedAt": "2026-10-29T20:19:19.7719864Z",
+      "durationMs": 1449,
       "error": ""
     },
     {
@@ -3967,7 +3967,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.2983697Z",
+      "checkedAt": "2026-10-29T20:19:19.9239475Z",
       "durationMs": 0,
       "error": ""
     },
@@ -3977,8 +3977,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:15.179705Z",
-      "durationMs": 723,
+      "checkedAt": "2026-10-29T20:19:20.8481134Z",
+      "durationMs": 766,
       "error": ""
     },
     {
@@ -3987,8 +3987,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.2362087Z",
-      "durationMs": 892,
+      "checkedAt": "2026-10-29T20:19:21.8763788Z",
+      "durationMs": 879,
       "error": ""
     },
     {
@@ -3997,7 +3997,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.3904825Z",
+      "checkedAt": "2026-10-29T20:19:22.0272446Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4007,8 +4007,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:17.2833899Z",
-      "durationMs": 736,
+      "checkedAt": "2026-10-29T20:19:22.9573419Z",
+      "durationMs": 768,
       "error": ""
     },
     {
@@ -4017,8 +4017,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:18.5115094Z",
-      "durationMs": 1061,
+      "checkedAt": "2026-10-29T20:19:24.0853612Z",
+      "durationMs": 964,
       "error": ""
     },
     {
@@ -4027,8 +4027,8 @@
       "ats": "Paylocity",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.6801886Z",
-      "durationMs": 1009,
+      "checkedAt": "2026-10-29T20:19:25.5377752Z",
+      "durationMs": 1293,
       "error": ""
     },
     {
@@ -4037,8 +4037,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.0625458Z",
-      "durationMs": 1233,
+      "checkedAt": "2026-10-29T20:19:26.6234823Z",
+      "durationMs": 934,
       "error": ""
     },
     {
@@ -4047,28 +4047,28 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.2249902Z",
+      "checkedAt": "2026-10-29T20:19:26.7786027Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "ChristianaCare",
-      "careersUrl": "https://careers.christianacare.org/",
+      "careersUrl": "https://careers.christianacare.org/job-search/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:22.3737882Z",
-      "durationMs": 991,
+      "checkedAt": "2026-10-29T20:19:27.9785849Z",
+      "durationMs": 1042,
       "error": ""
     },
     {
       "employer": "CommonSpirit Health",
-      "careersUrl": "https://careers-commonspirit.icims.com/jobs/dashboard",
-      "ats": "iCIMS",
+      "careersUrl": "https://www.mountain.commonspirit.org/Careers",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:23.3493237Z",
-      "durationMs": 825,
+      "checkedAt": "2026-10-29T20:19:28.9027075Z",
+      "durationMs": 777,
       "error": ""
     },
     {
@@ -4077,8 +4077,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:24.7488988Z",
-      "durationMs": 1249,
+      "checkedAt": "2026-10-29T20:19:30.2160256Z",
+      "durationMs": 1155,
       "error": ""
     },
     {
@@ -4087,8 +4087,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.6924694Z",
-      "durationMs": 6790,
+      "checkedAt": "2026-10-29T20:19:37.9919594Z",
+      "durationMs": 7602,
       "error": ""
     },
     {
@@ -4097,7 +4097,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.8556652Z",
+      "checkedAt": "2026-10-29T20:19:38.1412921Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4107,8 +4107,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:35.2756068Z",
-      "durationMs": 3269,
+      "checkedAt": "2026-10-29T20:19:39.7902753Z",
+      "durationMs": 1498,
       "error": ""
     },
     {
@@ -4117,8 +4117,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:38.7263297Z",
-      "durationMs": 3300,
+      "checkedAt": "2026-10-29T20:19:43.5054694Z",
+      "durationMs": 3560,
       "error": ""
     },
     {
@@ -4127,7 +4127,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:38.8895421Z",
+      "checkedAt": "2026-10-29T20:19:43.6567564Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4137,8 +4137,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.3142323Z",
-      "durationMs": 1266,
+      "checkedAt": "2026-10-29T20:19:45.2249858Z",
+      "durationMs": 1416,
       "error": ""
     },
     {
@@ -4147,8 +4147,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:41.6889161Z",
-      "durationMs": 1217,
+      "checkedAt": "2026-10-29T20:19:46.6824164Z",
+      "durationMs": 1307,
       "error": ""
     },
     {
@@ -4157,8 +4157,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:42.5898677Z",
-      "durationMs": 740,
+      "checkedAt": "2026-10-29T20:19:47.5748358Z",
+      "durationMs": 743,
       "error": ""
     },
     {
@@ -4167,8 +4167,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:43.4994916Z",
-      "durationMs": 760,
+      "checkedAt": "2026-10-29T20:19:48.5128904Z",
+      "durationMs": 781,
       "error": ""
     },
     {
@@ -4177,7 +4177,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:43.6610114Z",
+      "checkedAt": "2026-10-29T20:19:48.6749552Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4187,8 +4187,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:44.5794869Z",
-      "durationMs": 768,
+      "checkedAt": "2026-10-29T20:19:49.3546937Z",
+      "durationMs": 515,
       "error": ""
     },
     {
@@ -4197,8 +4197,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.0635967Z",
-      "durationMs": 1317,
+      "checkedAt": "2026-10-29T20:19:51.2311813Z",
+      "durationMs": 1711,
       "error": ""
     },
     {
@@ -4207,8 +4207,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:47.3265413Z",
-      "durationMs": 1102,
+      "checkedAt": "2026-10-29T20:19:52.374666Z",
+      "durationMs": 984,
       "error": ""
     },
     {
@@ -4217,28 +4217,28 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:49.1249948Z",
-      "durationMs": 1637,
+      "checkedAt": "2026-10-29T20:19:54.0776301Z",
+      "durationMs": 1531,
       "error": ""
     },
     {
       "employer": "Jefferson",
-      "careersUrl": "https://wearejefferson.org/human-resources/careers",
-      "ats": "custom",
+      "careersUrl": "https://jeffersonhealth.wd5.myworkdayjobs.com/ThomasJeffersonExternal",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:50.2062801Z",
-      "durationMs": 911,
+      "checkedAt": "2026-10-29T20:19:55.4551267Z",
+      "durationMs": 1214,
       "error": ""
     },
     {
       "employer": "Kaleida Health",
-      "careersUrl": "https://labs.kaleidahealth.org/careers/",
+      "careersUrl": "https://www.kaleidahealth.org/careers/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.0753578Z",
-      "durationMs": 708,
+      "checkedAt": "2026-10-29T20:19:56.4737284Z",
+      "durationMs": 857,
       "error": ""
     },
     {
@@ -4247,7 +4247,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.2273415Z",
+      "checkedAt": "2026-10-29T20:19:56.6248726Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4257,8 +4257,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:52.638742Z",
-      "durationMs": 1254,
+      "checkedAt": "2026-10-29T20:19:57.6791576Z",
+      "durationMs": 891,
       "error": ""
     },
     {
@@ -4267,8 +4267,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:56.7252029Z",
-      "durationMs": 3916,
+      "checkedAt": "2026-10-29T20:20:01.8670867Z",
+      "durationMs": 4038,
       "error": ""
     },
     {
@@ -4277,8 +4277,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:03.7645039Z",
-      "durationMs": 6888,
+      "checkedAt": "2026-10-29T20:20:08.7619624Z",
+      "durationMs": 6744,
       "error": ""
     },
     {
@@ -4287,8 +4287,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:10.9731511Z",
-      "durationMs": 7042,
+      "checkedAt": "2026-10-29T20:20:16.0234423Z",
+      "durationMs": 7106,
       "error": ""
     },
     {
@@ -4297,8 +4297,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:18.9567893Z",
-      "durationMs": 7831,
+      "checkedAt": "2026-10-29T20:20:25.161327Z",
+      "durationMs": 8980,
       "error": ""
     },
     {
@@ -4307,7 +4307,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:19.1189025Z",
+      "checkedAt": "2026-10-29T20:20:25.312939Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4317,7 +4317,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:19.277349Z",
+      "checkedAt": "2026-10-29T20:20:25.4683591Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4327,7 +4327,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:19.4358853Z",
+      "checkedAt": "2026-10-29T20:20:25.6267586Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4337,7 +4337,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:19.593848Z",
+      "checkedAt": "2026-10-29T20:20:25.7850956Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4347,8 +4347,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:28.5441384Z",
-      "durationMs": 8792,
+      "checkedAt": "2026-10-29T20:20:32.9859639Z",
+      "durationMs": 7043,
       "error": ""
     },
     {
@@ -4357,8 +4357,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:36.0059501Z",
-      "durationMs": 7312,
+      "checkedAt": "2026-10-29T20:20:40.2539945Z",
+      "durationMs": 7116,
       "error": ""
     },
     {
@@ -4367,18 +4367,18 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:42.9018827Z",
-      "durationMs": 6745,
+      "checkedAt": "2026-10-29T20:20:47.3178676Z",
+      "durationMs": 6914,
       "error": ""
     },
     {
       "employer": "Novant Health",
-      "careersUrl": "https://easyapply-novanthealth.icims.com/jobs/search",
-      "ats": "iCIMS",
+      "careersUrl": "https://jobs.novanthealth.org/careers-home/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:49.7940639Z",
-      "durationMs": 6735,
+      "checkedAt": "2026-10-29T20:20:55.5061Z",
+      "durationMs": 8038,
       "error": ""
     },
     {
@@ -4387,8 +4387,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:57.100857Z",
-      "durationMs": 7146,
+      "checkedAt": "2026-10-29T20:21:02.9978802Z",
+      "durationMs": 7342,
       "error": ""
     },
     {
@@ -4397,8 +4397,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:04.1575218Z",
-      "durationMs": 6905,
+      "checkedAt": "2026-10-29T20:21:10.4405663Z",
+      "durationMs": 7280,
       "error": ""
     },
     {
@@ -4407,8 +4407,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:11.5852538Z",
-      "durationMs": 7250,
+      "checkedAt": "2026-10-29T20:21:17.9733636Z",
+      "durationMs": 7382,
       "error": ""
     },
     {
@@ -4417,8 +4417,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:18.6919739Z",
-      "durationMs": 6956,
+      "checkedAt": "2026-10-29T20:21:24.9979499Z",
+      "durationMs": 6865,
       "error": ""
     },
     {
@@ -4427,7 +4427,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:18.8413675Z",
+      "checkedAt": "2026-10-29T20:21:25.1606803Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4437,8 +4437,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:25.8545596Z",
-      "durationMs": 6849,
+      "checkedAt": "2026-10-29T20:21:32.2401021Z",
+      "durationMs": 6929,
       "error": ""
     },
     {
@@ -4447,8 +4447,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:33.1859268Z",
-      "durationMs": 7181,
+      "checkedAt": "2026-10-29T20:21:39.4001243Z",
+      "durationMs": 7010,
       "error": ""
     },
     {
@@ -4457,8 +4457,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:41.4634274Z",
-      "durationMs": 8128,
+      "checkedAt": "2026-10-29T20:21:47.9323005Z",
+      "durationMs": 8382,
       "error": ""
     },
     {
@@ -4467,7 +4467,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:41.6139646Z",
+      "checkedAt": "2026-10-29T20:21:48.0926256Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4477,8 +4477,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:48.8351959Z",
-      "durationMs": 7065,
+      "checkedAt": "2026-10-29T20:21:55.6533648Z",
+      "durationMs": 7402,
       "error": ""
     },
     {
@@ -4487,8 +4487,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:55.9297602Z",
-      "durationMs": 6943,
+      "checkedAt": "2026-10-29T20:22:03.1892926Z",
+      "durationMs": 7374,
       "error": ""
     },
     {
@@ -4497,8 +4497,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:03.2237157Z",
-      "durationMs": 7143,
+      "checkedAt": "2026-10-29T20:22:10.8269395Z",
+      "durationMs": 7487,
       "error": ""
     },
     {
@@ -4507,8 +4507,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:10.4307245Z",
-      "durationMs": 7056,
+      "checkedAt": "2026-10-29T20:22:18.1588616Z",
+      "durationMs": 7164,
       "error": ""
     },
     {
@@ -4517,7 +4517,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:10.5809336Z",
+      "checkedAt": "2026-10-29T20:22:18.3110497Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4527,7 +4527,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:10.7465937Z",
+      "checkedAt": "2026-10-29T20:22:18.4771736Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4537,8 +4537,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:17.63528Z",
-      "durationMs": 6738,
+      "checkedAt": "2026-10-29T20:22:25.3612457Z",
+      "durationMs": 6726,
       "error": ""
     },
     {
@@ -4547,8 +4547,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:25.7675176Z",
-      "durationMs": 7982,
+      "checkedAt": "2026-10-29T20:22:32.6345297Z",
+      "durationMs": 7123,
       "error": ""
     },
     {
@@ -4557,8 +4557,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:34.5112447Z",
-      "durationMs": 8583,
+      "checkedAt": "2026-10-29T20:22:40.276814Z",
+      "durationMs": 7491,
       "error": ""
     },
     {
@@ -4567,8 +4567,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:41.9310399Z",
-      "durationMs": 7269,
+      "checkedAt": "2026-10-29T20:22:47.9301744Z",
+      "durationMs": 7503,
       "error": ""
     },
     {
@@ -4577,8 +4577,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:49.3825177Z",
-      "durationMs": 7299,
+      "checkedAt": "2026-10-29T20:22:55.4569683Z",
+      "durationMs": 7377,
       "error": ""
     },
     {
@@ -4587,8 +4587,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:56.4340367Z",
-      "durationMs": 6900,
+      "checkedAt": "2026-10-29T20:23:02.9465298Z",
+      "durationMs": 7325,
       "error": ""
     },
     {
@@ -4597,8 +4597,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:03.6123876Z",
-      "durationMs": 7011,
+      "checkedAt": "2026-10-29T20:23:09.9878246Z",
+      "durationMs": 6883,
       "error": ""
     },
     {
@@ -4607,8 +4607,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:10.5925828Z",
-      "durationMs": 6815,
+      "checkedAt": "2026-10-29T20:23:17.7789394Z",
+      "durationMs": 7628,
       "error": ""
     },
     {
@@ -4617,8 +4617,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:18.0872565Z",
-      "durationMs": 7335,
+      "checkedAt": "2026-10-29T20:23:25.4827742Z",
+      "durationMs": 7542,
       "error": ""
     },
     {
@@ -4627,8 +4627,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:24.9342484Z",
-      "durationMs": 6697,
+      "checkedAt": "2026-10-29T20:23:32.7132187Z",
+      "durationMs": 7076,
       "error": ""
     },
     {
@@ -4637,8 +4637,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:32.1205726Z",
-      "durationMs": 7028,
+      "checkedAt": "2026-10-29T20:23:40.0027736Z",
+      "durationMs": 7139,
       "error": ""
     },
     {
@@ -4647,7 +4647,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:32.271085Z",
+      "checkedAt": "2026-10-29T20:23:40.1531086Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4657,7 +4657,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:32.429237Z",
+      "checkedAt": "2026-10-29T20:23:40.3159506Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4667,8 +4667,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:40.1387728Z",
-      "durationMs": 7551,
+      "checkedAt": "2026-10-29T20:23:48.2541806Z",
+      "durationMs": 7788,
       "error": ""
     },
     {
@@ -4677,7 +4677,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:40.2996432Z",
+      "checkedAt": "2026-10-29T20:23:48.4047818Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4687,7 +4687,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:40.4512481Z",
+      "checkedAt": "2026-10-29T20:23:48.5631496Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4697,8 +4697,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:06.2467872Z",
-      "durationMs": 3605,
+      "checkedAt": "2026-10-29T20:19:04.6753507Z",
+      "durationMs": 2400,
       "error": ""
     },
     {
@@ -4707,8 +4707,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:07.7954573Z",
-      "durationMs": 1385,
+      "checkedAt": "2026-10-29T20:19:05.7472044Z",
+      "durationMs": 910,
       "error": ""
     },
     {
@@ -4717,8 +4717,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.023624Z",
-      "durationMs": 3051,
+      "checkedAt": "2026-10-29T20:19:07.3013542Z",
+      "durationMs": 1393,
       "error": ""
     },
     {
@@ -4727,7 +4727,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.1838002Z",
+      "checkedAt": "2026-10-29T20:19:07.4535043Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4737,8 +4737,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.5265251Z",
-      "durationMs": 1185,
+      "checkedAt": "2026-10-29T20:19:08.8678311Z",
+      "durationMs": 1255,
       "error": ""
     },
     {
@@ -4747,8 +4747,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.9712839Z",
-      "durationMs": 1279,
+      "checkedAt": "2026-10-29T20:19:09.7861961Z",
+      "durationMs": 757,
       "error": ""
     },
     {
@@ -4757,7 +4757,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.1223576Z",
+      "checkedAt": "2026-10-29T20:19:09.9384016Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4767,8 +4767,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.9624914Z",
-      "durationMs": 7682,
+      "checkedAt": "2026-10-29T20:19:17.5756083Z",
+      "durationMs": 7487,
       "error": ""
     },
     {
@@ -4777,8 +4777,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:26.0766495Z",
-      "durationMs": 3956,
+      "checkedAt": "2026-10-29T20:19:18.9064463Z",
+      "durationMs": 1181,
       "error": ""
     },
     {
@@ -4787,8 +4787,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:28.1039098Z",
-      "durationMs": 1875,
+      "checkedAt": "2026-10-29T20:19:20.2996206Z",
+      "durationMs": 1231,
       "error": ""
     },
     {
@@ -4797,8 +4797,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.1114192Z",
-      "durationMs": 2855,
+      "checkedAt": "2026-10-29T20:19:23.0459553Z",
+      "durationMs": 2597,
       "error": ""
     },
     {
@@ -4807,8 +4807,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:38.3967104Z",
-      "durationMs": 7134,
+      "checkedAt": "2026-10-29T20:19:30.0009318Z",
+      "durationMs": 6799,
       "error": ""
     },
     {
@@ -4817,8 +4817,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:39.4846437Z",
-      "durationMs": 938,
+      "checkedAt": "2026-10-29T20:19:30.976292Z",
+      "durationMs": 826,
       "error": ""
     },
     {
@@ -4827,8 +4827,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.5643974Z",
-      "durationMs": 906,
+      "checkedAt": "2026-10-29T20:19:32.1997296Z",
+      "durationMs": 1070,
       "error": ""
     },
     {
@@ -4837,8 +4837,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:41.655748Z",
-      "durationMs": 933,
+      "checkedAt": "2026-10-29T20:19:33.108113Z",
+      "durationMs": 759,
       "error": ""
     },
     {
@@ -4847,8 +4847,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:42.7257589Z",
-      "durationMs": 906,
+      "checkedAt": "2026-10-29T20:19:34.2126065Z",
+      "durationMs": 953,
       "error": ""
     },
     {
@@ -4857,8 +4857,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:43.7354106Z",
-      "durationMs": 851,
+      "checkedAt": "2026-10-29T20:19:35.0049255Z",
+      "durationMs": 633,
       "error": ""
     },
     {
@@ -4867,8 +4867,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:45.0442908Z",
-      "durationMs": 1159,
+      "checkedAt": "2026-10-29T20:19:36.1135575Z",
+      "durationMs": 947,
       "error": ""
     },
     {
@@ -4877,8 +4877,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.2490044Z",
-      "durationMs": 1037,
+      "checkedAt": "2026-10-29T20:19:37.0004853Z",
+      "durationMs": 722,
       "error": ""
     },
     {
@@ -4887,8 +4887,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:47.505102Z",
-      "durationMs": 1104,
+      "checkedAt": "2026-10-29T20:19:38.1666094Z",
+      "durationMs": 1016,
       "error": ""
     },
     {
@@ -4897,8 +4897,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:48.8908416Z",
-      "durationMs": 1234,
+      "checkedAt": "2026-10-29T20:19:39.3959181Z",
+      "durationMs": 1068,
       "error": ""
     },
     {
@@ -4907,7 +4907,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:49.0447426Z",
+      "checkedAt": "2026-10-29T20:19:39.5611834Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4917,8 +4917,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:50.2629726Z",
-      "durationMs": 1065,
+      "checkedAt": "2026-10-29T20:19:40.6817021Z",
+      "durationMs": 963,
       "error": ""
     },
     {
@@ -4927,18 +4927,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:51.3967431Z",
-      "durationMs": 977,
+      "checkedAt": "2026-10-29T20:19:41.5047516Z",
+      "durationMs": 672,
       "error": ""
     },
     {
       "employer": "Geisinger | Risant Health",
-      "careersUrl": "https://jobs.geisinger.org/",
-      "ats": "custom",
+      "careersUrl": "https://geisinger.wd5.myworkdayjobs.com/GeisingerExternal/",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:58.9057186Z",
-      "durationMs": 7360,
+      "checkedAt": "2026-10-29T20:19:48.5486577Z",
+      "durationMs": 6884,
       "error": ""
     },
     {
@@ -4947,7 +4947,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:59.0673209Z",
+      "checkedAt": "2026-10-29T20:19:48.7041107Z",
       "durationMs": 0,
       "error": ""
     },
@@ -4957,8 +4957,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:00.9184499Z",
-      "durationMs": 1693,
+      "checkedAt": "2026-10-29T20:19:50.1687007Z",
+      "durationMs": 1308,
       "error": ""
     },
     {
@@ -4967,8 +4967,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:01.9354039Z",
-      "durationMs": 850,
+      "checkedAt": "2026-10-29T20:19:51.3701873Z",
+      "durationMs": 1039,
       "error": ""
     },
     {
@@ -4977,8 +4977,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:03.6887483Z",
-      "durationMs": 1587,
+      "checkedAt": "2026-10-29T20:19:53.0268912Z",
+      "durationMs": 1506,
       "error": ""
     },
     {
@@ -4987,8 +4987,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:05.7191145Z",
-      "durationMs": 1879,
+      "checkedAt": "2026-10-29T20:19:54.6646212Z",
+      "durationMs": 1487,
       "error": ""
     },
     {
@@ -4997,8 +4997,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:07.3195399Z",
-      "durationMs": 1449,
+      "checkedAt": "2026-10-29T20:19:56.2281552Z",
+      "durationMs": 1398,
       "error": ""
     },
     {
@@ -5007,8 +5007,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:08.6298319Z",
-      "durationMs": 1160,
+      "checkedAt": "2026-10-29T20:19:57.8519242Z",
+      "durationMs": 1469,
       "error": ""
     },
     {
@@ -5017,8 +5017,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:09.8421957Z",
-      "durationMs": 1058,
+      "checkedAt": "2026-10-29T20:19:59.180977Z",
+      "durationMs": 1164,
       "error": ""
     },
     {
@@ -5027,7 +5027,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:10.0071265Z",
+      "checkedAt": "2026-10-29T20:19:59.3365383Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5037,8 +5037,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:17.789647Z",
-      "durationMs": 7624,
+      "checkedAt": "2026-10-29T20:20:06.5234234Z",
+      "durationMs": 7030,
       "error": ""
     },
     {
@@ -5047,8 +5047,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:22.4983081Z",
-      "durationMs": 4551,
+      "checkedAt": "2026-10-29T20:20:10.8966018Z",
+      "durationMs": 4212,
       "error": ""
     },
     {
@@ -5057,7 +5057,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:22.6618263Z",
+      "checkedAt": "2026-10-29T20:20:11.0590479Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5067,28 +5067,28 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:30.2794736Z",
-      "durationMs": 7453,
+      "checkedAt": "2026-10-29T20:20:18.4992083Z",
+      "durationMs": 7284,
       "error": ""
     },
     {
       "employer": "Memorial Health",
-      "careersUrl": "https://memorialhealthcare.wd1.myworkdayjobs.com/MHS_Careers",
-      "ats": "Workday",
+      "careersUrl": "https://memorial.health/about-us/careers/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:37.9883467Z",
-      "durationMs": 7537,
+      "checkedAt": "2026-10-29T20:20:25.8655564Z",
+      "durationMs": 7216,
       "error": ""
     },
     {
       "employer": "MemorialCare",
-      "careersUrl": "https://memorialcare.taleo.net/careersection/careersection/ex/joblist.ftl?lang=en",
-      "ats": "Oracle Taleo",
+      "careersUrl": "https://careers.memorialcare.org/search-jobs",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:45.2854024Z",
-      "durationMs": 7147,
+      "checkedAt": "2026-10-29T20:20:33.0286696Z",
+      "durationMs": 6996,
       "error": ""
     },
     {
@@ -5097,8 +5097,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:52.955078Z",
-      "durationMs": 7519,
+      "checkedAt": "2026-10-29T20:20:40.2116526Z",
+      "durationMs": 7033,
       "error": ""
     },
     {
@@ -5107,7 +5107,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:53.1059031Z",
+      "checkedAt": "2026-10-29T20:20:40.3619921Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5117,18 +5117,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:01.1847961Z",
-      "durationMs": 7922,
+      "checkedAt": "2026-10-29T20:20:48.1650144Z",
+      "durationMs": 7630,
       "error": ""
     },
     {
       "employer": "NCH",
-      "careersUrl": "https://careers.nch.com/?locale=en_US",
+      "careersUrl": "https://careers.nch.com/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:08.9030272Z",
-      "durationMs": 7553,
+      "checkedAt": "2026-10-29T20:20:55.5255984Z",
+      "durationMs": 7209,
       "error": ""
     },
     {
@@ -5137,8 +5137,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:16.7972123Z",
-      "durationMs": 7725,
+      "checkedAt": "2026-10-29T20:21:02.7878829Z",
+      "durationMs": 7104,
       "error": ""
     },
     {
@@ -5147,28 +5147,28 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:24.6575141Z",
-      "durationMs": 7710,
+      "checkedAt": "2026-10-29T20:21:10.1613508Z",
+      "durationMs": 7218,
       "error": ""
     },
     {
       "employer": "NYC Health + Hospitals",
-      "careersUrl": "http://employment.nychhc.org/",
+      "careersUrl": "https://employment.nychhc.org/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:32.4350928Z",
-      "durationMs": 7627,
+      "checkedAt": "2026-10-29T20:21:17.2862041Z",
+      "durationMs": 6970,
       "error": ""
     },
     {
       "employer": "One Brooklyn Health – Interfaith Medical Center | One Brooklyn Health",
-      "careersUrl": "https://careers.onebrooklynhealth.org/",
+      "careersUrl": "https://careers.onebrooklynhealth.org/jobs",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:44.9089611Z",
-      "durationMs": 72303,
+      "checkedAt": "2026-10-29T20:22:25.5261478Z",
+      "durationMs": 68068,
       "error": ""
     },
     {
@@ -5177,8 +5177,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:26:13.7769313Z",
-      "durationMs": 88717,
+      "checkedAt": "2026-10-29T20:23:54.3938666Z",
+      "durationMs": 88716,
       "error": ""
     },
     {
@@ -5187,18 +5187,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:42.47648Z",
-      "durationMs": 88538,
+      "checkedAt": "2026-10-29T20:25:23.3043045Z",
+      "durationMs": 88760,
       "error": ""
     },
     {
       "employer": "Piedmont Healthcare",
-      "careersUrl": "https://join.piedmont.org/jobs/categories",
+      "careersUrl": "https://piedmontcareers.org/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:29:14.7161261Z",
-      "durationMs": 92077,
+      "checkedAt": "2026-10-29T20:26:52.3442423Z",
+      "durationMs": 88879,
       "error": ""
     },
     {
@@ -5207,18 +5207,18 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:43.784392Z",
-      "durationMs": 88905,
+      "checkedAt": "2026-10-29T20:28:21.2259278Z",
+      "durationMs": 88732,
       "error": ""
     },
     {
       "employer": "Redeemer Health",
-      "careersUrl": "https://careers.redeemerhealth.org/jobs/categories",
+      "careersUrl": "https://careers.redeemerhealth.org/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:32:13.0400948Z",
-      "durationMs": 89105,
+      "checkedAt": "2026-10-29T20:29:50.8938489Z",
+      "durationMs": 89507,
       "error": ""
     },
     {
@@ -5227,8 +5227,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:42.8048057Z",
-      "durationMs": 89614,
+      "checkedAt": "2026-10-29T20:31:20.1688084Z",
+      "durationMs": 89113,
       "error": ""
     },
     {
@@ -5237,7 +5237,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:42.9554864Z",
+      "checkedAt": "2026-10-29T20:31:20.3195702Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5247,8 +5247,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:35:11.9238785Z",
-      "durationMs": 88817,
+      "checkedAt": "2026-10-29T20:32:49.7535031Z",
+      "durationMs": 89282,
       "error": ""
     },
     {
@@ -5257,7 +5257,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:35:12.0752183Z",
+      "checkedAt": "2026-10-29T20:32:49.9052932Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5267,8 +5267,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:41.3035316Z",
-      "durationMs": 89066,
+      "checkedAt": "2026-10-29T20:34:18.8328546Z",
+      "durationMs": 88777,
       "error": ""
     },
     {
@@ -5277,8 +5277,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:38:11.3115453Z",
-      "durationMs": 89857,
+      "checkedAt": "2026-10-29T20:35:48.0766362Z",
+      "durationMs": 89079,
       "error": ""
     },
     {
@@ -5287,8 +5287,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:41.3382664Z",
-      "durationMs": 89865,
+      "checkedAt": "2026-10-29T20:37:18.3433871Z",
+      "durationMs": 90116,
       "error": ""
     },
     {
@@ -5297,18 +5297,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:41:10.8589114Z",
-      "durationMs": 89360,
+      "checkedAt": "2026-10-29T20:38:47.8351285Z",
+      "durationMs": 89332,
       "error": ""
     },
     {
       "employer": "Southwell",
-      "careersUrl": "https://careers.mysouthwell.com/job-search/",
+      "careersUrl": "https://careers.mysouthwell.com/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:41.2315486Z",
-      "durationMs": 90198,
+      "checkedAt": "2026-10-29T20:40:16.8230148Z",
+      "durationMs": 88836,
       "error": ""
     },
     {
@@ -5317,8 +5317,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:44:10.3437861Z",
-      "durationMs": 88950,
+      "checkedAt": "2026-10-29T20:41:46.5417621Z",
+      "durationMs": 89560,
       "error": ""
     },
     {
@@ -5327,28 +5327,28 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:39.8250227Z",
-      "durationMs": 89313,
+      "checkedAt": "2026-10-29T20:43:15.8180822Z",
+      "durationMs": 89124,
       "error": ""
     },
     {
       "employer": "SUNY Downstate Medical Center",
-      "careersUrl": "",
-      "ats": "",
-      "status": "source missing",
+      "careersUrl": "https://ibqujb.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/jobs",
+      "ats": "Oracle Recruiting",
+      "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:39.9760102Z",
-      "durationMs": 0,
+      "checkedAt": "2026-10-29T20:44:45.3073469Z",
+      "durationMs": 89328,
       "error": ""
     },
     {
       "employer": "Temple Health",
-      "careersUrl": "https://careers.templehealth.org/us/en/search-results?from=0&s=1",
+      "careersUrl": "https://www.templehealth.org/careers",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:47:09.2186234Z",
-      "durationMs": 89087,
+      "checkedAt": "2026-10-29T20:46:14.4000456Z",
+      "durationMs": 88941,
       "error": ""
     },
     {
@@ -5357,7 +5357,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:47:09.3799881Z",
+      "checkedAt": "2026-10-29T20:46:14.5507828Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5367,8 +5367,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:48:38.6921297Z",
-      "durationMs": 89161,
+      "checkedAt": "2026-10-29T20:47:43.8614278Z",
+      "durationMs": 89152,
       "error": ""
     },
     {
@@ -5377,18 +5377,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:50:07.5326793Z",
-      "durationMs": 88682,
+      "checkedAt": "2026-10-29T20:49:12.8003841Z",
+      "durationMs": 88789,
       "error": ""
     },
     {
       "employer": "UK St. Claire | UK HealthCare",
-      "careersUrl": "https://careers.uky.edu/",
+      "careersUrl": "https://ukhealthcare.uky.edu/doctors-providers/nursing/career-center",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:51:36.5255425Z",
-      "durationMs": 88830,
+      "checkedAt": "2026-10-29T20:50:42.0711621Z",
+      "durationMs": 89121,
       "error": ""
     },
     {
@@ -5397,8 +5397,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:53:05.8758769Z",
-      "durationMs": 89198,
+      "checkedAt": "2026-10-29T20:52:11.2323346Z",
+      "durationMs": 89010,
       "error": ""
     },
     {
@@ -5407,7 +5407,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:53:06.0384054Z",
+      "checkedAt": "2026-10-29T20:52:11.3960043Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5417,8 +5417,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:54:36.3685468Z",
-      "durationMs": 90180,
+      "checkedAt": "2026-10-29T20:53:45.2731478Z",
+      "durationMs": 93719,
       "error": ""
     },
     {
@@ -5427,8 +5427,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:56:05.6665943Z",
-      "durationMs": 89142,
+      "checkedAt": "2026-10-29T20:55:14.3515659Z",
+      "durationMs": 88918,
       "error": ""
     },
     {
@@ -5437,8 +5437,8 @@
       "ats": "UKG Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:57:36.0473049Z",
-      "durationMs": 90230,
+      "checkedAt": "2026-10-29T20:56:44.5312144Z",
+      "durationMs": 90014,
       "error": ""
     },
     {
@@ -5447,8 +5447,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:59:04.802413Z",
-      "durationMs": 88589,
+      "checkedAt": "2026-10-29T20:58:13.4075124Z",
+      "durationMs": 88725,
       "error": ""
     },
     {
@@ -5457,18 +5457,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:59:04.9536244Z",
+      "checkedAt": "2026-10-29T20:58:13.5779603Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "WVU Medicine",
-      "careersUrl": "https://wvumedicine.org/careers/",
-      "ats": "custom",
+      "careersUrl": "https://wvumedicine.wd1.myworkdayjobs.com/UHA",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T15:00:34.2227706Z",
-      "durationMs": 89110,
+      "checkedAt": "2026-10-29T20:59:43.0213253Z",
+      "durationMs": 89271,
       "error": ""
     },
     {
@@ -5477,8 +5477,8 @@
       "ats": "SmartRecruiters",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:04.3772851Z",
-      "durationMs": 2563,
+      "checkedAt": "2026-10-29T20:19:08.5209279Z",
+      "durationMs": 2908,
       "error": ""
     },
     {
@@ -5487,8 +5487,8 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:04.540805Z",
-      "durationMs": 1,
+      "checkedAt": "2026-10-29T20:19:08.6943639Z",
+      "durationMs": 0,
       "error": ""
     },
     {
@@ -5497,8 +5497,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:06.1986891Z",
-      "durationMs": 1499,
+      "checkedAt": "2026-10-29T20:19:11.2178226Z",
+      "durationMs": 2365,
       "error": ""
     },
     {
@@ -5507,8 +5507,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:07.3777232Z",
-      "durationMs": 1028,
+      "checkedAt": "2026-10-29T20:19:13.9223996Z",
+      "durationMs": 2545,
       "error": ""
     },
     {
@@ -5517,8 +5517,8 @@
       "ats": "Oracle Taleo",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:08.5655176Z",
-      "durationMs": 1030,
+      "checkedAt": "2026-10-29T20:19:16.2706769Z",
+      "durationMs": 2196,
       "error": ""
     },
     {
@@ -5527,8 +5527,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:09.7496373Z",
-      "durationMs": 1020,
+      "checkedAt": "2026-10-29T20:19:18.6986279Z",
+      "durationMs": 2265,
       "error": ""
     },
     {
@@ -5537,8 +5537,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.1918028Z",
-      "durationMs": 1288,
+      "checkedAt": "2026-10-29T20:19:21.3936368Z",
+      "durationMs": 2544,
       "error": ""
     },
     {
@@ -5547,7 +5547,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.3477331Z",
+      "checkedAt": "2026-10-29T20:19:21.5481795Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5557,7 +5557,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:11.5072245Z",
+      "checkedAt": "2026-10-29T20:19:21.7057373Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5567,8 +5567,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:12.5992644Z",
-      "durationMs": 935,
+      "checkedAt": "2026-10-29T20:19:24.2102183Z",
+      "durationMs": 2346,
       "error": ""
     },
     {
@@ -5577,8 +5577,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:13.4737369Z",
-      "durationMs": 713,
+      "checkedAt": "2026-10-29T20:19:26.4710937Z",
+      "durationMs": 2104,
       "error": ""
     },
     {
@@ -5587,8 +5587,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:14.6491698Z",
-      "durationMs": 1014,
+      "checkedAt": "2026-10-29T20:19:28.7341961Z",
+      "durationMs": 2111,
       "error": ""
     },
     {
@@ -5597,8 +5597,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:16.8559856Z",
-      "durationMs": 2047,
+      "checkedAt": "2026-10-29T20:19:32.4231515Z",
+      "durationMs": 3528,
       "error": ""
     },
     {
@@ -5607,8 +5607,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:17.9581687Z",
-      "durationMs": 947,
+      "checkedAt": "2026-10-29T20:19:34.9967815Z",
+      "durationMs": 2413,
       "error": ""
     },
     {
@@ -5617,8 +5617,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:19.0463353Z",
-      "durationMs": 929,
+      "checkedAt": "2026-10-29T20:19:37.4570359Z",
+      "durationMs": 2308,
       "error": ""
     },
     {
@@ -5627,8 +5627,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:20.3059597Z",
-      "durationMs": 1095,
+      "checkedAt": "2026-10-29T20:19:40.1160298Z",
+      "durationMs": 2507,
       "error": ""
     },
     {
@@ -5637,8 +5637,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.0708592Z",
-      "durationMs": 610,
+      "checkedAt": "2026-10-29T20:19:43.906761Z",
+      "durationMs": 3628,
       "error": ""
     },
     {
@@ -5647,7 +5647,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:21.2227279Z",
+      "checkedAt": "2026-10-29T20:19:44.0566536Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5657,8 +5657,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:27.9489697Z",
-      "durationMs": 6566,
+      "checkedAt": "2026-10-29T20:19:51.0878278Z",
+      "durationMs": 6869,
       "error": ""
     },
     {
@@ -5667,8 +5667,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.0423478Z",
-      "durationMs": 928,
+      "checkedAt": "2026-10-29T20:19:53.4484937Z",
+      "durationMs": 2203,
       "error": ""
     },
     {
@@ -5677,8 +5677,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:29.9085501Z",
-      "durationMs": 717,
+      "checkedAt": "2026-10-29T20:19:56.0280778Z",
+      "durationMs": 2425,
       "error": ""
     },
     {
@@ -5687,18 +5687,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:30.6723978Z",
-      "durationMs": 609,
+      "checkedAt": "2026-10-29T20:19:58.291664Z",
+      "durationMs": 2113,
       "error": ""
     },
     {
       "employer": "EvergreenHealth",
-      "careersUrl": "https://jobs.jobvite.com/evergreenhealth/",
-      "ats": "Jobvite",
+      "careersUrl": "https://careers.evergreenhealth.com/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.7576244Z",
-      "durationMs": 935,
+      "checkedAt": "2026-10-29T20:20:00.3787462Z",
+      "durationMs": 1933,
       "error": ""
     },
     {
@@ -5707,7 +5707,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:31.932178Z",
+      "checkedAt": "2026-10-29T20:20:00.5284375Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5717,8 +5717,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:32.8421363Z",
-      "durationMs": 752,
+      "checkedAt": "2026-10-29T20:20:02.9634146Z",
+      "durationMs": 2285,
       "error": ""
     },
     {
@@ -5727,7 +5727,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:32.9933449Z",
+      "checkedAt": "2026-10-29T20:20:03.114771Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5737,8 +5737,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:34.0965932Z",
-      "durationMs": 946,
+      "checkedAt": "2026-10-29T20:20:04.6581946Z",
+      "durationMs": 1383,
       "error": ""
     },
     {
@@ -5747,8 +5747,8 @@
       "ats": "SmartRecruiters",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:35.1181855Z",
-      "durationMs": 870,
+      "checkedAt": "2026-10-29T20:20:05.6844098Z",
+      "durationMs": 872,
       "error": ""
     },
     {
@@ -5757,8 +5757,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:36.0965509Z",
-      "durationMs": 823,
+      "checkedAt": "2026-10-29T20:20:06.888286Z",
+      "durationMs": 1053,
       "error": ""
     },
     {
@@ -5767,8 +5767,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.0891432Z",
-      "durationMs": 840,
+      "checkedAt": "2026-10-29T20:20:08.0643954Z",
+      "durationMs": 1026,
       "error": ""
     },
     {
@@ -5777,8 +5777,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:37.9151803Z",
-      "durationMs": 675,
+      "checkedAt": "2026-10-29T20:20:09.062219Z",
+      "durationMs": 844,
       "error": ""
     },
     {
@@ -5787,8 +5787,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:39.0210581Z",
-      "durationMs": 943,
+      "checkedAt": "2026-10-29T20:20:10.5213342Z",
+      "durationMs": 1308,
       "error": ""
     },
     {
@@ -5797,8 +5797,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.5691359Z",
-      "durationMs": 1381,
+      "checkedAt": "2026-10-29T20:20:12.2052612Z",
+      "durationMs": 1522,
       "error": ""
     },
     {
@@ -5807,7 +5807,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.7237102Z",
+      "checkedAt": "2026-10-29T20:20:12.3555867Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5817,7 +5817,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:40.8980612Z",
+      "checkedAt": "2026-10-29T20:20:12.5097811Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5827,8 +5827,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.3451128Z",
-      "durationMs": 5289,
+      "checkedAt": "2026-10-29T20:20:13.5352477Z",
+      "durationMs": 867,
       "error": ""
     },
     {
@@ -5837,18 +5837,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:46.5053163Z",
+      "checkedAt": "2026-10-29T20:20:13.6958259Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "Mayo Clinic",
-      "careersUrl": "https://businessdevelopment.mayoclinic.org/resources/careers/",
+      "careersUrl": "https://careers.mayoclinic.org/",
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:21:53.6016752Z",
-      "durationMs": 6938,
+      "checkedAt": "2026-10-29T20:20:14.8253963Z",
+      "durationMs": 970,
       "error": ""
     },
     {
@@ -5857,18 +5857,18 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:00.3515194Z",
-      "durationMs": 6592,
+      "checkedAt": "2026-10-29T20:20:15.682565Z",
+      "durationMs": 706,
       "error": ""
     },
     {
       "employer": "Mercy",
-      "careersUrl": "https://careers.mercy.com/us/en",
-      "ats": "custom",
+      "careersUrl": "https://mercy.wd1.myworkdayjobs.com/mercycareers",
+      "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:08.3537635Z",
-      "durationMs": 7844,
+      "checkedAt": "2026-10-29T20:20:16.842761Z",
+      "durationMs": 1009,
       "error": ""
     },
     {
@@ -5877,8 +5877,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:15.227471Z",
-      "durationMs": 6723,
+      "checkedAt": "2026-10-29T20:20:17.5586784Z",
+      "durationMs": 555,
       "error": ""
     },
     {
@@ -5887,8 +5887,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:23.4660949Z",
-      "durationMs": 8075,
+      "checkedAt": "2026-10-29T20:20:18.6273055Z",
+      "durationMs": 913,
       "error": ""
     },
     {
@@ -5897,8 +5897,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:30.8366787Z",
-      "durationMs": 7220,
+      "checkedAt": "2026-10-29T20:20:20.7486579Z",
+      "durationMs": 1971,
       "error": ""
     },
     {
@@ -5907,8 +5907,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:39.1372203Z",
-      "durationMs": 8140,
+      "checkedAt": "2026-10-29T20:20:22.8018174Z",
+      "durationMs": 1904,
       "error": ""
     },
     {
@@ -5917,8 +5917,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:45.9836382Z",
-      "durationMs": 6695,
+      "checkedAt": "2026-10-29T20:20:23.9526925Z",
+      "durationMs": 981,
       "error": ""
     },
     {
@@ -5927,7 +5927,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:22:46.1350679Z",
+      "checkedAt": "2026-10-29T20:20:24.1113338Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5937,8 +5937,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:02.7414551Z",
-      "durationMs": 16451,
+      "checkedAt": "2026-10-29T20:20:27.9516674Z",
+      "durationMs": 3687,
       "error": ""
     },
     {
@@ -5947,7 +5947,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:23:02.9087112Z",
+      "checkedAt": "2026-10-29T20:20:28.1035911Z",
       "durationMs": 0,
       "error": ""
     },
@@ -5957,8 +5957,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:24:12.19077Z",
-      "durationMs": 69131,
+      "checkedAt": "2026-10-29T20:20:36.4547847Z",
+      "durationMs": 8194,
       "error": ""
     },
     {
@@ -5967,8 +5967,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:25:41.1405344Z",
-      "durationMs": 88800,
+      "checkedAt": "2026-10-29T20:20:37.3196029Z",
+      "durationMs": 713,
       "error": ""
     },
     {
@@ -5977,8 +5977,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:27:12.3357861Z",
-      "durationMs": 91046,
+      "checkedAt": "2026-10-29T20:20:40.5699452Z",
+      "durationMs": 3096,
       "error": ""
     },
     {
@@ -5987,8 +5987,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:28:41.571556Z",
-      "durationMs": 89074,
+      "checkedAt": "2026-10-29T20:20:42.0284149Z",
+      "durationMs": 1296,
       "error": ""
     },
     {
@@ -5997,7 +5997,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:28:41.7312591Z",
+      "checkedAt": "2026-10-29T20:20:42.1889302Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6007,8 +6007,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:30:10.6400319Z",
-      "durationMs": 88751,
+      "checkedAt": "2026-10-29T20:20:43.1339874Z",
+      "durationMs": 787,
       "error": ""
     },
     {
@@ -6017,8 +6017,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:39.850604Z",
-      "durationMs": 89056,
+      "checkedAt": "2026-10-29T20:20:44.320966Z",
+      "durationMs": 1024,
       "error": ""
     },
     {
@@ -6027,7 +6027,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:31:40.0157677Z",
+      "checkedAt": "2026-10-29T20:20:44.484652Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6037,8 +6037,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:10.865238Z",
-      "durationMs": 90691,
+      "checkedAt": "2026-10-29T20:20:46.2134417Z",
+      "durationMs": 1571,
       "error": ""
     },
     {
@@ -6047,7 +6047,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:11.0211231Z",
+      "checkedAt": "2026-10-29T20:20:46.3692212Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6057,7 +6057,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:33:11.1794693Z",
+      "checkedAt": "2026-10-29T20:20:46.5199466Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6067,8 +6067,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:40.4453144Z",
-      "durationMs": 89108,
+      "checkedAt": "2026-10-29T20:20:47.3622578Z",
+      "durationMs": 677,
       "error": ""
     },
     {
@@ -6077,7 +6077,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:40.6104908Z",
+      "checkedAt": "2026-10-29T20:20:47.5131152Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6087,7 +6087,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:40.7687044Z",
+      "checkedAt": "2026-10-29T20:20:47.6643123Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6097,7 +6097,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:34:40.9206198Z",
+      "checkedAt": "2026-10-29T20:20:47.8264603Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6107,8 +6107,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:09.926879Z",
-      "durationMs": 88842,
+      "checkedAt": "2026-10-29T20:20:48.726953Z",
+      "durationMs": 742,
       "error": ""
     },
     {
@@ -6117,7 +6117,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:36:10.0868963Z",
+      "checkedAt": "2026-10-29T20:20:48.8867453Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6127,8 +6127,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:37:39.2745674Z",
-      "durationMs": 89029,
+      "checkedAt": "2026-10-29T20:20:56.1650008Z",
+      "durationMs": 7120,
       "error": ""
     },
     {
@@ -6137,18 +6137,18 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:39:08.262782Z",
-      "durationMs": 88828,
+      "checkedAt": "2026-10-29T20:21:03.322566Z",
+      "durationMs": 6998,
       "error": ""
     },
     {
       "employer": "Trinity Health | CommonSpirit Health",
-      "careersUrl": "https://trinityhealth.wd1.myworkdayjobs.com/Jobs",
-      "ats": "Workday",
+      "careersUrl": "https://careers-commonspirit.icims.com/",
+      "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:40:37.3949516Z",
-      "durationMs": 88981,
+      "checkedAt": "2026-10-29T20:21:10.2771936Z",
+      "durationMs": 6797,
       "error": ""
     },
     {
@@ -6157,8 +6157,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:42:06.3193142Z",
-      "durationMs": 88774,
+      "checkedAt": "2026-10-29T20:21:17.6210652Z",
+      "durationMs": 7192,
       "error": ""
     },
     {
@@ -6167,8 +6167,8 @@
       "ats": "Workday",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:43:35.2715686Z",
-      "durationMs": 88797,
+      "checkedAt": "2026-10-29T20:21:24.7993829Z",
+      "durationMs": 7028,
       "error": ""
     },
     {
@@ -6177,8 +6177,8 @@
       "ats": "iCIMS",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:04.1058928Z",
-      "durationMs": 88684,
+      "checkedAt": "2026-10-29T20:21:31.7215526Z",
+      "durationMs": 6766,
       "error": ""
     },
     {
@@ -6187,18 +6187,18 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:45:04.2583157Z",
+      "checkedAt": "2026-10-29T20:21:31.8729326Z",
       "durationMs": 0,
       "error": ""
     },
     {
       "employer": "UPMC Washington | UPMC",
-      "careersUrl": "https://stgupmcjobs.taleo.net/careersection/upmc_external/moresearch.ftl",
-      "ats": "Oracle Taleo",
+      "careersUrl": "https://careers.upmc.com/",
+      "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:46:34.7320921Z",
-      "durationMs": 90312,
+      "checkedAt": "2026-10-29T20:21:39.033182Z",
+      "durationMs": 7010,
       "error": ""
     },
     {
@@ -6207,8 +6207,8 @@
       "ats": "Oracle Recruiting",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:48:04.2575759Z",
-      "durationMs": 89362,
+      "checkedAt": "2026-10-29T20:21:46.6377411Z",
+      "durationMs": 7456,
       "error": ""
     },
     {
@@ -6217,8 +6217,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:49:33.5082303Z",
-      "durationMs": 89089,
+      "checkedAt": "2026-10-29T20:21:53.9950242Z",
+      "durationMs": 7205,
       "error": ""
     },
     {
@@ -6227,7 +6227,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:49:33.6703189Z",
+      "checkedAt": "2026-10-29T20:21:54.1458724Z",
       "durationMs": 0,
       "error": ""
     },
@@ -6237,8 +6237,8 @@
       "ats": "custom",
       "status": "monitored",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:51:02.9681238Z",
-      "durationMs": 89142,
+      "checkedAt": "2026-10-29T20:22:01.474539Z",
+      "durationMs": 7170,
       "error": ""
     },
     {
@@ -6247,7 +6247,7 @@
       "ats": "",
       "status": "source missing",
       "rolesFound": 0,
-      "checkedAt": "2026-10-29T14:51:03.1299872Z",
+      "checkedAt": "2026-10-29T20:22:01.6342087Z",
       "durationMs": 0,
       "error": ""
     }
