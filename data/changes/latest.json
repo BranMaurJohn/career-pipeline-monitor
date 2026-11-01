@@ -1,10 +1,11 @@
 {
-  "generatedAt": "2026-11-01T01:51:59.5837076Z",
-  "currentJobCount": 7,
-  "previousJobCount": 6,
-  "newJobCount": 1,
-  "removedJobCount": 0,
-  "newJobs": [
+  "generatedAt": "2026-11-01T15:51:24.2776753Z",
+  "currentJobCount": 6,
+  "previousJobCount": 7,
+  "newJobCount": 0,
+  "removedJobCount": 1,
+  "newJobs": [],
+  "removedJobs": [
     {
       "employer": "Advocate Health",
       "roleTitle": "Workforce Management System Analyst",
@@ -16,6 +17,5 @@
       "verifiedAt": "2026-11-01T01:11:04.5216966Z"
     }
   ],
-  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
