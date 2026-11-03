@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-11-03T15:49:31.5346276Z",
-  "currentJobCount": 6,
-  "previousJobCount": 7,
-  "newJobCount": 0,
-  "removedJobCount": 1,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-11-03T21:41:02.4618671Z",
+  "currentJobCount": 7,
+  "previousJobCount": 6,
+  "newJobCount": 1,
+  "removedJobCount": 0,
+  "newJobs": [
     {
       "employer": "Advocate Health",
       "roleTitle": "Workforce Management System Analyst",
@@ -14,8 +13,9 @@
       "jobUrl": "https://careers.advocatehealth.org/job/24089474/workforce-management-system-analyst-anesthesiology-winston-salem-nc/",
       "careersUrl": "https://careers.advocatehealth.org/",
       "source": "Bing RSS",
-      "verifiedAt": "2026-11-03T06:48:44.5671557Z"
+      "verifiedAt": "2026-11-03T20:59:59.1031698Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
