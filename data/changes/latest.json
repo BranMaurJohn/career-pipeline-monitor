@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-11-06T03:07:45.5020801Z",
-  "currentJobCount": 3,
-  "previousJobCount": 7,
-  "newJobCount": 0,
-  "removedJobCount": 4,
-  "newJobs": [],
-  "removedJobs": [
+  "generatedAt": "2026-11-06T11:34:13.6207382Z",
+  "currentJobCount": 7,
+  "previousJobCount": 3,
+  "newJobCount": 4,
+  "removedJobCount": 0,
+  "newJobs": [
     {
       "employer": "Beth Israel Lahey Health",
       "roleTitle": "Senior UKG Scheduling Analyst (Remote)",
@@ -14,27 +13,7 @@
       "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-remote-charlestown-ma-jr93454/",
       "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
       "source": "Official career page",
-      "verifiedAt": "2026-11-05T21:59:35.485205Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Scheduling Analyst",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-charlestown-ma-jr96189/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-11-05T21:59:35.4749152Z"
-    },
-    {
-      "employer": "Beth Israel Lahey Health",
-      "roleTitle": "Senior UKG Timekeeping Analyst",
-      "workModel": "Not stated",
-      "salary": "Not disclosed",
-      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-timekeeping-analyst-charlestown-ma-jr96188/",
-      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
-      "source": "Official career page",
-      "verifiedAt": "2026-11-05T21:59:35.476667Z"
+      "verifiedAt": "2026-11-06T10:53:46.1754659Z"
     },
     {
       "employer": "Beth Israel Lahey Health",
@@ -44,8 +23,29 @@
       "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-integration-developer-charlestown-ma-jr93455/",
       "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
       "source": "Official career page",
-      "verifiedAt": "2026-11-05T21:59:35.4813886Z"
+      "verifiedAt": "2026-11-06T10:53:46.1742187Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Timekeeping Analyst",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-timekeeping-analyst-charlestown-ma-jr96188/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-11-06T10:53:46.1686312Z"
+    },
+    {
+      "employer": "Beth Israel Lahey Health",
+      "roleTitle": "Senior UKG Scheduling Analyst",
+      "workModel": "Not stated",
+      "salary": "Not disclosed",
+      "jobUrl": "https://jobs.bilh.org/jobs/senior-ukg-scheduling-analyst-charlestown-ma-jr96189/",
+      "careersUrl": "https://jobs.bilh.org/job_family/information-technology/",
+      "source": "Official career page",
+      "verifiedAt": "2026-11-06T10:53:46.1669533Z"
     }
   ],
+  "removedJobs": [],
   "removalPolicy": "Removed postings are audit-only. ClickUp tasks are never automatically deleted or demoted."
 }
